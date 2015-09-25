@@ -1,0 +1,21 @@
+{
+  "name": "node-ncbi",
+  "version": "0.0.1",
+  "description": "Access and parse the NCBI eUtils API in Node or the Browser",
+  "main": "index.js",
+  "author": {
+    "name": "Casey Ydenberg",
+    "email": "ydenberg@gmail.com",
+    "url": "http://www.caseyy.org/"
+  },
+  "dependencies": {
+    "popsicle": "^0.5.12",
+    "underscore": "^1.8.3",
+    "xml2js": "^0.4.9"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-mocha": "^2.1.2",
+    "mocha": "^2.2.5"
+  }
+}
