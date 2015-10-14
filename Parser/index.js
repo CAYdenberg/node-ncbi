@@ -26,7 +26,7 @@ module.exports = {
     var dataObj = createDataObj(data);
     summaryArr = _.map(dataObj.data.result, function(summary, key) {
       //papers are indexed by their uid.
-      if ( loadDataInt(key, 10) ) {
+      if ( parseInt(key, 10) ) {
         return summary;
       } else {
         return false;
