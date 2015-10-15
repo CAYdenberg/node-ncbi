@@ -1,0 +1,183 @@
+<PubmedArticleSet>
+<PubmedArticle>
+<MedlineCitation Owner="NLM" Status="In-Data-Review">
+<PMID Version="1">26147656</PMID>
+<DateCreated>
+<Year>2015</Year>
+<Month>09</Month>
+<Day>08</Day>
+</DateCreated>
+<Article PubModel="Print-Electronic">
+<Journal>
+<ISSN IssnType="Electronic">1949-3592</ISSN>
+<JournalIssue CitedMedium="Internet">
+<Volume>72</Volume>
+<Issue>7</Issue>
+<PubDate>
+<Year>2015</Year>
+<Month>Jul</Month>
+</PubDate>
+</JournalIssue>
+<Title>Cytoskeleton (Hoboken, N.J.)</Title>
+<ISOAbbreviation>Cytoskeleton (Hoboken)</ISOAbbreviation>
+</Journal>
+<ArticleTitle>
+Combinatorial genetic analysis of a network of actin disassembly-promoting factors.
+</ArticleTitle>
+<Pagination>
+<MedlinePgn>349-61</MedlinePgn>
+</Pagination>
+<ELocationID EIdType="doi" ValidYN="Y">10.1002/cm.21231</ELocationID>
+<Abstract>
+<AbstractText>
+The patterning of actin cytoskeleton structures in vivo is a product of spatially and temporally regulated polymer assembly balanced by polymer disassembly. While in recent years our understanding of actin assembly mechanisms has grown immensely, our knowledge of actin disassembly machinery and mechanisms has remained comparatively sparse. Saccharomyces cerevisiae is an ideal system to tackle this problem, both because of its amenabilities to genetic manipulation and live-cell imaging and because only a single gene encodes each of the core disassembly factors: cofilin (COF1), Srv2/CAP (SRV2), Aip1 (AIP1), GMF (GMF1/AIM7), coronin (CRN1), and twinfilin (TWF1). Among these six factors, only the functions of cofilin are essential and have been well defined. Here, we investigated the functions of the nonessential actin disassembly factors by performing genetic and live-cell imaging analyses on a combinatorial set of isogenic single, double, triple, and quadruple mutants in S. cerevisiae. Our results show that each disassembly factor makes an important contribution to cell viability, actin organization, and endocytosis. Further, our data reveal new relationships among these factors, providing insights into how they work together to orchestrate actin turnover. Finally, we observe specific combinations of mutations that are lethal, e.g., srv2Δ aip1Δ and srv2Δ crn1Δ twf1Δ, demonstrating that while cofilin is essential, it is not sufficient in vivo, and that combinations of the other disassembly factors perform vital functions. © 2015 The Authors. Cytoskeleton Published by Wiley Periodicals, Inc.
+</AbstractText>
+<CopyrightInformation>
+© 2015 The Authors. Cytoskeleton Published by Wiley Periodicals, Inc.
+</CopyrightInformation>
+</Abstract>
+<AuthorList CompleteYN="Y">
+<Author ValidYN="Y">
+<LastName>Ydenberg</LastName>
+<ForeName>Casey A</ForeName>
+<Initials>CA</Initials>
+<AffiliationInfo>
+<Affiliation>
+Department of Biology, Rosenstiel Basic Medical Science Research Center, Brandeis University, Waltham, Massachusetts, 02454.
+</Affiliation>
+</AffiliationInfo>
+</Author>
+<Author ValidYN="Y">
+<LastName>Johnston</LastName>
+<ForeName>Adam</ForeName>
+<Initials>A</Initials>
+<AffiliationInfo>
+<Affiliation>
+Department of Biology, Rosenstiel Basic Medical Science Research Center, Brandeis University, Waltham, Massachusetts, 02454.
+</Affiliation>
+</AffiliationInfo>
+</Author>
+<Author ValidYN="Y">
+<LastName>Weinstein</LastName>
+<ForeName>Jaclyn</ForeName>
+<Initials>J</Initials>
+<AffiliationInfo>
+<Affiliation>
+Department of Biology, Rosenstiel Basic Medical Science Research Center, Brandeis University, Waltham, Massachusetts, 02454.
+</Affiliation>
+</AffiliationInfo>
+</Author>
+<Author ValidYN="Y">
+<LastName>Bellavance</LastName>
+<ForeName>Danielle</ForeName>
+<Initials>D</Initials>
+<AffiliationInfo>
+<Affiliation>
+Department of Biology, Rosenstiel Basic Medical Science Research Center, Brandeis University, Waltham, Massachusetts, 02454.
+</Affiliation>
+</AffiliationInfo>
+</Author>
+<Author ValidYN="Y">
+<LastName>Jansen</LastName>
+<ForeName>Silvia</ForeName>
+<Initials>S</Initials>
+<AffiliationInfo>
+<Affiliation>
+Department of Biology, Rosenstiel Basic Medical Science Research Center, Brandeis University, Waltham, Massachusetts, 02454.
+</Affiliation>
+</AffiliationInfo>
+</Author>
+<Author ValidYN="Y">
+<LastName>Goode</LastName>
+<ForeName>Bruce L</ForeName>
+<Initials>BL</Initials>
+<AffiliationInfo>
+<Affiliation>
+Department of Biology, Rosenstiel Basic Medical Science Research Center, Brandeis University, Waltham, Massachusetts, 02454.
+</Affiliation>
+</AffiliationInfo>
+</Author>
+</AuthorList>
+<Language>eng</Language>
+<PublicationTypeList>
+<PublicationType UI="D016428">Journal Article</PublicationType>
+</PublicationTypeList>
+<ArticleDate DateType="Electronic">
+<Year>2015</Year>
+<Month>08</Month>
+<Day>22</Day>
+</ArticleDate>
+</Article>
+<MedlineJournalInfo>
+<Country>United States</Country>
+<MedlineTA>Cytoskeleton (Hoboken)</MedlineTA>
+<NlmUniqueID>101523844</NlmUniqueID>
+<ISSNLinking>1949-3592</ISSNLinking>
+</MedlineJournalInfo>
+<CitationSubset>IM</CitationSubset>
+<KeywordList Owner="NOTNLM">
+<Keyword MajorTopicYN="N">Aip1</Keyword>
+<Keyword MajorTopicYN="N">Cofilin</Keyword>
+<Keyword MajorTopicYN="N">Coronin</Keyword>
+<Keyword MajorTopicYN="N">GMF</Keyword>
+<Keyword MajorTopicYN="N">Srv2/CAP1</Keyword>
+<Keyword MajorTopicYN="N">Twinfilin</Keyword>
+<Keyword MajorTopicYN="N">actin</Keyword>
+<Keyword MajorTopicYN="N">actin disassembly</Keyword>
+<Keyword MajorTopicYN="N">cell polarity</Keyword>
+<Keyword MajorTopicYN="N">endocytosis</Keyword>
+<Keyword MajorTopicYN="N">yeast</Keyword>
+</KeywordList>
+</MedlineCitation>
+<PubmedData>
+<History>
+<PubMedPubDate PubStatus="received">
+<Year>2015</Year>
+<Month>6</Month>
+<Day>23</Day>
+</PubMedPubDate>
+<PubMedPubDate PubStatus="revised">
+<Year>2015</Year>
+<Month>6</Month>
+<Day>29</Day>
+</PubMedPubDate>
+<PubMedPubDate PubStatus="accepted">
+<Year>2015</Year>
+<Month>7</Month>
+<Day>1</Day>
+</PubMedPubDate>
+<PubMedPubDate PubStatus="aheadofprint">
+<Year>2015</Year>
+<Month>8</Month>
+<Day>22</Day>
+</PubMedPubDate>
+<PubMedPubDate PubStatus="entrez">
+<Year>2015</Year>
+<Month>7</Month>
+<Day>7</Day>
+<Hour>6</Hour>
+<Minute>0</Minute>
+</PubMedPubDate>
+<PubMedPubDate PubStatus="pubmed">
+<Year>2015</Year>
+<Month>7</Month>
+<Day>7</Day>
+<Hour>6</Hour>
+<Minute>0</Minute>
+</PubMedPubDate>
+<PubMedPubDate PubStatus="medline">
+<Year>2015</Year>
+<Month>7</Month>
+<Day>7</Day>
+<Hour>6</Hour>
+<Minute>0</Minute>
+</PubMedPubDate>
+</History>
+<PublicationStatus>ppublish</PublicationStatus>
+<ArticleIdList>
+<ArticleId IdType="pubmed">26147656</ArticleId>
+<ArticleId IdType="doi">10.1002/cm.21231</ArticleId>
+</ArticleIdList>
+</PubmedData>
+</PubmedArticle>
+</PubmedArticleSet>

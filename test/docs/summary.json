@@ -1,0 +1,1222 @@
+{
+    "header": {
+        "type": "esummary",
+        "version": "0.3"
+    },
+    "result": {
+        "uids": [
+            "26147656",
+            "25995115",
+            "24719456",
+            "23727094",
+            "22323294",
+            "22002930",
+            "19188495",
+            "18979235",
+            "18474625"
+        ],
+        "26147656": {
+            "uid": "26147656",
+            "pubdate": "2015 Jul",
+            "epubdate": "2015 Aug 22",
+            "source": "Cytoskeleton (Hoboken)",
+            "authors": [
+                {
+                    "name": "Ydenberg CA",
+                    "authtype": "Author",
+                    "clusterid": ""
+                },
+                {
+                    "name": "Johnston A",
+                    "authtype": "Author",
+                    "clusterid": ""
+                },
+                {
+                    "name": "Weinstein J",
+                    "authtype": "Author",
+                    "clusterid": ""
+                },
+                {
+                    "name": "Bellavance D",
+                    "authtype": "Author",
+                    "clusterid": ""
+                },
+                {
+                    "name": "Jansen S",
+                    "authtype": "Author",
+                    "clusterid": ""
+                },
+                {
+                    "name": "Goode BL",
+                    "authtype": "Author",
+                    "clusterid": ""
+                }
+            ],
+            "lastauthor": "Goode BL",
+            "title": "Combinatorial genetic analysis of a network of actin disassembly-promoting factors.",
+            "sorttitle": "combinatorial genetic analysis of a network of actin disassembly promoting factors ",
+            "volume": "72",
+            "issue": "7",
+            "pages": "349-61",
+            "lang": [
+                "eng"
+            ],
+            "nlmuniqueid": "101523844",
+            "issn": "1949-3584",
+            "essn": "1949-3592",
+            "pubtype": [
+                "Journal Article"
+            ],
+            "recordstatus": "PubMed - in process",
+            "pubstatus": "256",
+            "articleids": [
+                {
+                    "idtype": "pubmed",
+                    "idtypen": 1,
+                    "value": "26147656"
+                },
+                {
+                    "idtype": "doi",
+                    "idtypen": 3,
+                    "value": "10.1002/cm.21231"
+                },
+                {
+                    "idtype": "eid",
+                    "idtypen": 8,
+                    "value": "26147656"
+                },
+                {
+                    "idtype": "rid",
+                    "idtypen": 8,
+                    "value": "26147656"
+                }
+            ],
+            "history": [
+                {
+                    "pubstatus": "received",
+                    "date": "2015/06/23 00:00"
+                },
+                {
+                    "pubstatus": "revised",
+                    "date": "2015/06/29 00:00"
+                },
+                {
+                    "pubstatus": "accepted",
+                    "date": "2015/07/01 00:00"
+                },
+                {
+                    "pubstatus": "aheadofprint",
+                    "date": "2015/08/22 00:00"
+                },
+                {
+                    "pubstatus": "entrez",
+                    "date": "2015/07/07 06:00"
+                },
+                {
+                    "pubstatus": "pubmed",
+                    "date": "2015/07/07 06:00"
+                },
+                {
+                    "pubstatus": "medline",
+                    "date": "2015/07/07 06:00"
+                }
+            ],
+            "references": [
+            ],
+            "attributes": [
+                "Has Abstract"
+            ],
+            "pmcrefcount": 0,
+            "fulljournalname": "Cytoskeleton (Hoboken, N.J.)",
+            "elocationid": "doi: 10.1002/cm.21231",
+            "viewcount": 260,
+            "doctype": "citation",
+            "srccontriblist": [
+            ],
+            "booktitle": "",
+            "medium": "",
+            "edition": "",
+            "publisherlocation": "",
+            "publishername": "",
+            "srcdate": "",
+            "reportnumber": "",
+            "availablefromurl": "",
+            "locationlabel": "",
+            "doccontriblist": [
+            ],
+            "docdate": "",
+            "bookname": "",
+            "chapter": "",
+            "sortpubdate": "2015/07/01 00:00",
+            "sortfirstauthor": "Ydenberg CA",
+            "vernaculartitle": ""
+        },
+        "25995115": {
+            "uid": "25995115",
+            "pubdate": "2015 May 21",
+            "epubdate": "2015 May 21",
+            "source": "Nat Commun",
+            "authors": [
+                {
+                    "name": "Jansen S",
+                    "authtype": "Author",
+                    "clusterid": ""
+                },
+                {
+                    "name": "Collins A",
+                    "authtype": "Author",
+                    "clusterid": ""
+                },
+                {
+                    "name": "Chin SM",
+                    "authtype": "Author",
+                    "clusterid": ""
+                },
+                {
+                    "name": "Ydenberg CA",
+                    "authtype": "Author",
+                    "clusterid": ""
+                },
+                {
+                    "name": "Gelles J",
+                    "authtype": "Author",
+                    "clusterid": ""
+                },
+                {
+                    "name": "Goode BL",
+                    "authtype": "Author",
+                    "clusterid": ""
+                }
+            ],
+            "lastauthor": "Goode BL",
+            "title": "Single-molecule imaging of a three-component ordered actin disassembly mechanism.",
+            "sorttitle": "single molecule imaging of a three component ordered actin disassembly mechanism ",
+            "volume": "6",
+            "issue": "",
+            "pages": "7202",
+            "lang": [
+                "eng"
+            ],
+            "nlmuniqueid": "101528555",
+            "issn": "",
+            "essn": "2041-1723",
+            "pubtype": [
+                "Journal Article"
+            ],
+            "recordstatus": "PubMed - in process",
+            "pubstatus": "3",
+            "articleids": [
+                {
+                    "idtype": "pii",
+                    "idtypen": 4,
+                    "value": "ncomms8202"
+                },
+                {
+                    "idtype": "doi",
+                    "idtypen": 3,
+                    "value": "10.1038/ncomms8202"
+                },
+                {
+                    "idtype": "pubmed",
+                    "idtypen": 1,
+                    "value": "25995115"
+                },
+                {
+                    "idtype": "pmc",
+                    "idtypen": 8,
+                    "value": "PMC4443854"
+                },
+                {
+                    "idtype": "mid",
+                    "idtypen": 8,
+                    "value": "NIHMS682752"
+                },
+                {
+                    "idtype": "eid",
+                    "idtypen": 8,
+                    "value": "25995115"
+                },
+                {
+                    "idtype": "rid",
+                    "idtypen": 8,
+                    "value": "25995115"
+                },
+                {
+                    "idtype": "pmcid",
+                    "idtypen": 5,
+                    "value": "pmc-id: PMC4443854;manuscript-id: NIHMS682752;"
+                }
+            ],
+            "history": [
+                {
+                    "pubstatus": "received",
+                    "date": "2014/12/21 00:00"
+                },
+                {
+                    "pubstatus": "accepted",
+                    "date": "2015/04/17 00:00"
+                },
+                {
+                    "pubstatus": "entrez",
+                    "date": "2015/05/22 06:00"
+                },
+                {
+                    "pubstatus": "pubmed",
+                    "date": "2015/05/23 06:00"
+                },
+                {
+                    "pubstatus": "medline",
+                    "date": "2015/05/23 06:00"
+                }
+            ],
+            "references": [
+            ],
+            "attributes": [
+                "Has Abstract"
+            ],
+            "pmcrefcount": 1,
+            "fulljournalname": "Nature communications",
+            "elocationid": "doi: 10.1038/ncomms8202",
+            "viewcount": 385,
+            "doctype": "citation",
+            "srccontriblist": [
+            ],
+            "booktitle": "",
+            "medium": "",
+            "edition": "",
+            "publisherlocation": "",
+            "publishername": "",
+            "srcdate": "",
+            "reportnumber": "",
+            "availablefromurl": "",
+            "locationlabel": "",
+            "doccontriblist": [
+            ],
+            "docdate": "",
+            "bookname": "",
+            "chapter": "",
+            "sortpubdate": "2015/05/21 00:00",
+            "sortfirstauthor": "Jansen S",
+            "vernaculartitle": ""
+        },
+        "24719456": {
+            "uid": "24719456",
+            "pubdate": "2014 Jun",
+            "epubdate": "2014 Apr 9",
+            "source": "Mol Biol Cell",
+            "authors": [
+                {
+                    "name": "Graziano BR",
+                    "authtype": "Author",
+                    "clusterid": ""
+                },
+                {
+                    "name": "Yu HY",
+                    "authtype": "Author",
+                    "clusterid": ""
+                },
+                {
+                    "name": "Alioto SL",
+                    "authtype": "Author",
+                    "clusterid": ""
+                },
+                {
+                    "name": "Eskin JA",
+                    "authtype": "Author",
+                    "clusterid": ""
+                },
+                {
+                    "name": "Ydenberg CA",
+                    "authtype": "Author",
+                    "clusterid": ""
+                },
+                {
+                    "name": "Waterman DP",
+                    "authtype": "Author",
+                    "clusterid": ""
+                },
+                {
+                    "name": "Garabedian M",
+                    "authtype": "Author",
+                    "clusterid": ""
+                },
+                {
+                    "name": "Goode BL",
+                    "authtype": "Author",
+                    "clusterid": ""
+                }
+            ],
+            "lastauthor": "Goode BL",
+            "title": "The F-BAR protein Hof1 tunes formin activity to sculpt actin cables during polarized growth.",
+            "sorttitle": "f bar protein hof1 tunes formin activity to sculpt actin cables during polarized growth ",
+            "volume": "25",
+            "issue": "11",
+            "pages": "1730-43",
+            "lang": [
+                "eng"
+            ],
+            "nlmuniqueid": "9201390",
+            "issn": "1059-1524",
+            "essn": "1939-4586",
+            "pubtype": [
+                "Journal Article"
+            ],
+            "recordstatus": "PubMed - indexed for MEDLINE",
+            "pubstatus": "256",
+            "articleids": [
+                {
+                    "idtype": "pii",
+                    "idtypen": 4,
+                    "value": "mbc.E14-03-0850"
+                },
+                {
+                    "idtype": "doi",
+                    "idtypen": 3,
+                    "value": "10.1091/mbc.E14-03-0850"
+                },
+                {
+                    "idtype": "pubmed",
+                    "idtypen": 1,
+                    "value": "24719456"
+                },
+                {
+                    "idtype": "pmc",
+                    "idtypen": 8,
+                    "value": "PMC4038500"
+                },
+                {
+                    "idtype": "eid",
+                    "idtypen": 8,
+                    "value": "24719456"
+                },
+                {
+                    "idtype": "rid",
+                    "idtypen": 8,
+                    "value": "24719456"
+                },
+                {
+                    "idtype": "pmcid",
+                    "idtypen": 5,
+                    "value": "pmc-id: PMC4038500;"
+                }
+            ],
+            "history": [
+                {
+                    "pubstatus": "aheadofprint",
+                    "date": "2014/04/09 00:00"
+                },
+                {
+                    "pubstatus": "entrez",
+                    "date": "2014/04/11 06:00"
+                },
+                {
+                    "pubstatus": "pubmed",
+                    "date": "2014/04/11 06:00"
+                },
+                {
+                    "pubstatus": "medline",
+                    "date": "2015/01/22 06:00"
+                }
+            ],
+            "references": [
+            ],
+            "attributes": [
+                "Has Abstract"
+            ],
+            "pmcrefcount": 2,
+            "fulljournalname": "Molecular biology of the cell",
+            "elocationid": "doi: 10.1091/mbc.E14-03-0850",
+            "viewcount": 323,
+            "doctype": "citation",
+            "srccontriblist": [
+            ],
+            "booktitle": "",
+            "medium": "",
+            "edition": "",
+            "publisherlocation": "",
+            "publishername": "",
+            "srcdate": "",
+            "reportnumber": "",
+            "availablefromurl": "",
+            "locationlabel": "",
+            "doccontriblist": [
+            ],
+            "docdate": "",
+            "bookname": "",
+            "chapter": "",
+            "sortpubdate": "2014/06/01 00:00",
+            "sortfirstauthor": "Graziano BR",
+            "vernaculartitle": ""
+        },
+        "23727094": {
+            "uid": "23727094",
+            "pubdate": "2013 Jun 17",
+            "epubdate": "2013 May 30",
+            "source": "Curr Biol",
+            "authors": [
+                {
+                    "name": "Ydenberg CA",
+                    "authtype": "Author",
+                    "clusterid": ""
+                },
+                {
+                    "name": "Padrick SB",
+                    "authtype": "Author",
+                    "clusterid": ""
+                },
+                {
+                    "name": "Sweeney MO",
+                    "authtype": "Author",
+                    "clusterid": ""
+                },
+                {
+                    "name": "Gandhi M",
+                    "authtype": "Author",
+                    "clusterid": ""
+                },
+                {
+                    "name": "Sokolova O",
+                    "authtype": "Author",
+                    "clusterid": ""
+                },
+                {
+                    "name": "Goode BL",
+                    "authtype": "Author",
+                    "clusterid": ""
+                }
+            ],
+            "lastauthor": "Goode BL",
+            "title": "GMF severs actin-Arp2/3 complex branch junctions by a cofilin-like mechanism.",
+            "sorttitle": "gmf severs actin arp2 3 complex branch junctions by a cofilin like mechanism ",
+            "volume": "23",
+            "issue": "12",
+            "pages": "1037-45",
+            "lang": [
+                "eng"
+            ],
+            "nlmuniqueid": "9107782",
+            "issn": "0960-9822",
+            "essn": "1879-0445",
+            "pubtype": [
+                "Journal Article"
+            ],
+            "recordstatus": "PubMed - indexed for MEDLINE",
+            "pubstatus": "256",
+            "articleids": [
+                {
+                    "idtype": "pii",
+                    "idtypen": 4,
+                    "value": "S0960-9822(13)00499-5"
+                },
+                {
+                    "idtype": "doi",
+                    "idtypen": 3,
+                    "value": "10.1016/j.cub.2013.04.058"
+                },
+                {
+                    "idtype": "pubmed",
+                    "idtypen": 1,
+                    "value": "23727094"
+                },
+                {
+                    "idtype": "pmc",
+                    "idtypen": 8,
+                    "value": "PMC3714218"
+                },
+                {
+                    "idtype": "mid",
+                    "idtypen": 8,
+                    "value": "NIHMS472952"
+                },
+                {
+                    "idtype": "eid",
+                    "idtypen": 8,
+                    "value": "23727094"
+                },
+                {
+                    "idtype": "rid",
+                    "idtypen": 8,
+                    "value": "23727094"
+                },
+                {
+                    "idtype": "pmcid",
+                    "idtypen": 5,
+                    "value": "pmc-id: PMC3714218;manuscript-id: NIHMS472952;"
+                }
+            ],
+            "history": [
+                {
+                    "pubstatus": "received",
+                    "date": "2013/01/30 00:00"
+                },
+                {
+                    "pubstatus": "revised",
+                    "date": "2013/03/27 00:00"
+                },
+                {
+                    "pubstatus": "accepted",
+                    "date": "2013/04/19 00:00"
+                },
+                {
+                    "pubstatus": "aheadofprint",
+                    "date": "2013/05/30 00:00"
+                },
+                {
+                    "pubstatus": "entrez",
+                    "date": "2013/06/04 06:00"
+                },
+                {
+                    "pubstatus": "pubmed",
+                    "date": "2013/06/04 06:00"
+                },
+                {
+                    "pubstatus": "medline",
+                    "date": "2014/02/06 06:00"
+                }
+            ],
+            "references": [
+            ],
+            "attributes": [
+                "Has Abstract"
+            ],
+            "pmcrefcount": 11,
+            "fulljournalname": "Current biology : CB",
+            "elocationid": "doi: 10.1016/j.cub.2013.04.058",
+            "viewcount": 148,
+            "doctype": "citation",
+            "srccontriblist": [
+            ],
+            "booktitle": "",
+            "medium": "",
+            "edition": "",
+            "publisherlocation": "",
+            "publishername": "",
+            "srcdate": "",
+            "reportnumber": "",
+            "availablefromurl": "",
+            "locationlabel": "",
+            "doccontriblist": [
+            ],
+            "docdate": "",
+            "bookname": "",
+            "chapter": "",
+            "sortpubdate": "2013/06/17 00:00",
+            "sortfirstauthor": "Ydenberg CA",
+            "vernaculartitle": ""
+        },
+        "22323294": {
+            "uid": "22323294",
+            "pubdate": "2012 Apr",
+            "epubdate": "2012 Feb 9",
+            "source": "Mol Biol Cell",
+            "authors": [
+                {
+                    "name": "Ydenberg CA",
+                    "authtype": "Author",
+                    "clusterid": ""
+                },
+                {
+                    "name": "Stein RA",
+                    "authtype": "Author",
+                    "clusterid": ""
+                },
+                {
+                    "name": "Rose MD",
+                    "authtype": "Author",
+                    "clusterid": ""
+                }
+            ],
+            "lastauthor": "Rose MD",
+            "title": "Cdc42p and Fus2p act together late in yeast cell fusion.",
+            "sorttitle": "cdc42p and fus2p act together late in yeast cell fusion ",
+            "volume": "23",
+            "issue": "7",
+            "pages": "1208-18",
+            "lang": [
+                "eng"
+            ],
+            "nlmuniqueid": "9201390",
+            "issn": "1059-1524",
+            "essn": "1939-4586",
+            "pubtype": [
+                "Journal Article"
+            ],
+            "recordstatus": "PubMed - indexed for MEDLINE",
+            "pubstatus": "256",
+            "articleids": [
+                {
+                    "idtype": "pii",
+                    "idtypen": 4,
+                    "value": "mbc.E11-08-0723"
+                },
+                {
+                    "idtype": "doi",
+                    "idtypen": 3,
+                    "value": "10.1091/mbc.E11-08-0723"
+                },
+                {
+                    "idtype": "pubmed",
+                    "idtypen": 1,
+                    "value": "22323294"
+                },
+                {
+                    "idtype": "pmc",
+                    "idtypen": 8,
+                    "value": "PMC3315798"
+                },
+                {
+                    "idtype": "eid",
+                    "idtypen": 8,
+                    "value": "22323294"
+                },
+                {
+                    "idtype": "rid",
+                    "idtypen": 8,
+                    "value": "22323294"
+                },
+                {
+                    "idtype": "pmcid",
+                    "idtypen": 5,
+                    "value": "pmc-id: PMC3315798;"
+                }
+            ],
+            "history": [
+                {
+                    "pubstatus": "aheadofprint",
+                    "date": "2012/02/09 00:00"
+                },
+                {
+                    "pubstatus": "entrez",
+                    "date": "2012/02/11 06:00"
+                },
+                {
+                    "pubstatus": "pubmed",
+                    "date": "2012/02/11 06:00"
+                },
+                {
+                    "pubstatus": "medline",
+                    "date": "2012/09/14 06:00"
+                }
+            ],
+            "references": [
+            ],
+            "attributes": [
+                "Has Abstract"
+            ],
+            "pmcrefcount": 5,
+            "fulljournalname": "Molecular biology of the cell",
+            "elocationid": "doi: 10.1091/mbc.E11-08-0723",
+            "viewcount": 64,
+            "doctype": "citation",
+            "srccontriblist": [
+            ],
+            "booktitle": "",
+            "medium": "",
+            "edition": "",
+            "publisherlocation": "",
+            "publishername": "",
+            "srcdate": "",
+            "reportnumber": "",
+            "availablefromurl": "",
+            "locationlabel": "",
+            "doccontriblist": [
+            ],
+            "docdate": "",
+            "bookname": "",
+            "chapter": "",
+            "sortpubdate": "2012/04/01 00:00",
+            "sortfirstauthor": "Ydenberg CA",
+            "vernaculartitle": ""
+        },
+        "22002930": {
+            "uid": "22002930",
+            "pubdate": "2011 Nov",
+            "epubdate": "2011 Oct 28",
+            "source": "Cytoskeleton (Hoboken)",
+            "authors": [
+                {
+                    "name": "Ydenberg CA",
+                    "authtype": "Author",
+                    "clusterid": ""
+                },
+                {
+                    "name": "Smith BA",
+                    "authtype": "Author",
+                    "clusterid": ""
+                },
+                {
+                    "name": "Breitsprecher D",
+                    "authtype": "Author",
+                    "clusterid": ""
+                },
+                {
+                    "name": "Gelles J",
+                    "authtype": "Author",
+                    "clusterid": ""
+                },
+                {
+                    "name": "Goode BL",
+                    "authtype": "Author",
+                    "clusterid": ""
+                }
+            ],
+            "lastauthor": "Goode BL",
+            "title": "Cease-fire at the leading edge: new perspectives on actin filament branching, debranching, and cross-linking.",
+            "sorttitle": "cease fire at the leading edge new perspectives on actin filament branching debranching and cross linking ",
+            "volume": "68",
+            "issue": "11",
+            "pages": "596-602",
+            "lang": [
+                "eng"
+            ],
+            "nlmuniqueid": "101523844",
+            "issn": "1949-3584",
+            "essn": "1949-3592",
+            "pubtype": [
+                "Journal Article",
+                "Review"
+            ],
+            "recordstatus": "PubMed - indexed for MEDLINE",
+            "pubstatus": "256",
+            "articleids": [
+                {
+                    "idtype": "doi",
+                    "idtypen": 3,
+                    "value": "10.1002/cm.20543"
+                },
+                {
+                    "idtype": "pubmed",
+                    "idtypen": 1,
+                    "value": "22002930"
+                },
+                {
+                    "idtype": "pmc",
+                    "idtypen": 8,
+                    "value": "PMC3218376"
+                },
+                {
+                    "idtype": "mid",
+                    "idtypen": 8,
+                    "value": "NIHMS336179"
+                },
+                {
+                    "idtype": "eid",
+                    "idtypen": 8,
+                    "value": "22002930"
+                },
+                {
+                    "idtype": "rid",
+                    "idtypen": 8,
+                    "value": "22002930"
+                },
+                {
+                    "idtype": "pmcid",
+                    "idtypen": 5,
+                    "value": "pmc-id: PMC3218376;manuscript-id: NIHMS336179;"
+                }
+            ],
+            "history": [
+                {
+                    "pubstatus": "received",
+                    "date": "2011/09/29 00:00"
+                },
+                {
+                    "pubstatus": "revised",
+                    "date": "2011/10/08 00:00"
+                },
+                {
+                    "pubstatus": "accepted",
+                    "date": "2011/10/10 00:00"
+                },
+                {
+                    "pubstatus": "aheadofprint",
+                    "date": "2011/10/28 00:00"
+                },
+                {
+                    "pubstatus": "entrez",
+                    "date": "2011/10/18 06:00"
+                },
+                {
+                    "pubstatus": "pubmed",
+                    "date": "2011/10/18 06:00"
+                },
+                {
+                    "pubstatus": "medline",
+                    "date": "2012/03/08 06:00"
+                }
+            ],
+            "references": [
+            ],
+            "attributes": [
+                "Has Abstract"
+            ],
+            "pmcrefcount": 8,
+            "fulljournalname": "Cytoskeleton (Hoboken, N.J.)",
+            "elocationid": "doi: 10.1002/cm.20543",
+            "viewcount": 41,
+            "doctype": "citation",
+            "srccontriblist": [
+            ],
+            "booktitle": "",
+            "medium": "",
+            "edition": "",
+            "publisherlocation": "",
+            "publishername": "",
+            "srcdate": "",
+            "reportnumber": "",
+            "availablefromurl": "",
+            "locationlabel": "",
+            "doccontriblist": [
+            ],
+            "docdate": "",
+            "bookname": "",
+            "chapter": "",
+            "sortpubdate": "2011/11/01 00:00",
+            "sortfirstauthor": "Ydenberg CA",
+            "vernaculartitle": ""
+        },
+        "19188495": {
+            "uid": "19188495",
+            "pubdate": "2009 Feb 9",
+            "epubdate": "2009 Feb 2",
+            "source": "J Cell Biol",
+            "authors": [
+                {
+                    "name": "Ydenberg CA",
+                    "authtype": "Author",
+                    "clusterid": ""
+                },
+                {
+                    "name": "Rose MD",
+                    "authtype": "Author",
+                    "clusterid": ""
+                }
+            ],
+            "lastauthor": "Rose MD",
+            "title": "Antagonistic regulation of Fus2p nuclear localization by pheromone signaling and the cell cycle.",
+            "sorttitle": "antagonistic regulation of fus2p nuclear localization by pheromone signaling and the cell cycle ",
+            "volume": "184",
+            "issue": "3",
+            "pages": "409-22",
+            "lang": [
+                "eng"
+            ],
+            "nlmuniqueid": "0375356",
+            "issn": "0021-9525",
+            "essn": "1540-8140",
+            "pubtype": [
+                "Journal Article"
+            ],
+            "recordstatus": "PubMed - indexed for MEDLINE",
+            "pubstatus": "256",
+            "articleids": [
+                {
+                    "idtype": "pii",
+                    "idtypen": 4,
+                    "value": "jcb.200809066"
+                },
+                {
+                    "idtype": "doi",
+                    "idtypen": 3,
+                    "value": "10.1083/jcb.200809066"
+                },
+                {
+                    "idtype": "pubmed",
+                    "idtypen": 1,
+                    "value": "19188495"
+                },
+                {
+                    "idtype": "pmc",
+                    "idtypen": 8,
+                    "value": "PMC2646560"
+                },
+                {
+                    "idtype": "eid",
+                    "idtypen": 8,
+                    "value": "19188495"
+                },
+                {
+                    "idtype": "rid",
+                    "idtypen": 8,
+                    "value": "19188495"
+                },
+                {
+                    "idtype": "pmcid",
+                    "idtypen": 5,
+                    "value": "pmc-id: PMC2646560;"
+                }
+            ],
+            "history": [
+                {
+                    "pubstatus": "aheadofprint",
+                    "date": "2009/02/02 00:00"
+                },
+                {
+                    "pubstatus": "entrez",
+                    "date": "2009/02/04 09:00"
+                },
+                {
+                    "pubstatus": "pubmed",
+                    "date": "2009/02/04 09:00"
+                },
+                {
+                    "pubstatus": "medline",
+                    "date": "2009/04/02 09:00"
+                }
+            ],
+            "references": [
+            ],
+            "attributes": [
+                "Has Abstract"
+            ],
+            "pmcrefcount": 7,
+            "fulljournalname": "The Journal of cell biology",
+            "elocationid": "doi: 10.1083/jcb.200809066",
+            "viewcount": 47,
+            "doctype": "citation",
+            "srccontriblist": [
+            ],
+            "booktitle": "",
+            "medium": "",
+            "edition": "",
+            "publisherlocation": "",
+            "publishername": "",
+            "srcdate": "",
+            "reportnumber": "",
+            "availablefromurl": "",
+            "locationlabel": "",
+            "doccontriblist": [
+            ],
+            "docdate": "",
+            "bookname": "",
+            "chapter": "",
+            "sortpubdate": "2009/02/09 00:00",
+            "sortfirstauthor": "Ydenberg CA",
+            "vernaculartitle": ""
+        },
+        "18979235": {
+            "uid": "18979235",
+            "pubdate": "2008",
+            "epubdate": "",
+            "source": "Methods Mol Biol",
+            "authors": [
+                {
+                    "name": "Ydenberg CA",
+                    "authtype": "Author",
+                    "clusterid": ""
+                },
+                {
+                    "name": "Rose MD",
+                    "authtype": "Author",
+                    "clusterid": ""
+                }
+            ],
+            "lastauthor": "Rose MD",
+            "title": "Yeast mating: a model system for studying cell and nuclear fusion.",
+            "sorttitle": "yeast mating a model system for studying cell and nuclear fusion ",
+            "volume": "475",
+            "issue": "",
+            "pages": "3-20",
+            "lang": [
+                "eng"
+            ],
+            "nlmuniqueid": "9214969",
+            "issn": "1064-3745",
+            "essn": "1940-6029",
+            "pubtype": [
+                "Journal Article"
+            ],
+            "recordstatus": "PubMed - indexed for MEDLINE",
+            "pubstatus": "4",
+            "articleids": [
+                {
+                    "idtype": "doi",
+                    "idtypen": 3,
+                    "value": "10.1007/978-1-59745-250-2_1"
+                },
+                {
+                    "idtype": "pubmed",
+                    "idtypen": 1,
+                    "value": "18979235"
+                },
+                {
+                    "idtype": "eid",
+                    "idtypen": 8,
+                    "value": "18979235"
+                },
+                {
+                    "idtype": "rid",
+                    "idtypen": 8,
+                    "value": "18979235"
+                }
+            ],
+            "history": [
+                {
+                    "pubstatus": "pubmed",
+                    "date": "2008/11/04 09:00"
+                },
+                {
+                    "pubstatus": "medline",
+                    "date": "2008/12/17 09:00"
+                },
+                {
+                    "pubstatus": "entrez",
+                    "date": "2008/11/04 09:00"
+                }
+            ],
+            "references": [
+            ],
+            "attributes": [
+                "Has Abstract"
+            ],
+            "pmcrefcount": 16,
+            "fulljournalname": "Methods in molecular biology (Clifton, N.J.)",
+            "elocationid": "doi: 10.1007/978-1-59745-250-2_1",
+            "viewcount": 126,
+            "doctype": "citation",
+            "srccontriblist": [
+            ],
+            "booktitle": "",
+            "medium": "",
+            "edition": "",
+            "publisherlocation": "",
+            "publishername": "",
+            "srcdate": "",
+            "reportnumber": "",
+            "availablefromurl": "",
+            "locationlabel": "",
+            "doccontriblist": [
+            ],
+            "docdate": "",
+            "bookname": "",
+            "chapter": "",
+            "sortpubdate": "2008/01/01 00:00",
+            "sortfirstauthor": "Ydenberg CA",
+            "vernaculartitle": ""
+        },
+        "18474625": {
+            "uid": "18474625",
+            "pubdate": "2008 May 19",
+            "epubdate": "2008 May 12",
+            "source": "J Cell Biol",
+            "authors": [
+                {
+                    "name": "Paterson JM",
+                    "authtype": "Author",
+                    "clusterid": ""
+                },
+                {
+                    "name": "Ydenberg CA",
+                    "authtype": "Author",
+                    "clusterid": ""
+                },
+                {
+                    "name": "Rose MD",
+                    "authtype": "Author",
+                    "clusterid": ""
+                }
+            ],
+            "lastauthor": "Rose MD",
+            "title": "Dynamic localization of yeast Fus2p to an expanding ring at the cell fusion junction during mating.",
+            "sorttitle": "dynamic localization of yeast fus2p to an expanding ring at the cell fusion junction during mating ",
+            "volume": "181",
+            "issue": "4",
+            "pages": "697-709",
+            "lang": [
+                "eng"
+            ],
+            "nlmuniqueid": "0375356",
+            "issn": "0021-9525",
+            "essn": "1540-8140",
+            "pubtype": [
+                "Journal Article"
+            ],
+            "recordstatus": "PubMed - indexed for MEDLINE",
+            "pubstatus": "256",
+            "articleids": [
+                {
+                    "idtype": "pii",
+                    "idtypen": 4,
+                    "value": "jcb.200801101"
+                },
+                {
+                    "idtype": "doi",
+                    "idtypen": 3,
+                    "value": "10.1083/jcb.200801101"
+                },
+                {
+                    "idtype": "pubmed",
+                    "idtypen": 1,
+                    "value": "18474625"
+                },
+                {
+                    "idtype": "pmc",
+                    "idtypen": 8,
+                    "value": "PMC2386108"
+                },
+                {
+                    "idtype": "eid",
+                    "idtypen": 8,
+                    "value": "18474625"
+                },
+                {
+                    "idtype": "rid",
+                    "idtypen": 8,
+                    "value": "18474625"
+                },
+                {
+                    "idtype": "pmcid",
+                    "idtypen": 5,
+                    "value": "pmc-id: PMC2386108;"
+                }
+            ],
+            "history": [
+                {
+                    "pubstatus": "aheadofprint",
+                    "date": "2008/05/12 00:00"
+                },
+                {
+                    "pubstatus": "pubmed",
+                    "date": "2008/05/14 09:00"
+                },
+                {
+                    "pubstatus": "medline",
+                    "date": "2008/06/05 09:00"
+                },
+                {
+                    "pubstatus": "entrez",
+                    "date": "2008/05/14 09:00"
+                }
+            ],
+            "references": [
+            ],
+            "attributes": [
+                "Has Abstract"
+            ],
+            "pmcrefcount": 11,
+            "fulljournalname": "The Journal of cell biology",
+            "elocationid": "doi: 10.1083/jcb.200801101",
+            "viewcount": 33,
+            "doctype": "citation",
+            "srccontriblist": [
+            ],
+            "booktitle": "",
+            "medium": "",
+            "edition": "",
+            "publisherlocation": "",
+            "publishername": "",
+            "srcdate": "",
+            "reportnumber": "",
+            "availablefromurl": "",
+            "locationlabel": "",
+            "doccontriblist": [
+            ],
+            "docdate": "",
+            "bookname": "",
+            "chapter": "",
+            "sortpubdate": "2008/05/19 00:00",
+            "sortfirstauthor": "Paterson JM",
+            "vernaculartitle": ""
+        }
+    }
+}

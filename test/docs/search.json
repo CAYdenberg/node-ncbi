@@ -1,0 +1,34 @@
+{
+    "header": {
+        "type": "esearch",
+        "version": "0.3"
+    },
+    "esearchresult": {
+        "count": "9",
+        "retmax": "9",
+        "retstart": "0",
+        "idlist": [
+            "26147656",
+            "25995115",
+            "24719456",
+            "23727094",
+            "22323294",
+            "22002930",
+            "19188495",
+            "18979235",
+            "18474625"
+        ],
+        "translationset": [
+        ],
+        "translationstack": [
+            {
+                "term": "ydenberg ca[Author]",
+                "field": "Author",
+                "count": "9",
+                "explode": "N"
+            },
+            "GROUP"
+        ],
+        "querytranslation": "ydenberg ca[Author]"
+    }
+}

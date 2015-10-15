@@ -44,6 +44,7 @@ function NcbiData(data) {
  * @return: an array of nodes.
  */
 NcbiData.prototype.deepSearch = function deepSearch(find, data) {
+  data = data || this.data;
   var found = [];
   //if data is not an object, return an empty array.
   if ( ! _.isObject(data) ) {
@@ -96,6 +97,23 @@ NcbiData.prototype.nodeValues = function(nodes) {
     valueArr.push( this.nodeValue(node) );
   }.bind(this));
   return valueArr;
+}
+
+NcbiData.prototype.find = function(callback, single) {
+  var found = [];
+  if ( _.isString(callback) ) {
+    found = this.deepSearch(callback);
+  } else if ( _.isFunction(callback) ) {
+    found = callback.call(this, this.data);
+  }
+  if (!found.length) {
+    return null;
+  }
+  if (single) {
+    return this.nodeValue(found[0]);
+  } else {
+    return this.nodeValues(found);
+  }
 }
 
 module.exports = function(data) {

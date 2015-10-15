@@ -6,20 +6,17 @@ module.exports = {
 
   count: function(data) {
     var dataObj = createDataObj(data);
-    try {
-      return dataObj.data.esearchresult.count;
-    } catch(err) {
-      return null;
-    }
+    return dataObj.find(function(data) {
+      console.log(data);
+      return [data.esearchresult.count]
+    }, true);
   },
 
   ids: function(data) {
     var dataObj = createDataObj(data);
-    try {
-      return dataObj.data.esearchresult.idlist;
-    } catch(err) {
-      return null;
-    }
+    return dataObj.find(function(data) {
+      return data.esearchresult.idlist;
+    });
   },
 
   summaries: function(data) {
@@ -40,23 +37,8 @@ module.exports = {
   },
 
   abstract: function(data, single) {
-    var record,
-      abstractObjs = [],
-      abstractStrs = [],
-      dataObj = createDataObj(data);
-    abstractObjs = dataObj.deepSearch('AbstractText', dataObj.data);
-    abstractStrs = dataObj.nodeValues(abstractObjs);
-    if (!abstractStrs.length) {
-      return null;
-    }
-    //figure out what to return based on whether single is true
-    if (single) {
-      //return a string
-      return abstractStrs[0];
-    } else {
-      //return an array of strings
-      return abstractStrs;
-    }
+    var dataObj = createDataObj(data);
+    return dataObj.find('AbstractText');
   }
 
 }
