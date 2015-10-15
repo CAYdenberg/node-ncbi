@@ -45,25 +45,26 @@ describe('parser', function() {
         done();
       });
     });
-    it('should find the count field in an XML search result', function(done) {
-      getDoc('search.xml', function(err, contents) {
-        assert.equal(parser.count(contents), 9);
-        done();
-      });
+  });
+
+
+  describe('ids', function() {
+    it('should return an array of ids', function() {
+      assert.equal(parser.ids(json).length, 9);
     });
   });
 
-  // describe('ids', function() {
-  //   it('should return an array of ids', function() {
-  //     assert.equal(parser.ids(json).length, 9);
-  //   });
-  // });
-  //
-  // describe('abstract', function() {
-  //   it('should retrieve the abstract from an xml string', function() {
-  //     assert.ok( parser.abstract(xml, true) );
-  //   });
-  // });
+  describe('summary', function() {
+    it('should find all of the info for each summary in the result set', function(done) {
+      
+    });
+  });
+
+  describe('abstract', function() {
+    it('should retrieve the abstract from an xml string', function() {
+      assert.ok( parser.abstract(xml, true) );
+    });
+  });
 
 });
 
