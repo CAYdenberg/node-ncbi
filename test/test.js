@@ -49,20 +49,30 @@ describe('parser', function() {
 
 
   describe('ids', function() {
-    it('should return an array of ids', function() {
-      assert.equal(parser.ids(json).length, 9);
+    it('should return an array of ids', function(done) {
+      getDoc('search.json', function(err, contents) {
+        assert.equal(parser.ids(contents).length, 9);
+        done();
+      })
     });
   });
 
   describe('summary', function() {
     it('should find all of the info for each summary in the result set', function(done) {
-      
+      getDoc('summary.json', function(err, contents) {
+        assert.equal(parser.summaries(contents).length, 9);
+        done();
+      });
     });
   });
 
+
   describe('abstract', function() {
-    it('should retrieve the abstract from an xml string', function() {
-      assert.ok( parser.abstract(xml, true) );
+    it('should retrieve the abstract from an xml string', function(done) {
+      getDoc('fetch.xml', function(err, contents) {
+        assert.ok( parser.abstract(contents, true) );
+        done();
+      });
     });
   });
 

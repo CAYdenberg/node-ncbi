@@ -15,23 +15,24 @@ function NcbiData(data) {
   var dataObj;
   //if simple javascript object
   if ( _.isObject(data) ) {
-    dataObj = data;
+    record = data;
   } else {
     //try JSON
     try {
-      dataObj = JSON.parse(data);
+      record = JSON.parse(data);
     } catch(err) {
       //try XML
       parseString(data, function(err, result) {
         if (err) {
-          this.data = null;
+          record = null;
         } else {
-          dataObj = result;
+          record = result;
         }
+        this.record = record;
       });
     }
   }
-  this.data = dataObj;
+  this.record = record;
 }
 
 /**
@@ -44,7 +45,7 @@ function NcbiData(data) {
  * @return: an array of nodes.
  */
 NcbiData.prototype.deepSearch = function deepSearch(find, data) {
-  data = data || this.data;
+  data = data || this.record;
   var found = [];
   //if data is not an object, return an empty array.
   if ( ! _.isObject(data) ) {
@@ -99,12 +100,28 @@ NcbiData.prototype.nodeValues = function(nodes) {
   return valueArr;
 }
 
-NcbiData.prototype.find = function(callback, single) {
+/**
+ * A wrapper around the parsing logic.
+ * @arg: logic: String or Function | if string, will call this.deepSearch and
+ * find nodes with that name.
+ * If function, will execute the function.
+ * @arg: single: Boolean. Whether to expect a single result or an array.
+ * @return: Null, String, or Array.
+ * If no results are found, return null.
+ * If the logic results in an Exception, returns null.
+ * If single is true, returns a string.
+ * Otherwise, returns an Array.
+ */
+NcbiData.prototype.find = function(logic, single) {
   var found = [];
-  if ( _.isString(callback) ) {
-    found = this.deepSearch(callback);
-  } else if ( _.isFunction(callback) ) {
-    found = callback.call(this, this.data);
+  if ( _.isString(logic) ) {
+    found = this.deepSearch(logic);
+  } else if ( _.isFunction(logic) ) {
+    try {
+      found = logic.call(this, this.record);
+    } catch(e) {
+      return null;
+    }
   }
   if (!found.length) {
     return null;

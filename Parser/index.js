@@ -1,14 +1,17 @@
 var _ = require('underscore');
 
-var createDataObj = require('./createDataObj');
+var createDataObj = require('./createNcbiData');
 
 module.exports = {
+
+  getNcbiData: function(data) {
+    return createDataObj(data);
+  },
 
   count: function(data) {
     var dataObj = createDataObj(data);
     return dataObj.find(function(data) {
-      console.log(data);
-      return [data.esearchresult.count]
+      return data.esearchresult.count
     }, true);
   },
 
@@ -19,21 +22,23 @@ module.exports = {
     });
   },
 
-  summaries: function(data) {
+  summaries: function(data, single) {
     var dataObj = createDataObj(data);
-    summaryArr = _.map(dataObj.data.result, function(summary, key) {
-      //papers are indexed by their uid.
-      if ( parseInt(key, 10) ) {
-        return summary;
-      } else {
-        return false;
+    return dataObj.find(function(data) {
+      summaryArr = _.map(data.result, function(summary, key) {
+        //papers are indexed by their uid.
+        if ( parseInt(key, 10) ) {
+          return summary;
+        } else {
+          return false;
+        }
+      });
+      var curatedArr = _.without(summaryArr, false);
+      if (!curatedArr.length) {
+        return null;
       }
-    });
-    var curatedArr = _.without(summaryArr, false);
-    if (!curatedArr.length) {
-      return null;
-    }
-    return curatedArr;
+      return curatedArr;
+    }, single);
   },
 
   abstract: function(data, single) {
