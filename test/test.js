@@ -56,17 +56,6 @@ describe('parser', function() {
     });
   });
 
-  describe('countAndIds', function() {
-    it('should get both the total papers and the ids for the current set', function(done) {
-      getDoc('search.json', function(err, contents) {
-        var result = parser.countAndIds(contents);
-        assert.equal(result.count, 9);
-        assert.equal(result.ids.length, 9);
-        done();
-      });
-    });
-  });
-
   describe('summary', function() {
     it('should find all of the info for each summary in the result set', function(done) {
       getDoc('summary.json', function(err, contents) {
