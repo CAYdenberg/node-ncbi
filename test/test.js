@@ -10,10 +10,10 @@ describe('Array', function(){
 })
 
 
-var Gateway = require('../Gateway');
+var createGateway = require('../createGateway');
 describe('Gateway', function() {
 
-  var search = new Gateway({
+  var search = createGateway({
     method : 'esearch',
     params : {
       db : 'pubmed',
@@ -47,13 +47,23 @@ describe('parser', function() {
     });
   });
 
-
   describe('ids', function() {
     it('should return an array of ids', function(done) {
       getDoc('search.json', function(err, contents) {
         assert.equal(parser.ids(contents).length, 9);
         done();
       })
+    });
+  });
+
+  describe('countAndIds', function() {
+    it('should get both the total papers and the ids for the current set', function(done) {
+      getDoc('search.json', function(err, contents) {
+        var result = parser.countAndIds(contents);
+        assert.equal(result.count, 9);
+        assert.equal(result.ids.length, 9);
+        done();
+      });
     });
   });
 
@@ -77,49 +87,3 @@ describe('parser', function() {
   });
 
 });
-
-//
-//
-// var actions = require('../lib/NCBI/ncbi.js');
-// describe('ncbi', function() {
-//
-//   var pubmedSearch = actions.pubmedSearch;
-//   describe('pubmedSearch', function() {
-//     it('should search pubmed', function(done) {
-//       var result = pubmedSearch('rose md', {resultsPerPage : 10}).then(function(res) {
-//         assert.equal(res.papers.length, 10);
-//         assert(res.total);
-//         done();
-//       });
-//     });
-//     it('should return an empty array if no results are found', function(done) {
-//       var result = pubmedSearch('canucks flames').then(function(res) {
-//         assert.equal(0, res.papers.length);
-//         done();
-//       });
-//     });
-//   });
-//
-//   var getAbstract = actions.getAbstract;
-//   describe('getAbstract', function() {
-//     it('should return the abstract from pubmed', function(done) {
-//       getAbstract(26147656).then(function(data) {
-//         assert.ok(data);
-//         done();
-//       });
-//     });
-//     it('should return multiple abstracts from pubmed', function(done) {
-//       var result = getAbstract([25187651, 26147656]).then(function(data) {
-//         assert.ok(data);
-//         done();
-//       });
-//     });
-//     it('should return null if bad pmid is sent', function(done) {
-//       var result = getAbstract(0).then(function(data) {
-//         assert.equal(0, data.length);
-//         done();
-//       });
-//     });
-//   });
-//
-// });

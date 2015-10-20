@@ -22,6 +22,15 @@ module.exports = {
     });
   },
 
+  countAndIds: function(data) {
+    var count = this.count(data);
+    var ids = this.ids(data);
+    return {
+      count: count,
+      ids: ids
+    };
+  },
+
   summaries: function(data, single) {
     var dataObj = createDataObj(data);
     return dataObj.find(function(data) {

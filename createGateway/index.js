@@ -56,7 +56,11 @@ Gateway.prototype.addIds = function(ids) {
   return this.addParams({id : idString});
 }
 
-
+/**
+ * Create the URL to access the API.
+ * @return String | A URL representing the call that will be made, based on this.settings
+ * Called by: this.send
+ */
 Gateway.prototype.generateUrl = function() {
   var url = this.getBase();
   for (var key in this.settings.params) {
@@ -68,12 +72,16 @@ Gateway.prototype.generateUrl = function() {
   return encodeURI(url);
 }
 
+/**
+ * Send off the request.
+ * @return: Promise | Call .then(function(response)) to process the response.
+ * Call .catch(function(err)) to deal with errors.
+ */
 Gateway.prototype.send = function() {
   var url = this.generateUrl();
   if (this.test) {
-    console.log('Test call to NCBI eUtils:' + url);
     return new Promise(function(resolve) {
-      resolve();
+      resolve('Test call to NCBI eUtils: ' + url);
     });
   }
   return popsicle({
@@ -82,4 +90,6 @@ Gateway.prototype.send = function() {
   });
 }
 
-module.exports = Gateway;
+module.exports = function(args) {
+    return new Gateway(args);
+}
