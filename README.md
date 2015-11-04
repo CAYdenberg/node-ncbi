@@ -43,13 +43,12 @@ var gateway = require('node-ncbi/createGateway')({
     test: false
 });
 ```
-(defaults are shown).
 
-Method may be esearch, esummary, or efetch, etc.
+`method` may be esearch, esummary, efetch, etc.
 
-Params can be [any of the parameters that the eUtils API accepts](http://www.ncbi.nlm.nih.gov/books/NBK25500/).
+`responseType` may be json or xml. Note that efetch only returns XML.
 
-Note that efetch only returns XML.
+Params can be [any of the parameters that the eUtils API accepts](http://www.ncbi.nlm.nih.gov/books/NBK25500/), as key-value pairs.
 
 **Methods**
 
@@ -57,9 +56,9 @@ Note that efetch only returns XML.
 
 `gateway.addIds(ids)` - special way to add a list of IDs as a parameter; an array of ids will be concatenated into a string.
 
-`gateway.send().then` - send off the request. The entire, unfiltered response will be the first argument of the callback passed to `then`.
+`gateway.send().then(function(response) {...})` - send off the request. The entire, unfiltered response will be the first argument of the callback passed to `then`.
 
-`gateway.get().then` - send of the request and created a parser object. The parser object will be the first argument of the callback passed to `then`.
+`gateway.get().then(function(doc) {...})` - send of the request and created a parser object. The parser object will be the first argument of the callback passed to `then`.
 
 ###Parser###
 
