@@ -1,12 +1,12 @@
 #node-ncbi#
 
-A nodejs wrapper for the NCBI eUtils API. You can use to search PubMed or other databases and get the results as a JavaScript object.
+A nodejs wrapper for the NCBI eUtils API. You can use it to search PubMed or other databases and get the results as a JavaScript object.
 
 [Read the full documentation of the API](http://www.ncbi.nlm.nih.gov/books/NBK25500/).
 
 ##Getting started##
 
-`npm install node-ncbi`
+`npm install --save node-ncbi`
 
 `var ncbi = require('node-ncbi');`
 
@@ -47,15 +47,15 @@ var gateway = require('node-ncbi/createGateway')({
 
 Method may be esearch, esummary, or efetch, etc.
 
-Params can be any of the parameters that the eUtils API accepts.
+Params can be [any of the parameters that the eUtils API accepts](http://www.ncbi.nlm.nih.gov/books/NBK25500/).
 
 Note that efetch only returns XML.
 
 **Methods**
 
-`gateway.addParams` - add new parameters after instatiating the object.
+`gateway.addParams({parameterKey: parameterValue})` - add new parameters after instantiating the object.
 
-`gateway.addIds` - special way to add a list of IDs as a parameter; an array of ids will be concatenated into a string.
+`gateway.addIds(ids)` - special way to add a list of IDs as a parameter; an array of ids will be concatenated into a string.
 
 `gateway.send().then` - send off the request. The entire, unfiltered response will be the first argument of the callback passed to `then`.
 
@@ -67,7 +67,7 @@ Note that efetch only returns XML.
 var doc = require('node-ncbi/createNcbiDataDocument')(data);
 ```
 
-Data may be JSON or XML. It will stored in the property `doc.record`.
+Data may be JSON or XML (or a JavaScript object). It will stored in the property `doc.record`.
 
 **Methods**
 
