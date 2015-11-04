@@ -73,7 +73,7 @@ describe('parser', function() {
     it('should retrieve the abstract from an xml string', function(done) {
       getDoc('fetch.xml', function(err, contents) {
         var parser = createParser(contents);
-        assert.ok( parser.abstract(true) );
+        assert.ok( parser.abstracts(true) );
         done();
       });
     });
