@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "description": "Access and parse the NCBI eUtils API in Node or the Browser",
   "main": "index.js",
-  "licence": "MIT",
+  "license": "MIT",
   "author": {
     "name": "Casey Ydenberg",
     "email": "ydenberg@gmail.com",
