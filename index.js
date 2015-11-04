@@ -1,6 +1,5 @@
 var _ = require('underscore');
 var createGateway = require('./createGateway');
-var parser = require('./parser');
 
 module.exports = {
 
@@ -28,27 +27,26 @@ module.exports = {
     });
 
     return new Promise(function(resolve, reject) {
-      var needed = {};
-      search.send().then(function(response) {
-        needed.count = parser.count(response);
-        var ids = parser.ids(response);
+      var data = {};
+      search.get().then(function(document) {
 
-        if ( ! response.ids.length ) {
-          needed.papers = [];
+        data.count = document.count();
+
+        var ids = document.ids();
+
+        if ( ! ids.length ) {
+          data.papers = [];
           resolve(data);
         }
 
         summary.addIds(ids);
 
-        summary.send().then(function(response) {
-          needed.papers = response;
+        summary.get().then(function(document) {
+          data.papers = document.summaries();
           resolve(data);
         });
 
-      }).catch(function(err) {
-        //in case of any error, pass up the chain
-        reject(err);
-      });
+      })
     });
   },
 
@@ -62,8 +60,8 @@ module.exports = {
       }
     });
     gateway.addIds(pmids);
-    return gateway.send().then(function(response) {
-      return abstracts = parser.abstracts(response, single);
+    return gateway.get().then(function(document) {
+      return document.abstracts(single);
     });
   }
 

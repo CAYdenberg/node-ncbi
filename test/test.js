@@ -35,13 +35,14 @@ function getDoc(filename, callback) {
   fs.readFile(path.join(__dirname, 'docs', filename), 'UTF-8', callback);
 }
 
-var parser = require('../parser');
+var createParser = require('../createNcbiDataDocument');
 describe('parser', function() {
 
   describe('count', function() {
     it('should find the count field in a JSON search result', function(done) {
       getDoc('search.json', function(err, contents) {
-        assert.equal(parser.count(contents), 9);
+        var parser = createParser(contents);
+        assert.equal(parser.count(), 9);
         done();
       });
     });
@@ -50,7 +51,8 @@ describe('parser', function() {
   describe('ids', function() {
     it('should return an array of ids', function(done) {
       getDoc('search.json', function(err, contents) {
-        assert.equal(parser.ids(contents).length, 9);
+        var parser = createParser(contents);
+        assert.equal(parser.ids().length, 9);
         done();
       })
     });
@@ -59,17 +61,19 @@ describe('parser', function() {
   describe('summary', function() {
     it('should find all of the info for each summary in the result set', function(done) {
       getDoc('summary.json', function(err, contents) {
-        assert.equal(parser.summaries(contents).length, 9);
+        var parser = createParser(contents);
+        var summaries = parser.summaries();
+        assert.equal(summaries.length, 9);
         done();
       });
     });
   });
 
-
   describe('abstract', function() {
     it('should retrieve the abstract from an xml string', function(done) {
       getDoc('fetch.xml', function(err, contents) {
-        assert.ok( parser.abstract(contents, true) );
+        var parser = createParser(contents);
+        assert.ok( parser.abstract(true) );
         done();
       });
     });

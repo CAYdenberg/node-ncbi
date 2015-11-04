@@ -1,6 +1,8 @@
 var _ = require('underscore');
 var popsicle = require('popsicle');
 
+var createParser = require('./createNcbiDataDocument');
+
 /**
  * Class Gateway.
  * This class is intended as a wrapper around the PubMed eUtils REST-like API.
@@ -52,7 +54,7 @@ Gateway.prototype.addParams = function(params) {
  * @return: the full Object of URL parameters
  */
 Gateway.prototype.addIds = function(ids) {
-  var idString = ids.join();
+  var idString = _.isArray(ids) ? ids.join() : ids;
   return this.addParams({id : idString});
 }
 
@@ -87,6 +89,18 @@ Gateway.prototype.send = function() {
   return popsicle({
     method : 'GET',
     url : url
+  });
+}
+
+/**
+ * Send off the request and create a parser.
+ * @return Promise | Call .then(function(document)) to access the methods in the
+ * parser object (count, ids, summaries, abstract).
+ * Call .catch(function(err)) to deal with errors.
+ */
+Gateway.prototype.get = function() {
+  return this.send().then(function(document) {
+    return createParser(document.body);
   });
 }
 

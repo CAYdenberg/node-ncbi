@@ -15,24 +15,23 @@ function NcbiData(data) {
   var dataObj;
   //if simple javascript object
   if ( _.isObject(data) ) {
-    record = data;
+    dataObj = data;
   } else {
     //try JSON
     try {
-      record = JSON.parse(data);
+      dataObj = JSON.parse(data);
     } catch(err) {
       //try XML
       parseString(data, function(err, result) {
         if (err) {
-          record = null;
+          dataObj = null;
         } else {
-          record = result;
+          dataObj = result;
         }
-        this.record = record;
       });
     }
   }
-  this.record = record;
+  this.record = dataObj;
 }
 
 /**
@@ -101,36 +100,76 @@ NcbiData.prototype.nodeValues = function(nodes) {
 }
 
 /**
- * A wrapper around the parsing logic.
- * @arg: logic: String or Function | if string, will call this.deepSearch and
- * find nodes with that name.
- * If function, will execute the function.
- * @arg: single: Boolean. Whether to expect a single result or an array.
- * @return: Null, String, or Array.
- * If no results are found, return null.
- * If the logic results in an Exception, returns null.
- * If single is true, returns a string.
- * Otherwise, returns an Array.
+ * Helper function to return either a string for a single result or an
+ * array for multiple results.
+ * @arg results | Array
+ * @arg single | Boolean
+ * @return null, array, or string
  */
-NcbiData.prototype.find = function(logic, single) {
-  var found = [];
-  if ( _.isString(logic) ) {
-    found = this.deepSearch(logic);
-  } else if ( _.isFunction(logic) ) {
-    try {
-      found = logic.call(this, this.record);
-    } catch(e) {
-      return null;
-    }
+NcbiData.prototype.getStringOrArray = function(results, single) {
+  if ( ! results.length ) {
+    return null;
+  } else if (single) {
+    return results[0];
+  } else {
+    return results;
   }
-  if (!found.length) {
+}
+
+/**
+ * Safely access the count property and return it
+ */
+NcbiData.prototype.count = function() {
+  try {
+    return this.record.esearchresult.count;
+  } catch(e) {
     return null;
   }
-  if (single) {
-    return this.nodeValue(found[0]);
-  } else {
-    return this.nodeValues(found);
+}
+
+/**
+ * Safely access the list of ids and return them
+ */
+NcbiData.prototype.ids = function() {
+  try {
+    return this.record.esearchresult.idlist;
+  } catch(e) {
+    return null;
   }
+}
+
+/**
+ * Return an array of record summaries. Return the ENTIRE record in each case.
+ * @arg single | Boolean - if true, the return just one record instead of an array
+ */
+NcbiData.prototype.summaries = function(single) {
+  var results;
+  try {
+    results = this.record.result;
+  } catch(e) {
+    return null;
+  }
+  summaryArr = _.map(results, function(summary, key) {
+    //papers are indexed by their uid.
+    if ( parseInt(key, 10) ) {
+      return summary;
+    } else {
+      return false;
+    }
+  });
+  var curatedArr = _.without(summaryArr, false);
+  return this.getStringOrArray(curatedArr, single);
+},
+
+/**
+ * Perform a deep search for the abstract text and return it.
+ * @arg single | Boolean, if true, return just one result as a string instead
+ * of an array
+ */
+NcbiData.prototype.abstracts = function(single) {
+  var nodes = this.deepSearch('AbstractText');
+  var values = this.nodeValues(nodes);
+  return this.getStringOrArray(values, single);
 }
 
 module.exports = function(data) {
