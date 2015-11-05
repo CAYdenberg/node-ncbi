@@ -4,15 +4,15 @@ A nodejs wrapper for the NCBI eUtils API. You can use it to search PubMed or oth
 
 [Read the full documentation of the API](http://www.ncbi.nlm.nih.gov/books/NBK25500/).
 
-##Getting started##
+## Getting started
 
 `npm install --save node-ncbi`
 
 `var ncbi = require('node-ncbi');`
 
-##Basic usage##
+## Basic usage
 
-```
+```js
 ncbi.pubmedSearch('actin').then(function(results) {
     console.log(results);
 })
@@ -20,20 +20,20 @@ ncbi.pubmedSearch('actin').then(function(results) {
 
 Will display `{count: 101882, papers: {...}}`
 
-```
+```js
 ncbi.getAbstract(6365930, true).then(function(result) {
     console.log(result);
 });
 ```
 will display the abstract, where 6365930 is a PubMed ID number, a true indicates that only a single result is expected.
 
-##Advanced usage##
+## Advanced usage
 
 node-ncbi consists of three components: a gateway, a parser, and a few functions that wrap around them to create simple interfaces.
 
-###Gateway###
+### Gateway
 
-```
+```js
 var gateway = require('node-ncbi/createGateway')({
     method: 'esearch',
     responseType: 'json',
@@ -62,7 +62,7 @@ Params can be [any of the parameters that the eUtils API accepts](http://www.ncb
 
 ###Parser###
 
-```
+```js
 var doc = require('node-ncbi/createNcbiDataDocument')(data);
 ```
 
@@ -78,7 +78,7 @@ Data may be JSON or XML (or a JavaScript object). It will stored in the property
 
 `doc.abstracts(single)` - return the abstract from one or more results, as a string. If *single* is false, return an array, otherwise a single string.
 
-###License###
+### License
 
 Copyright (c) 2015 Casey A. Ydenberg
 

@@ -2,12 +2,22 @@
   "name": "node-ncbi",
   "version": "0.0.1",
   "description": "Access and parse the NCBI eUtils API in Node or the Browser",
+  "keywords": [
+    "pubmed",
+    "ncbi",
+    "biology",
+    "medicine",
+    "research"
+  ],
   "main": "index.js",
-  "license": "MIT",
   "author": {
     "name": "Casey Ydenberg",
     "email": "ydenberg@gmail.com",
     "url": "http://www.caseyy.org/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/CAYdenberg/node-ncbi.git"
   },
   "dependencies": {
     "popsicle": "^0.5.12",
