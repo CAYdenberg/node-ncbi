@@ -1,4 +1,4 @@
-#node-ncbi#
+# node-ncbi
 
 A nodejs wrapper for the NCBI eUtils API. You can use it to search PubMed or other databases and get the results as a JavaScript object.
 
