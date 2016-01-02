@@ -44,8 +44,12 @@ module.exports = {
         summary.get().then(function(document) {
           data.papers = document.summaries();
           resolve(data);
+        }, function(err) {
+          reject(err);
         });
 
+      }, function(err) {
+        reject(err);
       })
     });
   },
