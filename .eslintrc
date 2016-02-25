@@ -1,15 +1,16 @@
 {
   "env": {
-    "browser": true,
-    "node": true
+    "node": true,
+    "browser": true
   },
   "globals": {
-    "describe": true,
-    "before": true,
-    "it": true,
-    "beforeAll": true
+
   },
   "extends": "eslint:recommended",
+  "ecmaFeatures": {
+    "arrowFunctions": true,
+    "blockBindings": true
+  },
   "rules": {
     "no-console": 0
   }
