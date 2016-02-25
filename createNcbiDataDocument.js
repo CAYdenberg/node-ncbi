@@ -149,7 +149,7 @@ NcbiData.prototype.summaries = function(single) {
   } catch(e) {
     return null;
   }
-  summaryArr = _.map(results, function(summary, key) {
+  var summaryArr = _.map(results, function(summary, key) {
     //papers are indexed by their uid.
     if ( parseInt(key, 10) ) {
       return summary;

@@ -20,13 +20,16 @@
     "url": "https://github.com/CAYdenberg/node-ncbi.git"
   },
   "dependencies": {
+    "gulp-util": "^3.0.7",
     "popsicle": "^0.5.12",
     "underscore": "^1.8.3",
     "xml2js": "^0.4.9"
   },
   "devDependencies": {
-    "gulp": "^3.9.0",
+    "gulp": "^3.9.1",
+    "gulp-eslint": "^2.0.0",
     "gulp-mocha": "^2.1.2",
     "mocha": "^2.2.5"
-  }
+  },
+  "license": "MIT"
 }
