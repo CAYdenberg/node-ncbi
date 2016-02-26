@@ -1,7 +1,7 @@
 {
   "env": {
     "node": true,
-    "browser": true
+    "commonjs": true
   },
   "globals": {
 

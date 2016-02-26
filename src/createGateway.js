@@ -1,7 +1,7 @@
 var _ = require('underscore');
 var popsicle = require('popsicle');
 
-var createParser = require('./createNcbiDataDocument');
+var createParser = require('./documents');
 
 /**
  * Class Gateway.

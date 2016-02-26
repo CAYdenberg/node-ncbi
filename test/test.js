@@ -1,3 +1,5 @@
+/*eslint-env mocha */
+
 //test the tests
 var assert = require("assert")
 describe('Array', function(){
@@ -10,7 +12,7 @@ describe('Array', function(){
 })
 
 
-var createGateway = require('../createGateway');
+var createGateway = require('../src/createGateway');
 describe('Gateway', function() {
 
   var search = createGateway({
@@ -30,12 +32,12 @@ describe('Gateway', function() {
 });
 
 function getDoc(filename, callback) {
-  fs = require('fs');
-  path = require('path');
+  var fs = require('fs');
+  var path = require('path');
   fs.readFile(path.join(__dirname, 'docs', filename), 'UTF-8', callback);
 }
 
-var createParser = require('../createNcbiDataDocument');
+var createParser = require('../src/documents');
 describe('parser', function() {
 
   describe('count', function() {
