@@ -43,7 +43,7 @@ describe('parser', function() {
   describe('count', function() {
     it('should find the count field in a JSON search result', function(done) {
       getDoc('search.json', function(err, contents) {
-        var parser = createParser(contents);
+        var parser = createParser(contents, 'esearch');
         assert.equal(parser.count(), 9);
         done();
       });
@@ -53,7 +53,7 @@ describe('parser', function() {
   describe('ids', function() {
     it('should return an array of ids', function(done) {
       getDoc('search.json', function(err, contents) {
-        var parser = createParser(contents);
+        var parser = createParser(contents, 'esearch');
         assert.equal(parser.ids().length, 9);
         done();
       })
@@ -63,7 +63,7 @@ describe('parser', function() {
   describe('summary', function() {
     it('should find all of the info for each summary in the result set', function(done) {
       getDoc('summary.json', function(err, contents) {
-        var parser = createParser(contents);
+        var parser = createParser(contents, 'esummary');
         var summaries = parser.summaries();
         assert.equal(summaries.length, 9);
         done();
@@ -74,7 +74,7 @@ describe('parser', function() {
   describe('abstract', function() {
     it('should retrieve the abstract from an xml string', function(done) {
       getDoc('fetch.xml', function(err, contents) {
-        var parser = createParser(contents);
+        var parser = createParser(contents, 'efetch');
         assert.ok( parser.abstracts(true) );
         done();
       });
