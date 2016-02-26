@@ -10,6 +10,9 @@
     "research"
   ],
   "main": "index.js",
+  "scripts": {
+    "start": "node ./bin/repl"
+  },
   "author": {
     "name": "Casey Ydenberg",
     "email": "ydenberg@gmail.com",
@@ -29,7 +32,8 @@
     "gulp": "^3.9.1",
     "gulp-eslint": "^2.0.0",
     "gulp-mocha": "^2.1.2",
-    "mocha": "^2.2.5"
+    "mocha": "^2.2.5",
+    "open": "0.0.5"
   },
   "license": "MIT"
 }
