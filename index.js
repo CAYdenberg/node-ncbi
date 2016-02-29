@@ -1,1 +1,1 @@
-require('./src/methods');
+module.exports = require('./src/methods');
