@@ -1,4 +1,4 @@
-var _ = require('underscore');
+const _ = require('underscore');
 
 var ELinkDocument = require('./document');
 
@@ -10,14 +10,21 @@ var ELinkDocument = require('./document');
  * which will also find cites and getSimilar.
  */
 
+/**
+ * General method for finding links of a specific type. Step through all the
+ * linksetdbs, looking for one where linkname matches a particular string, and then
+ * return all the links in the array.
+ */
 ELinkDocument.findLinks = function(linkname) {
+
   try {
 
-    let linksetdb = _.find(this.record.linksets.linksetdbs, linksetdb => {
+    //have not found a case where there is more than one linkset
+    var foundLinkset = _.find(this.record.linksets[0].linksetdbs, linksetdb => {
       return (linksetdb.linkname === linkname);
     });
-    if (linksetdb) {
-      return linksetdb.links;
+    if (foundLinkset) {
+      return foundLinkset.links;
     } else {
       return [];
     }

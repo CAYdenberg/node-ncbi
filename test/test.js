@@ -12,7 +12,7 @@ describe('Array', function(){
 })
 
 
-var createGateway = require('../src/createGateway');
+var createGateway = require('../src/gateways/createGateway');
 describe('Gateway', function() {
 
   var search = createGateway({
@@ -76,6 +76,36 @@ describe('parser', function() {
       getDoc('fetch.xml', function(err, contents) {
         var parser = createParser(contents, 'efetch');
         assert.ok( parser.abstracts(true) );
+        done();
+      });
+    });
+  });
+
+  describe('citedBy', function() {
+    it('should find all of the papers that have cited this one', function(done) {
+      getDoc('elink.json', function(err, contents) {
+        var parser = createParser(contents, 'elink');
+        assert.equal(parser.citedBy().length, 2);
+        done();
+      });
+    })
+  });
+
+  describe('cites', function() {
+    it('should find all the papers this paper cites', function(done) {
+      getDoc('elink.json', function(err, contents) {
+        var parser = createParser(contents, 'elink');
+        assert.ok(parser.cites());
+        done();
+      });
+    });
+  });
+
+  describe('similar', function() {
+    it('should find all the papers PubMed flags as similar to this one', function(done) {
+      getDoc('elink.json', function(err, contents) {
+        var parser = createParser(contents, 'elink');
+        assert.ok(parser.similar());
         done();
       });
     });

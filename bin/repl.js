@@ -6,7 +6,7 @@ var replServer = repl.start({
   prompt: 'node-ncbi> '
 });
 
-const gateway = replServer.context.gateway = require('../src/createGateway');
+const gateway = replServer.context.gateway = require('../src/gateways/createGateway');
 
 const url = replServer.context.url = function(params) {
   params.test = true;

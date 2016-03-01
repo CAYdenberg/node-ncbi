@@ -4,7 +4,8 @@ const _ = require("underscore");
 const DocumentPrototypes = {
   esearch: require('./esearch'),
   esummary: require('./esummary'),
-  efetch: require('./efetch')
+  efetch: require('./efetch'),
+  elink: require('./elink')
 };
 
 function parse(data) {

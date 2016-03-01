@@ -1,7 +1,7 @@
-var _ = require('underscore');
-var popsicle = require('popsicle');
+const _ = require('underscore');
+const popsicle = require('popsicle');
 
-var createParser = require('./documents');
+const createParser = require('../documents');
 
 /**
  * Prototype Gateway.
