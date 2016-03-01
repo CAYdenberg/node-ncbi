@@ -3,9 +3,7 @@ const _ = require('underscore');
 var ELinkDocument = require('./document');
 
 /**
- * To parse citedBy:
- * http://eutils.ncbi.nlm.nih.gov/entrez/eutils/elink.fcgi?dbfrom=pubmed&db=pmc&cmd=neighbor&id=22588722&retmode=json
- * or maybe
+ * Example document:
  * http://eutils.ncbi.nlm.nih.gov/entrez/eutils/elink.fcgi?dbfrom=pubmed&db=pubmed&cmd=neighbor&id=22588722&retmode=json
  * which will also find cites and getSimilar.
  */

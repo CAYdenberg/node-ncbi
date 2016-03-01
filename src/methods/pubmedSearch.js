@@ -1,5 +1,5 @@
 const _ = require('underscore');
-const createGateway = require('../createGateway');
+var createGateway = require('../gateways');
 
 module.exports = function(query, args) {
   const defaults = {
@@ -8,21 +8,8 @@ module.exports = function(query, args) {
   }
   const settings = _.extend(defaults, args);
 
-  var search = createGateway({
-    method : 'esearch',
-    params : {
-      db : 'pubmed',
-      term : query,
-      retstart : settings.start,
-      retmax : settings.end - settings.start
-    }
-  });
-  var summary = createGateway({
-    method : 'esummary',
-    params : {
-      db : 'pubmed'
-    }
-  });
+  var search = createGateway.pubmedSearch(query, settings.start, settings.end);
+  var summary = createGateway.pubmedSummary();
 
   return new Promise(function(resolve, reject) {
     var data = {};

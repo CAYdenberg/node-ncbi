@@ -2,14 +2,14 @@ var createGateway = require('./createGateway');
 
 module.exports = {
 
-  pubmedSearch: function(query, settings) {
+  pubmedSearch: function(query, start, end) {
     return createGateway({
       method : 'esearch',
       params : {
         db : 'pubmed',
         term : query,
-        retstart : settings.start,
-        retmax : settings.end - settings.start
+        retstart : start,
+        retmax : end - start
       }
     });
   },
@@ -29,6 +29,17 @@ module.exports = {
       responseType : 'xml',
       params : {
         db : 'pubmed'
+      }
+    });
+  },
+
+  pubmedLinks: function() {
+    return createGateway({
+      method : 'elink',
+      params : {
+        db : 'pubmed',
+        dbfrom: 'pubmed',
+        cmd: 'neighbor'
       }
     });
   }

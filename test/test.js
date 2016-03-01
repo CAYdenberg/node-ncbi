@@ -12,20 +12,25 @@ describe('Array', function(){
 })
 
 
-var createGateway = require('../src/gateways/createGateway');
-describe('Gateway', function() {
+const createGateway = require('../src/gateways');
+describe('Search Gateway', function() {
 
-  var search = createGateway({
-    method : 'esearch',
-    params : {
-      db : 'pubmed',
-      term : 'ydenberg ca'
-    },
-    test : true
-  });
-  describe('generateUrl', function() {
+  describe('generateUrl search', function() {
+    var search = createGateway.pubmedSearch('ydenberg ca', 0, 10);
     it('should build a valid search url from parameters', function() {
-      assert.equal(search.generateUrl(), 'http://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=ydenberg%20ca&retmode=json');
+      assert.equal(search.generateUrl(), 'http://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=ydenberg%20ca&retstart=0&retmax=10&retmode=json');
+    });
+  });
+
+});
+
+describe('Links gateway', function() {
+
+  describe('generateUrl links', function() {
+    var links = createGateway.pubmedLinks();
+    links.addIds(22588722);
+    it('should build a valid link url from parameters', function() {
+      assert.equal(links.generateUrl(), 'http://eutils.ncbi.nlm.nih.gov/entrez/eutils/elink.fcgi?db=pubmed&dbfrom=pubmed&cmd=neighbor&retmode=json&id=22588722');
     });
   });
 

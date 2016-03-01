@@ -18,19 +18,7 @@ const createParser = require('../documents');
  * @arg: test: Boolean | enable test mode. When in test mode, an actual call will
  * never happen, the search method will return a simple Promise instead.
  */
-var Gateway = {
-  defaults: {
-    method : 'esearch',
-    responseType : 'json',
-    params : {},
-    test : false
-  },
-  settings: null,
-  setup: function(args) {
-    this.settings = _.extend(this.defaults, args);
-    this.addParams({retmode: this.settings.responseType });
-  }
-}
+var Gateway = {};
 
 /**
  * Storage of the base URL for the API.
@@ -108,8 +96,24 @@ Gateway.get = function() {
   });
 }
 
+/**
+* Use an Object literal to instatiate via the setup method:
+* @arg: method: string | 'esearch', 'esummary', 'efetch', 'einfo', see
+* http://www.ncbi.nlm.nih.gov/books/NBK25499/ for more info
+* @arg: responseType: string | 'json', 'xml', 'text'
+* @arg: params: Object | indexed object of other URL parameters, eg 'term' (for searches),
+* 'retstart', 'retmax'
+* @arg: test: Boolean | enable test mode. When in test mode, an actual call will
+* never happen, the search method will return a simple Promise instead.
+*/
 module.exports = function(args) {
   var gateway = Object.create(Gateway);
-  gateway.setup(args);
+  gateway.settings = _.extend({
+    method : 'esearch',
+    responseType : 'json',
+    params : {},
+    test : false
+  }, args);
+  gateway.addParams({retmode: gateway.settings.responseType });
   return gateway;
 }
