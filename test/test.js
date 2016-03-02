@@ -15,13 +15,22 @@ describe('Array', function(){
 const createGateway = require('../src/gateways');
 describe('Search Gateway', function() {
 
+  var search = createGateway.pubmedSearch('ydenberg ca', 0, 10);
   describe('generateUrl search', function() {
-    var search = createGateway.pubmedSearch('ydenberg ca', 0, 10);
     it('should build a valid search url from parameters', function() {
       assert.equal(search.generateUrl(), 'http://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=ydenberg%20ca&retstart=0&retmax=10&retmode=json');
     });
   });
 
+  describe('get', function() {
+    it('should give us a mechanism to resolve promises within a callback', function(done) {
+      search.get(function(parser, resolve) {
+        console.log('caller');
+        done();
+      });
+    });
+
+  });
 });
 
 describe('Links gateway', function() {

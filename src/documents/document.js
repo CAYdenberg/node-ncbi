@@ -1,4 +1,5 @@
 const _ = require("underscore");
+const createGateway = require('../gateways');
 
 /**
 Prototype NcbiDocument.
@@ -27,7 +28,7 @@ NcbiDocument.deepSearch = function deepSearch(find, data) {
   //go through each property, and assign it to found if the key
   //matches the key we're looking for
   _.each(data, function(value, key) {
-    if (key === find) {
+    if (String(key).toLowerCase() === String(find).toLowerCase()) {
       found.push(value);
     }
     //now add in the nodes from the sub-object. If the value of the

@@ -6,7 +6,7 @@ var EFetchDocument = require('./document');
  * of an array
  */
 EFetchDocument.abstracts = function(single) {
-  var nodes = this.deepSearch('AbstractText');
+  var nodes = this.deepSearch('abstracttext');
   var values = this.nodeValues(nodes);
   return this.getStringOrArray(values, single);
 }

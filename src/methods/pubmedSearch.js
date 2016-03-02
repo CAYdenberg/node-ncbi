@@ -1,5 +1,5 @@
 const _ = require('underscore');
-var createGateway = require('../gateways');
+const createGateway = require('../gateways');
 
 module.exports = function(query, args) {
   const defaults = {
@@ -11,30 +11,21 @@ module.exports = function(query, args) {
   var search = createGateway.pubmedSearch(query, settings.start, settings.end);
   var summary = createGateway.pubmedSummary();
 
-  return new Promise(function(resolve, reject) {
-    var data = {};
-    search.get().then(function(document) {
+  var data = {};
+  return search.get(function(parser, resolve) {
+    data.count = parser.count();
+    var ids = parser.ids();
 
-      data.count = document.count();
-
-      var ids = document.ids();
-
-      if ( ! ids.length ) {
-        data.papers = [];
-        resolve(data);
-      }
-
+    if (!ids.length) {
+      data.papers = [];
+      resolve(data);
+    } else {
       summary.addIds(ids);
-
-      summary.get().then(function(document) {
+      summary.get(function(document) {
         data.papers = document.summaries();
         resolve(data);
-      }, function(err) {
-        reject(err);
       });
+    }
 
-    }, function(err) {
-      reject(err);
-    })
   });
 }

@@ -90,9 +90,10 @@ Gateway.send = function() {
  * parser object (count, ids, summaries, abstract).
  * Call .catch(function(err)) to deal with errors.
  */
-Gateway.get = function() {
+Gateway.get = function(callback) {
   return this.send().then(document => {
-    return createParser(document.body, this.method);
+    var parser = createParser(document.body, this.method);
+    return callback.call(null, parser);
   });
 }
 

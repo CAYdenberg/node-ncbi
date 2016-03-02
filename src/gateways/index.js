@@ -1,4 +1,4 @@
-var createGateway = require('./createGateway');
+const createGateway = require('./createGateway');
 
 module.exports = {
 
