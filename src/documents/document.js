@@ -1,5 +1,4 @@
 const _ = require("underscore");
-const createGateway = require('../gateways');
 
 /**
 Prototype NcbiDocument.

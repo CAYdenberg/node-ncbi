@@ -1,3 +1,5 @@
+"strict mode";
+
 const _ = require('underscore');
 const popsicle = require('popsicle');
 
@@ -25,7 +27,7 @@ var Gateway = {};
  * @return: a URL
  */
 Gateway.getBase = function() {
-  return this.base = 'http://eutils.ncbi.nlm.nih.gov/entrez/eutils/' + this.settings.method + '.fcgi?';
+  return this.base = 'http://eutils.ncbi.nlm.nih.gov/entrez/eutils/' + this.settings.documentType + '.fcgi?';
 }
 
 /**
@@ -88,12 +90,19 @@ Gateway.send = function() {
  * Send off the request and create a parser.
  * @return Promise | Call .then(function(document)) to access the methods in the
  * parser object (count, ids, summaries, abstract).
+ * Alternatively if the name of the method is passed to resolve as a string,
+ * the data retrieved by the method will be passed to the next promise in the
+ * chain instead.
  * Call .catch(function(err)) to deal with errors.
  */
-Gateway.get = function(callback) {
+Gateway.resolve = function(method) {
   return this.send().then(document => {
     var parser = createParser(document.body, this.method);
-    return callback.call(null, parser);
+    if (method) {
+      return parser[method]();
+    } else {
+      return parser;
+    }
   });
 }
 
@@ -110,11 +119,11 @@ Gateway.get = function(callback) {
 module.exports = function(args) {
   var gateway = Object.create(Gateway);
   gateway.settings = _.extend({
-    method : 'esearch',
+    documentType : 'esearch',
     responseType : 'json',
     params : {},
     test : false
   }, args);
-  gateway.addParams({retmode: gateway.settings.responseType });
+  gateway.addParams({retmode: gateway.settings.responseType});
   return gateway;
 }

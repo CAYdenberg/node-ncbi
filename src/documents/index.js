@@ -1,7 +1,7 @@
 const parseString = require('xml2js').parseString;
 const _ = require("underscore");
 
-const DocumentPrototypes = {
+const DocumentTypes = {
   esearch: require('./esearch'),
   esummary: require('./esummary'),
   efetch: require('./efetch'),
@@ -32,7 +32,7 @@ function parse(data) {
 }
 
 module.exports = function(data, type) {
-  var doc = Object.create(DocumentPrototypes[type]);
+  var doc = Object.create(DocumentTypes[type]);
   doc.record = parse(data);
   return doc;
 }

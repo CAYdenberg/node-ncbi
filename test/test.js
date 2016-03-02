@@ -1,3 +1,5 @@
+"use strict";
+
 /*eslint-env mocha */
 
 //test the tests
@@ -9,10 +11,9 @@ describe('Array', function(){
       assert.equal(-1, [1,2,3].indexOf(0));
     })
   })
-})
+});
 
-
-const createGateway = require('../src/gateways');
+var createGateway = require('../src/gateways');
 describe('Search Gateway', function() {
 
   var search = createGateway.pubmedSearch('ydenberg ca', 0, 10);
@@ -22,22 +23,12 @@ describe('Search Gateway', function() {
     });
   });
 
-  describe('get', function() {
-    it('should give us a mechanism to resolve promises within a callback', function(done) {
-      search.get(function(parser, resolve) {
-        console.log('caller');
-        done();
-      });
-    });
-
-  });
 });
 
 describe('Links gateway', function() {
 
   describe('generateUrl links', function() {
-    var links = createGateway.pubmedLinks();
-    links.addIds(22588722);
+    var links = createGateway.pubmedLinks(22588722);
     it('should build a valid link url from parameters', function() {
       assert.equal(links.generateUrl(), 'http://eutils.ncbi.nlm.nih.gov/entrez/eutils/elink.fcgi?db=pubmed&dbfrom=pubmed&cmd=neighbor&retmode=json&id=22588722');
     });
