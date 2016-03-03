@@ -27,7 +27,7 @@ module.exports = {
     return gateway;
   },
 
-  abstract: function(ids) {
+  pubmedRecord: function(ids) {
     let gateway = createGateway({
       documentType : 'efetch',
       responseType : 'xml',
