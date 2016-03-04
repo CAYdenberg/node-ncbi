@@ -1,3 +1,3 @@
-"strict mode";
+"use strict";
 
-module.exports = require('./src/methods');
+module.exports = require('./src/controllers');

@@ -8,7 +8,7 @@ var SearchCtlr = {
   settings: null
 };
 
-SearchCtlr.page = function(pageNum) {
+SearchCtlr.getPage = function(pageNum) {
   pageNum = pageNum || 0;
 
   var firstResult = pageNum * this.settings.resultsPerPage + 1;

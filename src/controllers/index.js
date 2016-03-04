@@ -1,4 +1,4 @@
 module.exports = {
-  pubmedSearch: require('./pubmedSearch'),
-  getAbstract: require('./getAbstract')
+  createSearch: require('./createSearchCtlr'),
+  createCitation: require('./createCitationCtlr')
 }

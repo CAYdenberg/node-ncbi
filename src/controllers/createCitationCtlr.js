@@ -6,7 +6,7 @@ var CitationCtlr = {
 };
 
 CitationCtlr.linkage = function(linkType) {
-  var link = createGateway.elink(this.pmid);
+  var link = createGateway.pubmedLinks(this.pmid);
   return link.resolve(linkType).then(ids => {
     var summary = createGateway.pubmedSummary(ids);
     return summary.resolve('summaries');
