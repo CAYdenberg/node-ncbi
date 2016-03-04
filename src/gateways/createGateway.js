@@ -10,16 +10,8 @@ const createParser = require('../documents');
  * Intended as a wrapper around the PubMed eUtils REST-like API.
  * Full documentation of the API can be found here:
  * http://www.ncbi.nlm.nih.gov/books/NBK25500/
+*/
 
- * Use an Object literal to instatiate via the setup method:
- * @arg: method: string | 'esearch', 'esummary', 'efetch', 'einfo', see
- * http://www.ncbi.nlm.nih.gov/books/NBK25499/ for more info
- * @arg: responseType: string | 'json', 'xml', 'text'
- * @arg: params: Object | indexed object of other URL parameters, eg 'term' (for searches),
- * 'retstart', 'retmax'
- * @arg: test: Boolean | enable test mode. When in test mode, an actual call will
- * never happen, the search method will return a simple Promise instead.
- */
 var Gateway = {};
 
 /**
@@ -95,11 +87,11 @@ Gateway.send = function() {
  * chain instead.
  * Call .catch(function(err)) to deal with errors.
  */
-Gateway.resolve = function(method) {
+Gateway.resolve = function(methodName) {
   return this.send().then(document => {
-    var parser = createParser(document.body, this.method);
-    if (method) {
-      return parser[method]();
+    var parser = createParser(document.body, this.settings.documentType);
+    if (methodName) {
+      return parser[methodName]();
     } else {
       return parser;
     }
@@ -108,7 +100,7 @@ Gateway.resolve = function(method) {
 
 /**
 * Use an Object literal to instatiate via the setup method:
-* @arg: method: string | 'esearch', 'esummary', 'efetch', 'einfo', see
+* @arg: documentType: string | 'esearch', 'esummary', 'efetch', 'einfo', see
 * http://www.ncbi.nlm.nih.gov/books/NBK25499/ for more info
 * @arg: responseType: string | 'json', 'xml', 'text'
 * @arg: params: Object | indexed object of other URL parameters, eg 'term' (for searches),

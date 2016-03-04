@@ -29,7 +29,7 @@ CitationCtlr.similar = function() {
 
 CitationCtlr.abstract = function() {
   var abstract = createGateway.pubmedRecord(this.pmid);
-  return abstract.resolve('abstracttext');
+  return abstract.resolve('abstracts');
 }
 
 CitationCtlr.summary = function() {
