@@ -33,6 +33,9 @@ ELinkDocument.findLinks = function(linkname) {
 
 }
 
+/**
+ * Wrapper methods for findLinks.
+ */
 ELinkDocument.citedBy = function() {
   return this.findLinks('pubmed_pubmed_citedin');
 }
