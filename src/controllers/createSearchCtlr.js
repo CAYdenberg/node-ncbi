@@ -44,13 +44,13 @@ SearchCtlr.getPage = function(pageNum) {
  * @return a promise which will resolve to a page's-worth of result summaries.
  */
 SearchCtlr.nextPage = function() {
-  var page = this.page(this.currentPage);
+  var page = this.getPage(this.currentPage);
   this.currentPage++;
   return page;
 }
 
 SearchCtlr.search = function() {
-  var page = this.page(0);
+  var page = this.getPage(0);
   this.currentPage = 1;
   return page;
 }
