@@ -14,12 +14,12 @@ module.exports = {
    */
   pubmedSearch: function(query, start, end) {
     return createGateway({
-      documentType : 'esearch',
-      params : {
-        db : 'pubmed',
-        term : query,
-        retstart : start,
-        retmax : end - start
+      documentType: 'esearch',
+      params: {
+        db: 'pubmed',
+        term: query,
+        retstart: start,
+        retmax: end - start
       }
     });
   },
