@@ -1,8 +1,8 @@
 # node-ncbi
 
-A nodejs wrapper for the NCBI eUtils API. You can use it to search PubMed or other databases and get the results as a JavaScript object.
+A nodejs wrapper for the NCBI eUtils. You can use it to search PubMed or other databases and get the results as a JavaScript object.
 
-[Read the full documentation of the API](http://www.ncbi.nlm.nih.gov/books/NBK25500/).
+[Read the full documentation of eUtils](http://www.ncbi.nlm.nih.gov/books/NBK25500/).
 
 ## Getting started
 
@@ -12,75 +12,97 @@ A nodejs wrapper for the NCBI eUtils API. You can use it to search PubMed or oth
 
 ## Basic usage
 
+### PubMed Searches
+
 ```js
-ncbi.pubmedSearch('actin').then(function(results) {
+let pubmedSearch = ncbi.createSearch('actin');
+pubmedSearch.search().then((results) => {
     console.log(results);
-})
-```
-
-Will display `{count: 101882, papers: {...}}`
-
-```js
-ncbi.getAbstract(6365930, true).then(function(result) {
-    console.log(result);
 });
 ```
-will display the abstract, where 6365930 is a PubMed ID number, a true indicates that only a single result is expected.
 
-## Advanced usage
+Will log an array of objects. The objects represent PubMed "summaries" containing title, authors, journal and citation information, etc..
 
-node-ncbi consists of three components: a gateway, a parser, and a few functions that wrap around them to create simple interfaces.
-
-### Gateway
+By default, 10 results will be retrieved at a time. To get the next set of results:
 
 ```js
-var gateway = require('node-ncbi/createGateway')({
-    method: 'esearch',
-    responseType: 'json',
-    params: {
-        term: 'actin'
-    },
+pubmedSearch.nextPage().then( ... );
+```
+
+To change the number of results retrieved at a time:
+
+```js
+let pubmedSearch = ncbi.createSearch('actin', {
+    resultsPerPage: 100
+});
+```
+
+###Getting the details of a paper
+
+```js
+var paper = ncbi.createCitation(20517925);
+```
+
+where the only argument is a PMID (PubMed ID #).
+The following methods are available:
+
+- `abstract()` - get the abstract
+- `summary()` - get the "summary" - an object of fields containing title, authors, citation info, etc.
+- `cites()`  - papers which this paper cites.
+- `citedBy()` - papers which cite this paper (only includes citing papers in PubMed central)
+- `similar()` - papers similar to this one (similarity is calculated on NCBI's side of the API, not ours).
+
+All methods return a promise accessible by `.then()`. Except for `.abstract()` the parameter passed to the callback is a PubMed summary or an array of summaries.
+
+## Contributing
+
+I'd love to accept contributions improving the code or expanding the search methods beyond PubMed.
+
+You can build for development by navigating to the project folder and running `npm install`. You'll also need to have gulp installed globally `npm install -g gulp`.
+
+### Overview
+
+The module consists of three main parts: a Gateway class that controls access to the API, a set of Document parsers for finding the required information in the returned documents, and Controllers for tying the two together.
+
+Since many of the exposed methods require accessing the API multiple times (ie - perform a search and get ID numbers, then find the individual documents by sending those ID numbers) controllers configure as many gateways and parsers as needed to accomplish a particular task.
+
+Gateways are instantiated with an object literal as follows:
+
+```js
+let gateway = Gateway({
+    documentType: 'esearch' | 'esummary' | 'elink' | 'efetch' (default: 'esearch'),
+    responseType: 'json' | 'xml' (default: 'json'),
+    params: {} (set of parameters for the API)
     test: false
 });
 ```
 
-`method` may be esearch, esummary, efetch, etc.
+See the [API documentaion](http://www.ncbi.nlm.nih.gov/books/NBK25500/) for more information on document types and available parameters.
 
-`responseType` may be json or xml. Note that efetch only returns XML.
-
-Params can be [any of the parameters that the eUtils API accepts](http://www.ncbi.nlm.nih.gov/books/NBK25500/), as key-value pairs.
-
-**Methods**
-
-`gateway.addParams({parameterKey: parameterValue})` - add new parameters after instantiating the object.
-
-`gateway.addIds(ids)` - special way to add a list of IDs as a parameter; an array of ids will be concatenated into a string.
-
-`gateway.send().then(function(response) {...})` - send off the request. The entire, unfiltered response will be the first argument of the callback passed to `then`.
-
-`gateway.get().then(function(doc) {...})` - send of the request and created a parser object. The parser object will be the first argument of the callback passed to `then`.
-
-###Parser###
+A set of PubMed IDs can be added like so:
 
 ```js
-var doc = require('node-ncbi/createNcbiDataDocument')(data);
+gateway.addIds([1111111, 2222222]);
 ```
 
-Data may be JSON or XML (or a JavaScript object). It will stored in the property `doc.record`.
+The most important method is `gateway.send()` which returns a Promise resolving to the appropriate parser for the returned document type. The parser methods are pretty self-explanatory and are named for the type of information that they will return.
 
-**Methods**
+### REPL
 
-`doc.count()` - return the count (total results) from a search.
+To help with creating Gateways are seeing the data structures returned by the API, node-ncbi provides a custom REPL. Start it with `npm start`. You can then run `url({object})` or `open({object})` where {object} is an object literal for creating gateways as described above. `url` will log the URL needed to access eUtils while `open` will open that URL in a browser. This can help to see the actual data which is useful to create new parsers.
 
-`doc.ids()` - return all IDs (such as PubMed ID numbers) from a search.
+### Unit tests
 
-`doc.summaries(single)` - return the complete record of each summary found in an esummary search. If *single* is false, return an array, otherwise a single object.
+The Gateway and the Parsers are tested independetly in `test/test.js`. Run with `gulp test`.
 
-`doc.abstracts(single)` - return the abstract from one or more results, as a string. If *single* is false, return an array, otherwise a single string.
+### ESLint
 
-### License
+Run with `gulp lint`.
 
-Copyright (c) 2015 Casey A. Ydenberg
+
+## License
+
+Copyright (c) 2016 Casey A. Ydenberg
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

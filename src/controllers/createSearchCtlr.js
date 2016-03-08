@@ -49,6 +49,12 @@ SearchCtlr.nextPage = function() {
   return page;
 }
 
+SearchCtlr.search = function() {
+  var page = this.page(0);
+  this.currentPage = 1;
+  return page;
+}
+
 /**
  * count - return the countVal (total number of results as specified by eUtils).
  */
