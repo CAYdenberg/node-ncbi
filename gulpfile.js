@@ -18,11 +18,11 @@ gulp.task('lint', function() {
 })
 
 gulp.task('test', function() {
-	return gulp.src(['test/*.js'], { read: false })
-		.pipe(mocha({ reporter: 'list' }))
-		.on('error', gutil.log);
+  return gulp.src(['test/*.js'], { read: false })
+    .pipe(mocha({ reporter: 'list' }))
+    .on('error', gutil.log);
 });
 
 gulp.task('test-watch', function() {
-	gulp.watch(['./**/*.js'], ['test']);
+  gulp.watch(['./**/*.js'], ['test']);
 });

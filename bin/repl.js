@@ -1,7 +1,6 @@
 const repl = require('repl');
 const open = require('open');
 
-
 var replServer = repl.start({
   prompt: 'node-ncbi> '
 });

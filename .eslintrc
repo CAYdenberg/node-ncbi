@@ -12,6 +12,9 @@
     "blockBindings": true
   },
   "rules": {
-    "no-console": 0
+    "no-console": 0,
+    "quotes": [2, "single"],
+    "key-spacing": [2, {"beforeColon": false, "afterColon": true}],
+    "prefer-const": [2]
   }
 }
