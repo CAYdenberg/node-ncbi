@@ -56,7 +56,7 @@ All methods return a promise accessible by `.then()`. Except for `.abstract()` t
 
 ## Contributing
 
-I'd love to accept contributions improving the code or expanding the search methods beyond PubMed.
+I'd love to get PRs improving the code or expanding the search methods beyond PubMed.
 
 You can build for development by navigating to the project folder and running `npm install`. You'll also need to have gulp installed globally `npm install -g gulp`.
 
