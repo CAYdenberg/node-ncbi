@@ -1,5 +1,5 @@
 const parseString = require('xml2js').parseString;
-const _ = require("underscore");
+const _ = require('underscore');
 
 const DocumentTypes = {
   esearch: require('./esearch'),

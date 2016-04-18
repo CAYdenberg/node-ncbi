@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 
 const createGateway = require('./createGateway');
 
@@ -28,10 +28,10 @@ module.exports = {
    * pubmedSummary. Get a set of pubmedSummaries, specified by an array of pmid (pubmed identifiers.)
    */
   pubmedSummary: function(ids) {
-    let gateway = createGateway({
-      documentType : 'esummary',
-      params : {
-        db : 'pubmed'
+    const gateway = createGateway({
+      documentType: 'esummary',
+      params: {
+        db: 'pubmed'
       }
     });
     gateway.addIds(ids);
@@ -43,11 +43,11 @@ module.exports = {
   * Note that efetch documents can only be returned via XML (or flatfile).
   */
   pubmedRecord: function(ids) {
-    let gateway = createGateway({
-      documentType : 'efetch',
-      responseType : 'xml',
-      params : {
-        db : 'pubmed'
+    const gateway = createGateway({
+      documentType: 'efetch',
+      responseType: 'xml',
+      params: {
+        db: 'pubmed'
       }
     });
     gateway.addIds(ids);
@@ -61,10 +61,10 @@ module.exports = {
    * this article.
    */
   pubmedLinks: function(id) {
-    let gateway = createGateway({
-      documentType : 'elink',
-      params : {
-        db : 'pubmed',
+    const gateway = createGateway({
+      documentType: 'elink',
+      params: {
+        db: 'pubmed',
         dbfrom: 'pubmed',
         cmd: 'neighbor'
       }

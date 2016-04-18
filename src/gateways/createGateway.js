@@ -1,4 +1,4 @@
-"strict mode";
+'strict mode';
 
 const _ = require('underscore');
 const popsicle = require('popsicle');
@@ -41,7 +41,7 @@ Gateway.addParams = function(params) {
  */
 Gateway.addIds = function(ids) {
   var idString = _.isArray(ids) ? ids.join() : ids;
-  return this.addParams({id : idString});
+  return this.addParams({id: idString});
 }
 
 /**
@@ -73,8 +73,8 @@ Gateway.send = function() {
     });
   }
   return popsicle({
-    method : 'GET',
-    url : url
+    method: 'GET',
+    url: url
   });
 }
 
@@ -111,10 +111,10 @@ Gateway.resolve = function(methodName) {
 module.exports = function(args) {
   var gateway = Object.create(Gateway);
   gateway.settings = _.extend({
-    documentType : 'esearch',
-    responseType : 'json',
-    params : {},
-    test : false
+    documentType: 'esearch',
+    responseType: 'json',
+    params: {},
+    test: false
   }, args);
   gateway.addParams({retmode: gateway.settings.responseType});
   return gateway;

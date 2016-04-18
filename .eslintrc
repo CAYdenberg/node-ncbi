@@ -1,16 +1,13 @@
 {
   "env": {
-    "node": true,
+    "es6": true,
     "commonjs": true
   },
   "globals": {
-
+    "console": true
   },
+  "sourceType": "module",
   "extends": "eslint:recommended",
-  "ecmaFeatures": {
-    "arrowFunctions": true,
-    "blockBindings": true
-  },
   "rules": {
     "no-console": 0,
     "quotes": [2, "single"],
