@@ -16,8 +16,7 @@ const createGateway = require('../gateways');
 var SearchCtlr = {
   countVal: -1,
   query: '',
-  settings: null,
-  currentPage: -1
+  settings: null
 };
 
 /**
@@ -31,24 +30,12 @@ SearchCtlr.getPage = function(pageNum) {
   var firstResult = pageNum * this.settings.resultsPerPage;
   var lastResult = (pageNum + 1) * this.settings.resultsPerPage;
   var search = createGateway.pubmedSearch(this.query, firstResult, lastResult);
-  console.log(search.generateUrl());
 
   return search.resolve().then(eSearchDocument => {
     this.countVal = eSearchDocument.count();
     var summary = createGateway.pubmedSummary(eSearchDocument.ids());
     return summary.resolve('summaries');
   });
-}
-
-/**
- * nextPage - get the next page of results.
- * Starting at 0, you can retrieve all results by calling nextPage sequentially.
- * @return a promise which will resolve to a page's-worth of result summaries.
- */
-SearchCtlr.nextPage = SearchCtlr.search = function() {
-  this.currentPage++;
-  var page = this.getPage(this.currentPage);
-  return page;
 }
 
 /**
