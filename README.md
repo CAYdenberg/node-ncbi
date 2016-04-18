@@ -26,8 +26,10 @@ Will log an array of objects. The objects represent PubMed "summaries" containin
 By default, 10 results will be retrieved at a time. To get the next set of results:
 
 ```js
-pubmedSearch.nextPage().then( ... );
+pubmedSearch.getPage(1).then( ... );
 ```
+
+**Note**: An earlier version used `pubmedSearch.nextPage` without an argument. I decided that storing this one tiny piece of state in the controller was stupid.
 
 To change the number of results retrieved at a time:
 

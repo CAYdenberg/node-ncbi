@@ -39,6 +39,11 @@ SearchCtlr.getPage = function(pageNum) {
 }
 
 /**
+ * Alias for getPage that gets the first page of results.
+ */
+SearchCtlr.search = () => {return SearchCtlr.getPage(0)};
+
+/**
  * count - return the countVal (total number of results as specified by eUtils).
  */
 SearchCtlr.count = function() {
