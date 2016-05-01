@@ -1,9 +1,9 @@
 'strict mode';
 
-const _ = require('underscore');
+const update = require('react-addons-update');
 const popsicle = require('popsicle');
 
-const createParser = require('../documents');
+const parse = require('./parse');
 
 /**
  * Prototype Gateway.
@@ -19,29 +19,7 @@ var Gateway = {};
  * @return: a URL
  */
 Gateway.getBase = function() {
-  return this.base = 'http://eutils.ncbi.nlm.nih.gov/entrez/eutils/' + this.settings.documentType + '.fcgi?';
-}
-
-/**
- * Set parameters after object instatiation.
- * Note: this method is also called by the constructor to add the responseType
- * as the retmode property.
- * @arg: params | Object | new URL parameters indexed by name
- * @return the URL parameters after modification
- */
-Gateway.addParams = function(params) {
-  _.extend(this.settings.params, params);
-  return this.settings.params;
-}
-
-/**
- * Add article IDs for performing an efetch or esummary type of request.
- * @arg: ids | Array | array of ID numbers (eg pubmed ids)
- * @return: the full Object of URL parameters
- */
-Gateway.addIds = function(ids) {
-  var idString = _.isArray(ids) ? ids.join() : ids;
-  return this.addParams({id: idString});
+  return this.base = 'http://eutils.ncbi.nlm.nih.gov/entrez/eutils/' + this.settings.utility + '.fcgi?';
 }
 
 /**
@@ -52,8 +30,8 @@ Gateway.addIds = function(ids) {
 Gateway.generateUrl = function() {
   var url = this.getBase();
   for (var key in this.settings.params) {
-    url = url + key + '=' + this.settings.params[key];
-    url = url + '&';
+    url += key + '=' + this.settings.params[key].toString();
+    url += '&';
   }
   //remove final &
   url = url.substring(0, url.length - 1);
@@ -78,8 +56,9 @@ Gateway.send = function() {
   });
 }
 
+
 /**
- * Send off the request and create a parser.
+ * Send off the request and parse the returned data.
  * @return Promise | Call .then(function(document)) to access the methods in the
  * parser object (count, ids, summaries, abstract).
  * Alternatively if the name of the method is passed to resolve as a string,
@@ -87,16 +66,11 @@ Gateway.send = function() {
  * chain instead.
  * Call .catch(function(err)) to deal with errors.
  */
-Gateway.resolve = function(methodName) {
-  return this.send().then(document => {
-    var parser = createParser(document.body, this.settings.documentType);
-    if (methodName) {
-      return parser[methodName]();
-    } else {
-      return parser;
-    }
+Gateway.resolve = function() {
+  return this.send().then(data => {
+    return parse(data);
   });
-}
+};
 
 /**
 * Use an Object literal to instatiate via the setup method:
@@ -109,13 +83,16 @@ Gateway.resolve = function(methodName) {
 * never happen, the search method will return a simple Promise instead.
 */
 module.exports = function(args) {
-  var gateway = Object.create(Gateway);
-  gateway.settings = _.extend({
-    documentType: 'esearch',
-    responseType: 'json',
-    params: {},
-    test: false
-  }, args);
-  gateway.addParams({retmode: gateway.settings.responseType});
+  const defaults = {
+    utility: 'esearch',
+    params: {
+      retmode: 'json',
+      db: 'pubmed'
+    }
+  };
+  const settings = update(defaults, {$merge: args, params: {$merge: args.params}});
+  const gateway = Object.assign(Object.create(Gateway), {
+    settings: settings
+  });
   return gateway;
 }

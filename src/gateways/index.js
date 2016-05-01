@@ -14,7 +14,7 @@ module.exports = {
    */
   pubmedSearch: function(query, start, end) {
     return createGateway({
-      documentType: 'esearch',
+      utility: 'esearch',
       params: {
         db: 'pubmed',
         term: query,
@@ -28,14 +28,13 @@ module.exports = {
    * pubmedSummary. Get a set of pubmedSummaries, specified by an array of pmid (pubmed identifiers.)
    */
   pubmedSummary: function(ids) {
-    const gateway = createGateway({
-      documentType: 'esummary',
+    return createGateway({
+      utility: 'esummary',
       params: {
-        db: 'pubmed'
+        db: 'pubmed',
+        id: ids
       }
     });
-    gateway.addIds(ids);
-    return gateway;
   },
 
   /**
@@ -43,15 +42,14 @@ module.exports = {
   * Note that efetch documents can only be returned via XML (or flatfile).
   */
   pubmedRecord: function(ids) {
-    const gateway = createGateway({
-      documentType: 'efetch',
-      responseType: 'xml',
+    return createGateway({
+      utility: 'efetch',
       params: {
-        db: 'pubmed'
+        db: 'pubmed',
+        responseType: 'xml',
+        id: ids
       }
     });
-    gateway.addIds(ids);
-    return gateway;
   },
 
   /**
@@ -61,16 +59,15 @@ module.exports = {
    * this article.
    */
   pubmedLinks: function(id) {
-    const gateway = createGateway({
-      documentType: 'elink',
+    return createGateway({
+      utility: 'elink',
       params: {
         db: 'pubmed',
         dbfrom: 'pubmed',
-        cmd: 'neighbor'
+        cmd: 'neighbor',
+        id: id
       }
     });
-    gateway.addIds(id);
-    return gateway;
   }
 
 }
