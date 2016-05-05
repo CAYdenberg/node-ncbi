@@ -12,14 +12,15 @@ module.exports = {
    * pubmedSearch. Return a Gateway for a pubmed search, with start and end parameters.
    * (ie first and last results.)
    */
-  pubmedSearch: function(query, start, end) {
+  pubmedSearch: function(query, page, resultsPerPage) {
+    const start = page * resultsPerPage;
     return createGateway({
       utility: 'esearch',
       params: {
         db: 'pubmed',
         term: query,
         retstart: start,
-        retmax: end - start
+        retmax: resultsPerPage
       }
     });
   },

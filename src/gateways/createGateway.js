@@ -1,5 +1,3 @@
-'strict mode';
-
 const update = require('react-addons-update');
 const popsicle = require('popsicle');
 
@@ -29,9 +27,15 @@ Gateway.getBase = function() {
  */
 Gateway.generateUrl = function() {
   var url = this.getBase();
+  console.log(this.settings.params);
   for (var key in this.settings.params) {
-    url += key + '=' + this.settings.params[key].toString();
-    url += '&';
+    try {
+      url += key + '=' + this.settings.params[key].toString();
+      url += '&';
+    } catch(e) {
+      //skip if this parameter cannot be converted to a string
+      continue;
+    }
   }
   //remove final &
   url = url.substring(0, url.length - 1);
@@ -66,9 +70,10 @@ Gateway.send = function() {
  * chain instead.
  * Call .catch(function(err)) to deal with errors.
  */
-Gateway.resolve = function() {
-  return this.send().then(data => {
-    return parse(data);
+Gateway.resolve = function(query) {
+  return this.send().then(res => {
+    const dataObj = parse(res.body);
+    return query(dataObj);
   });
 };
 
