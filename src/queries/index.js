@@ -89,7 +89,7 @@ const queries = {
     }
     Object.keys(results).forEach(key => {
       //papers are indexed by their uid, so if the key can be a number,
-      // we should include it in the summary array. Else we should skip it.
+      // we should include it in the summary array. Otherwise we should skip it.
       if (parseInt(key, 10)) {
         found.push(results[key]);
       }
@@ -118,21 +118,6 @@ const queries = {
   },
 
   /**
-   * Wrapper methods for findLinks.
-   */
-  citedBy: function(data) {
-    return queries.findLinks('pubmed_pubmed_citedin', data);
-  },
-
-  cites: function(data) {
-    return queries.findLinks('pubmed_pubmed_refs', data);
-  },
-
-  similar: function(data) {
-    return queries.findLinks('pubmed_pubmed', data);
-  },
-
-  /**
    * Perform a deep search for the abstract text and return it.
    * @arg single | Boolean, if true, return just one result as a string instead
    * of an array
@@ -140,7 +125,7 @@ const queries = {
   abstract: function(data) {
     const nodes = queries.deepSearch('abstracttext', data);
     const values = queries.nodeValues(nodes);
-    return values[0];
+    return values;
   }
 
 }

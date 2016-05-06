@@ -27,7 +27,6 @@ Gateway.getBase = function() {
  */
 Gateway.generateUrl = function() {
   var url = this.getBase();
-  console.log(this.settings.params);
   for (var key in this.settings.params) {
     try {
       url += key + '=' + this.settings.params[key].toString();
@@ -49,11 +48,6 @@ Gateway.generateUrl = function() {
  */
 Gateway.send = function() {
   var url = this.generateUrl();
-  if (this.test) {
-    return new Promise(function(resolve) {
-      resolve('Test call to NCBI eUtils: ' + url);
-    });
-  }
   return popsicle({
     method: 'GET',
     url: url

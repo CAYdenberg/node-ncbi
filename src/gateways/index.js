@@ -47,7 +47,7 @@ module.exports = {
       utility: 'efetch',
       params: {
         db: 'pubmed',
-        responseType: 'xml',
+        retmode: 'xml',
         id: ids
       }
     });
