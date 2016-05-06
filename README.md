@@ -12,11 +12,11 @@ A nodejs wrapper for the NCBI eUtils. You can use it to search PubMed or other d
 
 ## Basic usage
 
-### PubMed Searches
+### Performing a search
 
 ```js
-let pubmedSearch = ncbi.createSearch('actin');
-pubmedSearch.search().then((results) => {
+const pubmed = ncbi.pubmed;
+pubmed.search('actin').then((results) => {
     console.log(results);
 });
 ```
@@ -25,28 +25,31 @@ Will log an array of objects. The objects represent PubMed "summaries" containin
 
 By default, 10 results will be retrieved at a time. To get the next set of results:
 
-```js
-pubmedSearch.getPage(1).then( ... );
-```
-
-**Note**: An earlier version used `pubmedSearch.nextPage` without an argument. I decided that storing this one tiny piece of state in the controller was stupid.
-
-To change the number of results retrieved at a time:
-
-```js
-let pubmedSearch = ncbi.createSearch('actin', {
-    resultsPerPage: 100
+```javascript
+pubmed.search('actin', 1).then((results) => {
+    console.log(results);
 });
 ```
 
-###Getting the details of a paper
+To change the number of results retrieved at a time:
 
-```js
-var paper = ncbi.createCitation(20517925);
+```javascript
+pubmed.search('actin', 0, 20).then((results) => {
+    console.log(results);
+});
+```
+
+###Looking up a specific paper
+
+```javascript
+pubmed.summary(20517925).then((paper) => {
+  console.log(paper);
+});
 ```
 
 where the only argument is a PMID (PubMed ID #).
-The following methods are available:
+
+In addition, following methods are available:
 
 - `abstract()` - get the abstract
 - `summary()` - get the "summary" - an object of fields containing title, authors, citation info, etc.
@@ -62,40 +65,22 @@ I'd love to get PRs improving the code or expanding the search methods beyond Pu
 
 You can build for development by navigating to the project folder and running `npm install`. You'll also need to have gulp installed globally `npm install -g gulp`.
 
-### Overview
-
-The module consists of three main parts: a Gateway class that controls access to the API, a set of Document parsers for finding the required information in the returned documents, and Controllers for tying the two together.
-
-Since many of the exposed methods require accessing the API multiple times (ie - perform a search and get ID numbers, then find the individual documents by sending those ID numbers) controllers configure as many gateways and parsers as needed to accomplish a particular task.
-
-Gateways are instantiated with an object literal as follows:
-
-```js
-let gateway = Gateway({
-    documentType: 'esearch' | 'esummary' | 'elink' | 'efetch' (default: 'esearch'),
-    responseType: 'json' | 'xml' (default: 'json'),
-    params: {} (set of parameters for the API)
-    test: false
-});
-```
-
-See the [API documentaion](http://www.ncbi.nlm.nih.gov/books/NBK25500/) for more information on document types and available parameters.
-
-A set of PubMed IDs can be added like so:
-
-```js
-gateway.addIds([1111111, 2222222]);
-```
-
-The most important method is `gateway.send()` which returns a Promise resolving to the appropriate parser for the returned document type. The parser methods are pretty self-explanatory and are named for the type of information that they will return.
-
 ### REPL
 
-To help with creating Gateways are seeing the data structures returned by the API, node-ncbi provides a custom REPL. Start it with `npm start`. You can then run `url({object})` or `open({object})` where {object} is an object literal for creating gateways as described above. `url` will log the URL needed to access eUtils while `open` will open that URL in a browser. This can help to see the actual data which is useful to create new parsers.
+To help with creating Gateways are seeing the data structures returned by the API, node-ncbi provides a custom REPL. Start it with `npm start`. You can then run `url({object})` or `open({object})` where {object} is an object literal that looks like the following:
 
-### Unit tests
+```javascript
+utility: 'esearch',
+params: {
+  db: 'pubmed',
+  term: query,
+  retstart: start,
+  retmax: resultsPerPage
+}
+```
 
-The Gateway and the Parsers are tested independetly in `test/test.js`. Run with `gulp test`.
+ `url` will log the URL needed to access eUtils while `open` will open that URL in a browser. This can help with debugging and to look at the actual data which is useful to create new queries. [See the full documentation of eUtils](http://www.ncbi.nlm.nih.gov/books/NBK25500/) for more information on creating
+ queries.
 
 ### ESLint
 

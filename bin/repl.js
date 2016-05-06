@@ -8,12 +8,16 @@ var replServer = repl.start({
 
 const gateway = replServer.context.gateway = require('../src/gateways/createGateway');
 
-const url = replServer.context.url = function(params) {
-  params.test = true;
-  var urlGateway = gateway(params);
+const url = replServer.context.url = function(args) {
+  var urlGateway = gateway(args);
   return urlGateway.generateUrl();
 }
 
-replServer.context.open = function(params) {
-  open(url(params));
+replServer.context.open = function(args) {
+  open(url(args));
+  return;
+}
+
+replServer.context.noop = function() {
+  return '';
 }

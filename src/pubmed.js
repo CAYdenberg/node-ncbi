@@ -58,13 +58,6 @@ module.exports = {
 
   abstract: function(pmid) {
     return gateways.pubmedRecord(pmid).resolve(queries.abstract);
-  },
-
-  createSearch: function() {
-    console.error('createSearch has been deprecated. Please use the pure function `search` instead.');
-  },
-
-  createCitation: function() {
-    console.error('createCitation has been deprecated. Please use pure functions instead (see documentation)');
   }
+
 }
