@@ -83,31 +83,13 @@ describe('parser', function() {
     });
   });
 
-  describe('citedBy', function() {
+  describe('findLinks', function() {
     it('should find all of the papers that have cited this one', function(done) {
       getDoc('elink.json', function(err, contents) {
-        assert.equal(q.citedBy(contents).length, 2);
+        assert.equal(q.findLinks('pubmed_pubmed_citedin', contents).length, 2);
         done();
       });
     })
-  });
-
-  describe('cites', function() {
-    it('should find all the papers this paper cites', function(done) {
-      getDoc('elink.json', function(err, contents) {
-        assert.ok(q.cites(contents));
-        done();
-      });
-    });
-  });
-
-  describe('similar', function() {
-    it('should find all the papers PubMed flags as similar to this one', function(done) {
-      getDoc('elink.json', function(err, contents) {
-        assert.ok(q.similar(contents));
-        done();
-      });
-    });
   });
 
 });
