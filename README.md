@@ -4,7 +4,8 @@ A nodejs wrapper for the NCBI eUtils. You can use it to search PubMed or other d
 
 [Read the full documentation of eUtils](http://www.ncbi.nlm.nih.gov/books/NBK25500/).
 
-**Note:**
+**Note:** Browser use isn't ideal right now due to the very large XML parser. I'll come with a dedicated script
+that relies on the browser's native DOM parsing to get around this.
 
 ## Getting started
 
