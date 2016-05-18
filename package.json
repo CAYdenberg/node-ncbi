@@ -1,6 +1,6 @@
 {
   "name": "node-ncbi",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Access and parse the NCBI eUtils API in Node or the Browser",
   "keywords": [
     "pubmed",
