@@ -40,19 +40,22 @@ module.exports = {
 
   citedBy: function(pmid) {
     return gateways.pubmedLinks(pmid).resolve(data => {
-      return queries.findLinks('pubmed_pubmed_citedin', data);
+      var pmids = queries.findLinks('pubmed_pubmed_citedin', data);
+      return this.summaries(pmids);
     });
   },
 
   cites: function(pmid) {
     return gateways.pubmedLinks(pmid).resolve(data => {
-      return queries.findLinks('pubmed_pubmed_refs', data);
+      var pmids = queries.findLinks('pubmed_pubmed_refs', data);
+      return this.summaries(pmids);
     });
   },
 
   similar: function(pmid) {
     return gateways.pubmedLinks(pmid).resolve(data => {
-      return queries.findLinks('pubmed_pubmed', data);
+      var pmids = queries.findLinks('pubmed_pubmed', data);
+      return this.summaries(pmids);
     });
   },
 

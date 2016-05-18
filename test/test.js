@@ -93,3 +93,27 @@ describe('parser', function() {
   });
 
 });
+
+
+function areSummaries(summaries) {
+  return (typeof summaries[0].articleids === 'object');
+}
+
+var pubmed = require('../src/pubmed');
+describe('Pubmed module', function() {
+
+  it('should perform a search', function(done) {
+    pubmed.search('ydenberg ca').then(results => {
+      assert(areSummaries(results.papers));
+      done();
+    })
+  });
+
+  it('should return papers that cite this one', function(done) {
+    pubmed.citedBy(19188495).then(results => {
+      assert(areSummaries(results));
+      done();
+    });
+  });
+
+});
