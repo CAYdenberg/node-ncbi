@@ -1,7 +1,7 @@
 'use strict';
 
-const gateways = require('../gateways');
-const queries = require('../queries');
+const gateways = require('./gateways');
+const queries = require('./queries');
 
 module.exports = {
 
