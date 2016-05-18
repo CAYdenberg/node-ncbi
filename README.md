@@ -4,6 +4,8 @@ A nodejs wrapper for the NCBI eUtils. You can use it to search PubMed or other d
 
 [Read the full documentation of eUtils](http://www.ncbi.nlm.nih.gov/books/NBK25500/).
 
+**Note:**
+
 ## Getting started
 
 `npm install --save node-ncbi`
@@ -21,7 +23,16 @@ pubmed.search('actin').then((results) => {
 });
 ```
 
-Will log an array of objects. The objects represent PubMed "summaries" containing title, authors, journal and citation information, etc..
+Will log
+
+```
+{
+  count: (Number),
+  papers: (Array)
+}
+```
+
+where `count` is the total number of papers, independent of pagination. The "papers" represent PubMed "summaries" containing title, authors, journal and citation information, etc..
 
 By default, 10 results will be retrieved at a time. To get the next set of results:
 
