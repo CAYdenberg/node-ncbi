@@ -12,6 +12,12 @@ module.exports = {
     return gateways.pubmedSearch(query, page, resultsPerPage).resolve(data => {
       count = queries.count(data);
       const pmids = queries.ids(data);
+      if (!pmids.length) {
+        return {
+          count: 0,
+          papers: []
+        };
+      }
       return new Promise((resolve, reject) => {
         this.summaries(pmids).then(summaries => {
           resolve({
@@ -41,6 +47,7 @@ module.exports = {
   citedBy: function(pmid) {
     return gateways.pubmedLinks(pmid).resolve(data => {
       var pmids = queries.findLinks('pubmed_pubmed_citedin', data);
+      if (!pmids.length) return [];
       return this.summaries(pmids);
     });
   },
@@ -48,6 +55,7 @@ module.exports = {
   cites: function(pmid) {
     return gateways.pubmedLinks(pmid).resolve(data => {
       var pmids = queries.findLinks('pubmed_pubmed_refs', data);
+      if (!pmids.length) return [];
       return this.summaries(pmids);
     });
   },
@@ -55,6 +63,7 @@ module.exports = {
   similar: function(pmid) {
     return gateways.pubmedLinks(pmid).resolve(data => {
       var pmids = queries.findLinks('pubmed_pubmed', data);
+      if (!pmids.length) return [];
       return this.summaries(pmids);
     });
   },

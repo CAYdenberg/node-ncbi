@@ -68,7 +68,7 @@ const queries = {
     try {
       return data.esearchresult.count;
     } catch(e) {
-      return null;
+      return 0;
     }
   },
 
@@ -76,7 +76,7 @@ const queries = {
     try {
       return data.esearchresult.idlist;
     } catch(e) {
-      return null;
+      return [];
     }
   },
 
@@ -85,7 +85,7 @@ const queries = {
     try {
       var results = data.result;
     } catch(e) {
-      return null;
+      return [];
     }
     Object.keys(results).forEach(key => {
       //papers are indexed by their uid, so if the key can be a number,
@@ -113,7 +113,7 @@ const queries = {
       });
       return linksets;
     } catch(e) {
-      return null;
+      return [];
     }
   },
 
