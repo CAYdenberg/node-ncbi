@@ -24,6 +24,7 @@
   },
   "dependencies": {
     "popsicle": "^0.5.12",
+    "react": "^15.3.2",
     "react-addons-update": "^15.0.2",
     "xml2js": "^0.4.9"
   },
