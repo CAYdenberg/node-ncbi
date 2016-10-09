@@ -35,6 +35,7 @@ describe('Links gateway', function() {
 });
 
 const parse = require('../src/gateways/parse');
+
 function getDoc(filename, callback) {
 
   var fs = require('fs');
@@ -42,6 +43,37 @@ function getDoc(filename, callback) {
   fs.readFile(path.join(__dirname, 'docs', filename), 'UTF-8', (err, data) => {
     callback(err, parse(data));
   });
+}
+
+var sq = require('../src/queries/summaries');
+describe('Summary parser') {
+
+  describe('formatAuthors', function() {
+
+    it('should return the article authors as a string', function(done) {
+
+    });
+
+    it("should return an empty string in response to an empty array", function(done) {
+
+    });
+
+  });
+
+  describe('summary', function() {
+
+    it("should return an object containing the important data at the top level and the entire summary embedded under the 'raw' sub-object", function(done) {
+
+    })
+  });
+
+  describe("sort", function() {
+
+    it("should sort by reverse publication date order, by default", function(done) {
+
+    });
+  });
+  
 }
 
 var q = require('../src/queries');

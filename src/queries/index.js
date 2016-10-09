@@ -1,5 +1,7 @@
 const update = require('react-addons-update');
 
+const summaryQueries = require('./summaries');
+
 const queries = {
   /**
    * Perform a deep search on an object. Return an array of nodes identified by
@@ -79,6 +81,8 @@ const queries = {
       return [];
     }
   },
+
+
 
   summaries: function(data) {
     var found = [];
