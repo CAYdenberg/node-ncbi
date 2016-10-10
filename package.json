@@ -23,6 +23,7 @@
     "url": "https://github.com/CAYdenberg/node-ncbi.git"
   },
   "dependencies": {
+    "check-types": "^7.0.1",
     "popsicle": "^0.5.12",
     "react": "^15.3.2",
     "react-addons-update": "^15.0.2",

@@ -82,8 +82,6 @@ const queries = {
     }
   },
 
-
-
   summaries: function(data) {
     var found = [];
     try {
@@ -95,10 +93,12 @@ const queries = {
       //papers are indexed by their uid, so if the key can be a number,
       // we should include it in the summary array. Otherwise we should skip it.
       if (parseInt(key, 10)) {
-        found.push(results[key]);
+        const raw = results[key];
+        const summary = summaryQueries.summary(raw);
+        found.push(summary);
       }
     });
-    return found;
+    return summaryQueries.sortSummaries(found);
   },
 
   /**
