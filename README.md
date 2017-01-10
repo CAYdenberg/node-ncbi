@@ -4,8 +4,7 @@ A nodejs wrapper for the NCBI eUtils. You can use it to search PubMed or other d
 
 [Read the full documentation of eUtils](http://www.ncbi.nlm.nih.gov/books/NBK25500/).
 
-**Note:** Browser use isn't ideal due to the very large XML parser. I'll come with a dedicated script
-that relies on the browser's native DOM parsing to get around this.
+**Note:** NCBI appears to have changed their CORS policy making browser use impossible. You can still use the [API wrapper](http://ncbi.site/) (coming soon).
 
 ## Getting started
 
@@ -29,7 +28,15 @@ Will log
 ```
 {
   count: (Number),
-  papers: (Array)
+  papers: [
+    raw: (Pubmed Summary object),
+    pubDate: (String),
+    title: (String),
+    authors: (String),
+    pmid: (Integer),
+    pmc: (Integer if available),
+    doi: (String if available)
+  ]
 }
 ```
 
@@ -97,7 +104,6 @@ params: {
 ### ESLint
 
 Run with `gulp lint`.
-
 
 ## License
 

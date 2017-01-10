@@ -1,6 +1,6 @@
 {
   "name": "node-ncbi",
-  "version": "0.3.1",
+  "version": "0.4.0",
   "description": "Access and parse the NCBI eUtils API in Node or the Browser",
   "keywords": [
     "pubmed",
@@ -23,7 +23,9 @@
     "url": "https://github.com/CAYdenberg/node-ncbi.git"
   },
   "dependencies": {
+    "check-types": "^7.0.1",
     "popsicle": "^0.5.12",
+    "react": "^15.3.2",
     "react-addons-update": "^15.0.2",
     "xml2js": "^0.4.9"
   },

@@ -1,5 +1,7 @@
 /* eslint-env mocha, node */
 
+const check = require('check-types').assert;
+
 //test the tests
 var assert = require('assert')
 describe('Array', function() {
@@ -11,6 +13,11 @@ describe('Array', function() {
   })
 });
 
+/**
+ * GATEWAYS
+ *
+ * Testing ability of the gateways to form URLs from a set of parameters
+ */
 var createGateway = require('../src/gateways');
 describe('Search Gateway', function() {
 
@@ -43,11 +50,19 @@ describe('PMC full text gateway', () => {
     });
 
   });
-})
+});
 
-const parse = require('../src/gateways/parse');
+/**
+ * PARSERS
+ *
+ */
+
+/**
+ * Define helper functions to get JSON data as JavaScript so that we can
+ * query it
+ */
 function getDoc(filename, callback) {
-
+  const parse = require('../src/gateways/parse');
   var fs = require('fs');
   var path = require('path');
   fs.readFile(path.join(__dirname, 'docs', filename), 'UTF-8', (err, data) => {
@@ -55,8 +70,69 @@ function getDoc(filename, callback) {
   });
 }
 
-var q = require('../src/queries');
+/** Define helper function to determine if an object is a pubmed summary */
+function isPubmedSummary(obj) {
+  check.number(obj.pmid);
+  check.object(obj.raw);
+  check.string(obj.title);
+  check.string(obj.authors);
+  check.emptyString(obj.abstract);
+  check.string(obj.pubDate);
+}
+
+
+describe('Summary parser', function() {
+  const sq = require('../src/queries/summaries');
+  // Parser of a single summary
+
+  describe('formatAuthors', function() {
+
+    it('should return the article authors as a string', function() {
+      const authors = [
+        {name: 'Ydenberg CA'},
+        {name: 'Johnstone A'}
+      ]
+      var result = sq.formatAuthors(authors);
+      assert.equal('Ydenberg CA, Johnstone A', result);
+    });
+
+    it('should return an empty string in response to an empty array', function() {
+      var result = sq.formatAuthors([])
+      check.emptyString(result);
+    });
+
+  });
+
+  describe('summary', function() {
+
+    it('should return an object containing the important data at the top level and the entire summary embedded under the "raw" sub-object', function(done) {
+      getDoc('summary_single.json', (err, contents) => {
+        const result = sq.summary(contents);
+        isPubmedSummary(result);
+        done();
+      })
+    });
+
+  });
+
+  describe('sort', function() {
+
+    it('should sort by reverse publication date order, by default', function(done) {
+      const papers = [
+        {pubDate: '1990'},
+        {pubDate: '2010'},
+        {pubDate: '2000'}
+      ];
+      const result = sq.sortSummaries(papers);
+      assert.equal(result[0].pubDate, 2010);
+      done();
+    });
+  });
+
+});
+
 describe('parser', function() {
+  var q = require('../src/queries');
 
   describe('count', function() {
     it('should find the count field in a JSON search result', function(done) {
@@ -79,7 +155,9 @@ describe('parser', function() {
   describe('summary', function() {
     it('should find all of the info for each summary in the result set', function(done) {
       getDoc('summary.json', function(err, contents) {
-        assert.equal(q.summaries(contents).length, 9);
+        q.summaries(contents).forEach(summary => {
+          isPubmedSummary(summary);
+        })
         done();
       });
     });
@@ -106,9 +184,6 @@ describe('parser', function() {
 });
 
 
-function areSummaries(summaries) {
-  return (typeof summaries[0].articleids === 'object');
-}
 
 var pubmed = require('../src/pubmed');
 describe('Pubmed module', function() {
@@ -116,21 +191,21 @@ describe('Pubmed module', function() {
 
   it('should perform a search', function(done) {
     pubmed.search('ydenberg ca').then(results => {
-      assert(areSummaries(results.papers));
+      results.papers.forEach(isPubmedSummary);
       done();
     })
   });
 
   it('should return papers that cite this one', function(done) {
     pubmed.citedBy(19188495).then(results => {
-      assert(areSummaries(results));
+      results.forEach(isPubmedSummary);
       done();
     });
   });
 
   it('should return papers that are similar to this one', function(done) {
     pubmed.similar(19188495).then(results => {
-      assert(areSummaries(results));
+      results.forEach(isPubmedSummary);
       done();
     });
   });

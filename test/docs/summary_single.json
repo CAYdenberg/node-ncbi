@@ -1,0 +1,136 @@
+{
+    "uid": "26147656",
+    "pubdate": "2015 Jul",
+    "epubdate": "2015 Aug 22",
+    "source": "Cytoskeleton (Hoboken)",
+    "authors": [
+        {
+            "name": "Ydenberg CA",
+            "authtype": "Author",
+            "clusterid": ""
+        },
+        {
+            "name": "Johnston A",
+            "authtype": "Author",
+            "clusterid": ""
+        },
+        {
+            "name": "Weinstein J",
+            "authtype": "Author",
+            "clusterid": ""
+        },
+        {
+            "name": "Bellavance D",
+            "authtype": "Author",
+            "clusterid": ""
+        },
+        {
+            "name": "Jansen S",
+            "authtype": "Author",
+            "clusterid": ""
+        },
+        {
+            "name": "Goode BL",
+            "authtype": "Author",
+            "clusterid": ""
+        }
+    ],
+    "lastauthor": "Goode BL",
+    "title": "Combinatorial genetic analysis of a network of actin disassembly-promoting factors.",
+    "sorttitle": "combinatorial genetic analysis of a network of actin disassembly promoting factors ",
+    "volume": "72",
+    "issue": "7",
+    "pages": "349-61",
+    "lang": [
+        "eng"
+    ],
+    "nlmuniqueid": "101523844",
+    "issn": "1949-3584",
+    "essn": "1949-3592",
+    "pubtype": [
+        "Journal Article"
+    ],
+    "recordstatus": "PubMed - in process",
+    "pubstatus": "256",
+    "articleids": [
+        {
+            "idtype": "pubmed",
+            "idtypen": 1,
+            "value": "26147656"
+        },
+        {
+            "idtype": "doi",
+            "idtypen": 3,
+            "value": "10.1002/cm.21231"
+        },
+        {
+            "idtype": "eid",
+            "idtypen": 8,
+            "value": "26147656"
+        },
+        {
+            "idtype": "rid",
+            "idtypen": 8,
+            "value": "26147656"
+        }
+    ],
+    "history": [
+        {
+            "pubstatus": "received",
+            "date": "2015/06/23 00:00"
+        },
+        {
+            "pubstatus": "revised",
+            "date": "2015/06/29 00:00"
+        },
+        {
+            "pubstatus": "accepted",
+            "date": "2015/07/01 00:00"
+        },
+        {
+            "pubstatus": "aheadofprint",
+            "date": "2015/08/22 00:00"
+        },
+        {
+            "pubstatus": "entrez",
+            "date": "2015/07/07 06:00"
+        },
+        {
+            "pubstatus": "pubmed",
+            "date": "2015/07/07 06:00"
+        },
+        {
+            "pubstatus": "medline",
+            "date": "2015/07/07 06:00"
+        }
+    ],
+    "references": [
+    ],
+    "attributes": [
+        "Has Abstract"
+    ],
+    "pmcrefcount": 0,
+    "fulljournalname": "Cytoskeleton (Hoboken, N.J.)",
+    "elocationid": "doi: 10.1002/cm.21231",
+    "viewcount": 260,
+    "doctype": "citation",
+    "srccontriblist": [
+    ],
+    "booktitle": "",
+    "medium": "",
+    "edition": "",
+    "publisherlocation": "",
+    "publishername": "",
+    "srcdate": "",
+    "reportnumber": "",
+    "availablefromurl": "",
+    "locationlabel": "",
+    "doccontriblist": [
+    ],
+    "docdate": "",
+    "bookname": "",
+    "chapter": "",
+    "sortpubdate": "2015/07/01 00:00",
+    "sortfirstauthor": "Ydenberg CA",
+    "vernaculartitle": ""
+}

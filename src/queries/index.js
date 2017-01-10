@@ -1,5 +1,7 @@
 const update = require('react-addons-update');
 
+const summaryQueries = require('./summaries');
+
 const queries = {
   /**
    * Perform a deep search on an object. Return an array of nodes identified by
@@ -91,10 +93,12 @@ const queries = {
       //papers are indexed by their uid, so if the key can be a number,
       // we should include it in the summary array. Otherwise we should skip it.
       if (parseInt(key, 10)) {
-        found.push(results[key]);
+        const raw = results[key];
+        const summary = summaryQueries.summary(raw);
+        found.push(summary);
       }
     });
-    return found;
+    return summaryQueries.sortSummaries(found);
   },
 
   /**
