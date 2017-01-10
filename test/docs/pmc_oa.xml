@@ -1,0 +1,4580 @@
+<pmc-articleset>
+<article xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML" article-type="research-article">
+<?properties open_access?>
+<front>
+<journal-meta>
+<journal-id journal-id-type="nlm-ta">Mol Biol Cell</journal-id>
+<journal-id journal-id-type="iso-abbrev">Mol. Biol. Cell</journal-id>
+<journal-id journal-id-type="hwp">molbiolcell</journal-id>
+<journal-id journal-id-type="pmc">mbc</journal-id>
+<journal-id journal-id-type="publisher-id">Mol. Bio. Cell</journal-id>
+<journal-title-group>
+<journal-title>Molecular Biology of the Cell</journal-title>
+</journal-title-group>
+<issn pub-type="ppub">1059-1524</issn>
+<issn pub-type="epub">1939-4586</issn>
+<publisher>
+<publisher-name>The American Society for Cell Biology</publisher-name>
+</publisher>
+</journal-meta>
+<article-meta>
+<article-id pub-id-type="pmid">22323294</article-id>
+<article-id pub-id-type="pmc">3315798</article-id>
+<article-id pub-id-type="publisher-id">E11-08-0723</article-id>
+<article-id pub-id-type="doi">10.1091/mbc.E11-08-0723</article-id>
+<article-categories>
+<subj-group subj-group-type="heading">
+<subject>Articles</subject>
+<subj-group>
+<subject>Cell Interactions</subject>
+</subj-group>
+</subj-group>
+<series-title>
+A Highlights from
+<italic>MBoC</italic>
+Selection
+</series-title>
+</article-categories>
+<title-group>
+<article-title>
+Cdc42p and Fus2p act together late in yeast cell fusion
+</article-title>
+</title-group>
+<contrib-group>
+<contrib contrib-type="author">
+<name>
+<surname>Ydenberg</surname>
+<given-names>Casey A.</given-names>
+</name>
+<xref ref-type="author-notes" rid="FN1">*</xref>
+</contrib>
+<contrib contrib-type="author">
+<name>
+<surname>Stein</surname>
+<given-names>Richard A.</given-names>
+</name>
+</contrib>
+<contrib contrib-type="author">
+<name>
+<surname>Rose</surname>
+<given-names>Mark D.</given-names>
+</name>
+<xref ref-type="corresp" rid="cor1">
+<sup>1</sup>
+</xref>
+</contrib>
+<aff>
+Department of Molecular Biology, Princeton University, Princeton, NJ 08544
+</aff>
+</contrib-group>
+<contrib-group>
+<contrib contrib-type="editor">
+<name>
+<surname>Lew</surname>
+<given-names>Daniel J.</given-names>
+</name>
+<role>Monitoring Editor</role>
+</contrib>
+<aff>Duke University</aff>
+</contrib-group>
+<author-notes>
+<fn fn-type="present-address" id="FN1">
+<p>
+*Present address: Rosenstiel Center for Biomedical Research, Brandeis University, Waltham, MA 02454.
+</p>
+</fn>
+<corresp id="cor1">
+<sup>1</sup>
+Address correspondence to: Mark D. Rose (
+<email>mdrose@princeton.edu</email>
+).
+</corresp>
+</author-notes>
+<pub-date pub-type="ppub">
+<day>01</day>
+<month>4</month>
+<year>2012</year>
+</pub-date>
+<volume>23</volume>
+<issue>7</issue>
+<fpage>1208</fpage>
+<lpage>1218</lpage>
+<history>
+<date date-type="received">
+<day>26</day>
+<month>8</month>
+<year>2011</year>
+</date>
+<date date-type="rev-recd">
+<day>27</day>
+<month>1</month>
+<year>2012</year>
+</date>
+<date date-type="accepted">
+<day>31</day>
+<month>1</month>
+<year>2012</year>
+</date>
+</history>
+<permissions>
+<copyright-statement>
+© 2012 Ydenberg
+<italic>et al.</italic>
+This article is distributed by The American Society for Cell Biology under license from the author(s). Two months after publication it is available to the public under an Attribution–Noncommercial–Share Alike 3.0 Unported Creative Commons License (
+<ext-link ext-link-type="uri" xlink:href="http://creativecommons.org/licenses/by-nc-sa/3.0">http://creativecommons.org/licenses/by-nc-sa/3.0</ext-link>
+).
+</copyright-statement>
+<copyright-year>2012</copyright-year>
+<license license-type="creative-commons">
+<license-p>
+“ASCB®,” “The American Society for Cell Biology®,” and “Molecular Biology of the Cell®” are registered trademarks of The American Society of Cell Biology.
+</license-p>
+</license>
+</permissions>
+<self-uri xlink:title="pdf" xlink:type="simple" xlink:href="1208.pdf"/>
+<abstract abstract-type="precis">
+<p>
+Cdc42p is the master regulator of morphogenesis in eukaryotic cells. It has an additional role in cell fusion, acting later in the pathway, after cells have undergone the changes in polarization and growth required for fusion. Cdc42p acts in concert with Fus2p to allow cell fusion.
+</p>
+</abstract>
+<abstract>
+<p>
+Cell fusion is the key event of fertilization that gives rise to the diploid zygote and is a nearly universal aspect of eukaryotic biology. In the yeast
+<italic>Saccharomyces cerevisiae</italic>
+, several mutants have been identified that are defective for cell fusion, and yet the molecular mechanism of this process remains obscure. One obstacle has been that genetic screens have mainly focused on mating-specific factors, whereas the process likely involves housekeeping proteins as well. Here we implicate Cdc42p, an essential protein with roles in multiple aspects of morphogenesis, as a core component of the yeast cell fusion pathway. We identify a point mutant in the Rho-insert domain of
+<italic>CDC42</italic>
+, called
+<italic>cdc42-138</italic>
+, which is specifically defective in cell fusion. The cell fusion defect is not a secondary consequence of ineffective signaling or polarization. Genetic and morphological data show that Cdc42p acts at a late stage in cell fusion in concert with a key cell fusion regulator, Fus2p, which contains a Dbl-homology domain. We find that Fus2p binds specifically with activated Cdc42p, and binding is blocked by the
+<italic>cdc42-138</italic>
+mutation. Thus, in addition to signaling and morphogenetic roles in mating, Cdc42p plays a role late in cell fusion via activation of Fus2p.
+</p>
+</abstract>
+</article-meta>
+</front>
+<body>
+<sec>
+<title>INTRODUCTION</title>
+<p>
+Cell fusion is widespread in the eukaryotic kingdom. In addition to the familiar fertilization events necessary to restore the diploid state after meiosis (
+<xref ref-type="bibr" rid="B52">Primakoff and Myles, 2002</xref>
+), fusion occurs throughout the development of many multicellular organisms, including the formation of muscle, bone, and the mammalian placenta (
+<xref ref-type="bibr" rid="B63">Vignery, 2000</xref>
+;
+<xref ref-type="bibr" rid="B51">
+Potgens
+<italic>et al.</italic>
+, 2002
+</xref>
+;
+<xref ref-type="bibr" rid="B28">Horsley and Pavlath, 2004</xref>
+;
+<xref ref-type="bibr" rid="B10">Chen and Olson, 2005</xref>
+). In contrast to virus–cell fusion and fusion between intracellular membranes, the molecular mechanism of cell fusion is not well understood.
+</p>
+<p>
+Cell fusion in budding yeast occurs during mating events between haploid cells (
+<xref ref-type="bibr" rid="B38">Marsh and Rose, 1997</xref>
+;
+<xref ref-type="bibr" rid="B65">Ydenberg and Rose, 2008</xref>
+). Yeast haploid cells of the
+<bold>a</bold>
+and α mating types each secrete pheromones sensed by a receptor expressed by the opposite cell type. This induces characteristic gene expression and developmental changes resulting in polarized growth or “shmooing” in the direction of the mating partner, followed by cell fusion and nuclear fusion. Although numerous mutants have been identified that block fusion, many of them are now known to have prior defects in pheromone signaling and polarization, suggesting that the cell fusion defect is a secondary consequence of inefficient completion of earlier mating events (
+<xref ref-type="bibr" rid="B4">
+Brizzio
+<italic>et al.</italic>
+, 1996
+</xref>
+;
+<xref ref-type="bibr" rid="B13">
+Dorer
+<italic>et al.</italic>
+, 1997
+</xref>
+;
+<xref ref-type="bibr" rid="B49">
+Paterson
+<italic>et al.</italic>
+, 2008
+</xref>
+).
+</p>
+<p>
+In contrast, four proteins have been identified that appear to play a direct role in yeast cell fusion without having detectable defects in earlier steps of mating. Mutations in
+<italic>FUS1, FUS2</italic>
+, and
+<italic>RVS161</italic>
+block the removal of cell wall material between mating prezygotes (
+<xref ref-type="bibr" rid="B61">
+Trueheart
+<italic>et al.</italic>
+, 1987
+</xref>
+;
+<xref ref-type="bibr" rid="B62">Trueheart and Fink, 1989</xref>
+;
+<xref ref-type="bibr" rid="B5">
+Brizzio
+<italic>et al.</italic>
+, 1998
+</xref>
+), whereas
+<italic>PRM1</italic>
+mutants block fusion after cell wall removal but before plasma membrane fusion (
+<xref ref-type="bibr" rid="B26">Heiman and Walter, 2000</xref>
+). The molecular function of these proteins is not known, but it may involve the trafficking and/or fusion of mating-specific vesicles that are visualized at the cell fusion zone (
+<xref ref-type="bibr" rid="B19">
+Gammie
+<italic>et al.</italic>
+, 1998
+</xref>
+). These vesicles are delocalized in
+<italic>fus1</italic>
+mutants, as well as in polarization mutants (e.g.,
+<italic>bni1</italic>
+and
+<italic>spa2</italic>
+). The vesicles are properly localized in
+<italic>fus2</italic>
+and
+<italic>rvs161</italic>
+mutants, suggesting that these mutations affect later stages of cell fusion than
+<italic>fus1</italic>
+. The behavior of the vesicles in
+<italic>prm1</italic>
+mutant zygotes has not been reported.
+</p>
+<p>
+Fus2p and Rvs161p form a complex that is transported to the tips of fusing cells (
+<xref ref-type="bibr" rid="B5">
+Brizzio
+<italic>et al.</italic>
+, 1998
+</xref>
+;
+<xref ref-type="bibr" rid="B49">
+Paterson
+<italic>et al.</italic>
+, 2008
+</xref>
+;
+<xref ref-type="bibr" rid="B58">Sheltzer and Rose, 2009</xref>
+). Rvs161p is a BAR domain–containing protein that plays a separate role in endocytosis (
+<xref ref-type="bibr" rid="B11">
+Crouzet
+<italic>et al.</italic>
+, 1991
+</xref>
+) by stabilizing membrane curvature (
+<xref ref-type="bibr" rid="B50">
+Peter
+<italic>et al.</italic>
+, 2004
+</xref>
+). Fus2p contains a Dbl-homology domain, suggesting that it interacts with a Rho-type G protein. In support of this, a large-scale two-hybrid screen identified an interaction between Fus2p and Cdc42p in the GTP-bound form (
+<xref ref-type="bibr" rid="B43">
+Nelson
+<italic>et al.</italic>
+, 2004
+</xref>
+).
+</p>
+<p>
+Yeast Cdc42p plays multiple essential roles during growth and morphogenesis (
+<xref ref-type="bibr" rid="B31">Johnson, 1999</xref>
+;
+<xref ref-type="bibr" rid="B54">
+Richman
+<italic>et al.</italic>
+, 1999
+</xref>
+;
+<xref ref-type="bibr" rid="B32">
+Kozminski
+<italic>et al.</italic>
+, 2000
+</xref>
+;
+<xref ref-type="bibr" rid="B1">
+Adamo
+<italic>et al.</italic>
+, 2001
+</xref>
+), including during mating (
+<xref ref-type="bibr" rid="B60">
+Simon
+<italic>et al.</italic>
+, 1995
+</xref>
+;
+<xref ref-type="bibr" rid="B70">
+Zhao
+<italic>et al.</italic>
+, 1995
+</xref>
+). In late G1, Cdc42p establishes polarized growth toward a specific area of the cell surface to grow a new bud. During mating, the budding axis is overridden by cues that direct Cdc42p activity along the axis of the pheromone gradient (
+<xref ref-type="bibr" rid="B44">Nern and Arkowitz, 1998</xref>
+,
+<xref ref-type="bibr" rid="B45">1999</xref>
+). Cdc42p has been implicated in cell fusion (
+<xref ref-type="bibr" rid="B3">
+Barale
+<italic>et al.</italic>
+, 2006
+</xref>
+), but the stage at which it acts and its molecular functions are not clear. Here we present evidence that Cdc42 has multiple roles in cell fusion, that Fus2p is a direct effector of Cdc42p signaling, and that Cdc42p and Fus2p act together late in the cell fusion pathway. Our results have implications for the molecular mechanism of yeast cell fusion, the function of an uncharacterized domain in Cdc42p, and conservation between fungal and metazoan cell fusion mechanisms.
+</p>
+</sec>
+<sec>
+<title>RESULTS</title>
+<sec>
+<title>The Fus2p Dbl-homology domain promotes cell fusion</title>
+<p>
+Fus2p contains a Dbl-homology domain (
+<xref ref-type="bibr" rid="B49">
+Paterson
+<italic>et al.</italic>
+, 2008
+</xref>
+), suggesting that it may act as a guanine-nucleotide exchange factor for one of the six yeast Rho proteins. Conversely, a two-hybrid study suggested that Fus2p interacted with Cdc42p-Q61L, a GTP-locked allele (
+<xref ref-type="bibr" rid="B43">
+Nelson
+<italic>et al.</italic>
+, 2004
+</xref>
+). These results suggested that Fus2p may be an effector for Cdc42p, since it interacted exclusively with the active form of the GTPase.
+</p>
+<p>
+To assess the importance of the Dbl-homology domain in vivo, we examined the phenotype caused by a deletion of this domain. Fus2p-ΔDbl–green fluorescent protein (GFP) localized to the nucleus in mitotic cells and at the shmoo tip in pheromone-arrested cells, similar to wild-type Fus2p-GFP (
+<xref ref-type="bibr" rid="B49">
+Patterson
+<italic>et al</italic>
+., 2008
+</xref>
+). Therefore the Dbl-homology domain is required for neither localization in mitotic and pheromone-arrested cells nor the regulated change in localization (
+<xref ref-type="fig" rid="F1">Figure 1A</xref>
+). Both proteins were detected at similar levels (
+<xref ref-type="fig" rid="F1">Figure 1B</xref>
+). When this deletion was integrated into the genome to replace the endogenous
+<italic>FUS2</italic>
+locus, the resulting strain was significantly defective for the formation of diploids, although not quite as defective as a complete deletion mutant (
+<italic>fus2</italic>
+Δ;
+<xref ref-type="fig" rid="F1">Figure 1C</xref>
+). To examine the morphology of the zygotes formed by this strain, wild-type and
+<italic>fus2-</italic>
+Δ
+<italic>Dbl</italic>
+strains were mated to a
+<italic>fus2</italic>
+Δ tester strain and stained with FM4-64 to visualize the plasma membrane (
+<xref ref-type="fig" rid="F1">Figure 1D</xref>
+). We then counted the fully unfused zygotes (in which the septum between the mating partners remains intact) and partially unfused zygotes (in which there is a gap in the septum that fails to open completely). Both types of unfused zygotes are indicative of the defect in Fus2p function. The
+<italic>fus2</italic>
+<sup>
+Δ
+<italic>Dbl</italic>
+</sup>
+mutant produced a large number of unfused and partially unfused zygotes (
+<xref ref-type="fig" rid="F1">Figure 1E</xref>
+). Again, the phenotype is not as strong as a null
+<italic>fus2</italic>
+Δ strain, in which the majority of zygotes are fully unfused (compare to
+<xref ref-type="fig" rid="F2">Figure 2B</xref>
+). These results indicate that the
+<italic>fus2</italic>
+<sup>
+Δ
+<italic>Dbl</italic>
+</sup>
+allele is hypomorphic and that this domain is critically important but not absolutely required for Fus2p's cell fusion activity.
+</p>
+<fig id="F1" position="float">
+<label>FIGURE 1:</label>
+<caption>
+<p>
+The Dbl-homology domain is required for cell fusion. (A) Fus2p-ΔDbl-GFP localizes to the shmoo tip. Cells (MY9181) transformed with a plasmid expressing either Fus2p-GFP (pMR5469) or Fus2p-ΔDbl-GFP (pMR5883) were treated with pheromone as indicated for 2 h and examined. (B) Fus2p-ΔDbl-GFP is expressed at similar levels as the wild-type Fus2p-GFP protein. The same strains as in A were analyzed by Western blot using anti-GFP. (C) Diploid formation is defective in
+<italic>fus2-</italic>
+Δ
+<italic>Dbl</italic>
+. Wild type (DDY1300),
+<italic>fus2</italic>
+Δ (MY10016), and
+<italic>fus2-</italic>
+Δ
+<italic>Dbl</italic>
+(MY10933) were mated to
+<italic>fus1 fus2</italic>
+(MY10798) for 4 h at 30°C. (D, E) Cell fusion is defective in
+<italic>fus2-</italic>
+Δ
+<italic>Dbl</italic>
+. The same strains as in C were mated to
+<italic>fus2</italic>
+(MY10797) for 2 h, washed into azide, and stained with FM4-64 to label the plasma membrane. (D) Examples of fusion-defective zygotes. Wild-type zygote (DDY1300xMY10797), partial Fus
+<sup>−</sup>
+zygote (MY10933xMY10797), and full Fus
+<sup>−</sup>
+zygote (MY10933xMY10797). (E) Percentage of zygotes of each morphology produced in matings with the indicated genotype. Gray bars, partial Fus
+<sup>−</sup>
+zygotes; black bars, full Fus
+<sup>−</sup>
+zygotes. n ≥ 133 zygotes imaged in two independent experiments.
+</p>
+</caption>
+<graphic xlink:href="1208fig1"/>
+</fig>
+<fig id="F2" position="float">
+<label>FIGURE 2:</label>
+<caption>
+<p>
+Mutants in the Cdc42p Rho-insert domain are defective for cell fusion. (A, B) A screen for cell fusion–specific alleles of Cdc42p. Wild type (WT; DDY1300),
+<italic>fus2</italic>
+(MY10016), and 20 alleles from a Cdc42p alanine-scanning set were mated to an anti-WT strain (JY431; A) or an anti–
+<italic>fus1 fus2</italic>
+strain (JY429; B). Shown are the alleles discussed in the text. Note that the matings against JY431 are more dilute than against JY429, so that colony formation against the two testers cannot be compared with one another. Images are representative of two independent experiments. (B) Microscopic examination of zygotes. Bilateral matings of the indicated genotype were mated for 2 h at 30°C, washed into azide, and stained with FM4-64. Shown is the percentage of zygotes of each morphology in the indicated genotypes (WT, DDY1300 × DDY1301;
+<italic>fus2</italic>
+, MY10016 × MY10303;
+<italic>cdc42-138</italic>
+, DDY1354 × DDY1355;
+<italic>cdc42-V36M</italic>
+, MY10547 × MY10554; see
+<xref ref-type="bibr" rid="B32">
+Kozminski
+<italic>et al.</italic>
+, 2000
+</xref>
+, for other strain numbers). Gray bars, partial Fus
+<sup>−</sup>
+zygotes; black bars, full Fus
+<sup>−</sup>
+zygotes. n ≥ 122 zygotes imaged in at least two independent experiments. (C) Structure of Cdc42p indicating mutations affecting cell fusion. Mutations are mapped on a space-filling model of human Cdc42p (Brookhaven Protein Database, accession number 1AN0). The Rho-insert domain is shown in yellow, with mutations indicated in shades of red, correlated with the severity of the defect. The Switch I domain is shown in green, with the V36M mutation in dark blue. The Switch II domain is in light blue. Pseudo–wild-type mutations with no effect on cell fusion are not shown.
+</p>
+</caption>
+<graphic xlink:href="1208fig2"/>
+</fig>
+</sec>
+<sec>
+<title>
+Mutations in the Rho-insert domain are defective in cell fusion
+</title>
+<p>
+The interaction between activated Cdc42p and Fus2p suggested that Cdc42p may play a direct, specific role in cell fusion. Cdc42p has at least two defined roles in the mating pathway already: it is required for response to pheromone by activation of the PAK Ste20p (
+<xref ref-type="bibr" rid="B42">
+Moskow
+<italic>et al.</italic>
+, 2000
+</xref>
+) and for defining the site of polarization of the shmoo (
+<xref ref-type="bibr" rid="B46">Nern and Arkowitz, 2000</xref>
+). One mutant allele of
+<italic>cdc42</italic>
+that exhibits a defect in cell fusion has been previously characterized,
+<italic>cdc42-V36M</italic>
+(
+<xref ref-type="bibr" rid="B3">
+Barale
+<italic>et al.</italic>
+, 2006
+</xref>
+). However, given the many potential roles for Cdc42p in mating, the specific defect of
+<italic>cdc43-V36M</italic>
+remained unclear. To look for additional alleles of
+<italic>CDC42</italic>
+that might be specifically defective for Fus2p-mediated cell fusion, we used an alanine-scanning collection created previously (
+<xref ref-type="bibr" rid="B32">
+Kozminski
+<italic>et al.</italic>
+, 2000
+</xref>
+). Twenty mutant alleles, annotated as wild type for growth, were mated to a wild-type strain or a fusion-defective tester strain and examined for the ability to form diploids by a plate mating assay (
+<xref ref-type="fig" rid="F2">Figure 2A</xref>
+and Supplemental Figure S1). Because the
+<italic>fus2</italic>
+Δ single mutant exhibits an obvious defect when mated against a compromised partner (
+<xref ref-type="fig" rid="F2">Figure 2A</xref>
+) but not when mated to the wild-type strain, we reasoned that this approach would allow us to identify alleles that were specifically defective in cell fusion. One allele,
+<italic>cdc42-127</italic>
+, did not mate with either the
+<italic>fus1 fus2</italic>
+or the wild-type partner, indicating that it has a sterile (Ste
+<sup>−</sup>
+) phenotype (
+<xref ref-type="fig" rid="F2">Figure 2A</xref>
+). This mutation, V33A, lies within the Switch I region and was not analyzed further. Two alleles,
+<italic>cdc42-137</italic>
+and
+<italic>-138</italic>
+, exhibited significant mating defects with the
+<italic>fus1 fus2</italic>
+tester strain but not with the wild-type strain, suggesting that they represent cell fusion–specific (Fus
+<sup>−</sup>
+) alleles (
+<xref ref-type="fig" rid="F2">Figure 2B</xref>
+). The two mutations, D121A and D122A, respectively, lie within the Rho-insert domain (
+<xref ref-type="fig" rid="F2">Figure 2C</xref>
+) and alter consecutive negatively charged residues.
+</p>
+<p>
+To confirm that the mating defect against the compromised strain was due to reduced cell fusion efficiency, we quantified zygote morphology in these mutants. For these experiments, we used a bilateral mating configuration in which both partners contain the same mutation of interest. Under these conditions, wild-type zygotes typically have no visible septum between the mating partners, whereas
+<italic>cdc42-137</italic>
+and
+<italic>138</italic>
+zygotes frequently had all or part of the septum intact, indicating that they had not fully fused (
+<xref ref-type="fig" rid="F2">Figure 2B</xref>
+; 44% of
+<italic>cdc42-137</italic>
+zygotes and 75% of
+<italic>cdc42-138</italic>
+zygotes were fusion defective compared with 8% of wild-type zygotes).
+</p>
+<p>
+Given the location of these alleles within the Rho-insert domain, we examined two other mutations constructed in the alanine-scanning collection that altered residues in this region but that had not exhibited a defect in the plate mating screen. Both mutants showed a significant cell fusion defect;
+<italic>cdc42-105</italic>
+(E127A, K128A) produced 20% fusion defective zygotes, and
+<italic>cdc42-107</italic>
+(R131A, R133A, R135A) produced 28% fusion defective zygotes (
+<xref ref-type="fig" rid="F1">Figure 1C</xref>
+). These defects were not as strong as those for
+<italic>cdc42-137</italic>
+and
+<italic>cdc42-138</italic>
+, explaining why they were missed in the less sensitive plate mating assay. Together the data indicate that the Rho-insert domain of Cdc42p, which had not previously been shown to have a specific function, plays a significant and unexpected role in cell fusion. To further characterize the defect in cell fusion, we focused on the more potent
+<italic>cdc42-138</italic>
+allele.
+</p>
+</sec>
+<sec>
+<title>
+The fusion defect in cdc42-138 is not due to defective pheromone signaling
+</title>
+<p>
+Cdc42p plays a known role in the pheromone-signaling pathway (
+<xref ref-type="bibr" rid="B60">
+Simon
+<italic>et al.</italic>
+, 1995
+</xref>
+;
+<xref ref-type="bibr" rid="B70">
+Zhao
+<italic>et al.</italic>
+, 1995
+</xref>
+). One possibility was that the defect in cell fusion is simply due to partly compromised signaling (
+<xref ref-type="bibr" rid="B4">
+Brizzio
+<italic>et al.</italic>
+, 1996
+</xref>
+). To isolate Cdc42p from any effects on the pheromone pathway, we used a
+<italic>STE20</italic>
+-Δ
+<italic>CRIB</italic>
+mutation (
+<xref ref-type="bibr" rid="B34">
+Lamson
+<italic>et al.</italic>
+, 2002
+</xref>
+), which removes the Cdc42p-binding domain in Ste20p, thereby rendering the protein and the pheromone response pathway insensitive to signaling from Cdc42p. In the
+<italic>STE20</italic>
+-Δ
+<italic>CRIB</italic>
+background,
+<italic>cdc42-138</italic>
+had no effect on pheromone signaling (
+<xref ref-type="fig" rid="F3">Figure 3A</xref>
+). In contrast, mating between
+<italic>STE20</italic>
+-Δ
+<italic>CRIB cdc42-138</italic>
+double mutants was significantly more defective than matings between the
+<italic>STE20</italic>
+-Δ
+<italic>CRIB</italic>
+controls (
+<xref ref-type="fig" rid="F3">Figure 3B</xref>
+). Therefore
+<italic>cdc42-138</italic>
+is defective in an aspect of mating that is independent of signaling to Ste20p. We used cytoplasmic transfer assays to confirm that the mating defect was due to a cell fusion defect (
+<xref ref-type="fig" rid="F3">Figure 3, C and D</xref>
+). When a
+<italic>fus2</italic>
+Δ tester strain expressing cytoplasmic GFP was mated to a
+<italic>STE20-</italic>
+Δ
+<italic>CRIB</italic>
+strain, the GFP was transferred to the partner in 95% of the zygotes (corresponding to Fus
+<sup>+</sup>
+and partial Fus
+<sup>−</sup>
+zygotes). When the
+<italic>STE20-</italic>
+Δ
+<italic>CRIB</italic>
+strain also contained the
+<italic>cdc42-138</italic>
+mutation, cytoplasmic transfer was observed in only 49% of zygotes, indicating that
+<italic>cdc42-138</italic>
+had a full cell fusion defect in more than half of the zygotes in this strain (n ≥ 469). We conclude that
+<italic>CDC42</italic>
+plays a role in cell fusion that is independent of its role in signal transduction.
+</p>
+<fig id="F3" position="float">
+<label>FIGURE 3:</label>
+<caption>
+<p>
+The cell fusion defect in
+<italic>cdc42-138</italic>
+is not due to defective pheromone signaling. (A)
+<italic>cdc42-138</italic>
+has no defect in signaling in the context of
+<italic>STE20-</italic>
+Δ
+<italic>CRIB</italic>
+.
+<italic>STE20</italic>
+Δ−
+<italic>CRIB</italic>
+(MY10925; black bars) and
+<italic>STE20-</italic>
+Δ
+<italic>CRIB cdc42-138</italic>
+(MY10926; gray bars), transformed with
+<italic>fus1</italic>
+-
+<italic>LacZ</italic>
+(pSB231), were treated with the indicated concentrations of α-factor for 90 min and their response measured via β-galactosidase assay. Error bars represent SD of three independent experiments. (B–D)
+<italic>cdc42-138</italic>
+still exhibits a cell fusion defect in the
+<italic>STE20-</italic>
+Δ
+<italic>CRIB</italic>
+background. (B)
+<italic>STE20-</italic>
+Δ
+<italic>CRIB</italic>
+(MY10925) and
+<italic>STE20-</italic>
+Δ
+<italic>CRIB cdc42-138</italic>
+(MY10926) were mated to
+<italic>fus2</italic>
+(MY10797) for 4 h at 30°C, and diploids were selected by replica plating to selective media (C, D) Cytoplasmic transfer assays were performed using the same strains as in B, in which one partner expresses cytoplasmic GFP. (C) Examples of zygotes showing transfer (top) or in which cell fusion was blocked (bottom). The latter phenotype corresponds to the “Full” Fus
+<sup>−</sup>
+cell fusion defect. (D) Quantification of the data in C. More than 460 zygotes were imaged in two independent experiments. (E) The defect in
+<italic>cdc42-138</italic>
+is not mating-type specific. WT and
+<italic>cdc42-138</italic>
+cells were mated in the orientations indicated. Gray bars, partial Fus
+<sup>−</sup>
+zygotes; black bars, full Fus
+<sup>−</sup>
+zygotes. n ≥ 176 zygotes imaged in two independent experiments.
+</p>
+</caption>
+<graphic xlink:href="1208fig3"/>
+</fig>
+<p>
+A second possible explanation for the cell fusion defect in
+<italic>cdc42-138</italic>
+is that the mutants produce reduced levels of
+<bold>a</bold>
+-factor or α-factor, leading to a fusion defect due to reduced signaling in the partner (
+<xref ref-type="bibr" rid="B4">
+Brizzio
+<italic>et al.</italic>
+, 1996
+</xref>
+). Because the genes required for production and secretion of
+<bold>a</bold>
+-factor and α-factor are different, cell fusion mutations that affect pheromone levels are mating-type specific (
+<xref ref-type="bibr" rid="B4">
+Brizzio
+<italic>et al.</italic>
+, 1996
+</xref>
+). In crosses between
+<italic>cdc42-138</italic>
+strains and wild-type (WT) strains, the efficiency of cell fusion was independent of whether the
+<bold>a</bold>
+-cell or the α-cell contained the mutation (
+<xref ref-type="fig" rid="F3">Figure 3E</xref>
+;
+<bold>a</bold>
+WT × α
+<italic>cdc42-138</italic>
+produced 32% fusion-defective zygotes, compared with 41% for
+<bold>a</bold>
+<italic>cdc42-138</italic>
+× α WT). Moreover, the defect was significantly stronger when both strains contained the
+<italic>cdc42-138</italic>
+mutation, showing that Cdc42p function plays a role in cell fusion in both parents. These data indicate that the fusion defect in
+<italic>cdc42-138</italic>
+is not due to defective pheromone signaling.
+</p>
+</sec>
+<sec>
+<title>
+CDC42 plays independent roles in cell polarization and fusion
+</title>
+<p>
+Previously a point mutation within the Switch I domain of Cdc42p (
+<italic>cdc42</italic>
+-
+<italic>V36M</italic>
+) was reported to cause a cell fusion–defective phenotype (
+<xref ref-type="bibr" rid="B3">
+Barale
+<italic>et al.</italic>
+, 2006
+</xref>
+). To ensure that any differences observed between
+<italic>cdc42</italic>
+-
+<italic>V36M</italic>
+and
+<italic>cdc42-138</italic>
+would not be due to strain background, we re-created this allele in our strain background. We confirmed that
+<italic>cdc42-V36M</italic>
+caused a cell fusion defect, producing a significant number of unfused zygotes (
+<xref ref-type="fig" rid="F2">Figure 2B</xref>
+; 53% had fusion defects).
+</p>
+<p>
+Mutations that affect the polarization of cells in response to pheromone (e.g.,
+<italic>spa2, bni1, pea2</italic>
+) exhibit corresponding defects in cell fusion (
+<xref ref-type="bibr" rid="B13">
+Dorer
+<italic>et al.</italic>
+, 1997
+</xref>
+;
+<xref ref-type="bibr" rid="B19">
+Gammie
+<italic>et al.</italic>
+, 1998
+</xref>
+). Because Cdc42p is critically important for polarity during both mating and mitotic growth (
+<xref ref-type="bibr" rid="B8">Chant, 1999</xref>
+;
+<xref ref-type="bibr" rid="B53">Pruyne and Bretscher, 2000</xref>
+;
+<xref ref-type="bibr" rid="B7">Casamayor and Snyder, 2002</xref>
+), we next examined the morphological responses of
+<italic>cdc42-138</italic>
+and
+<italic>cdc42-V36M</italic>
+to pheromone.
+</p>
+<p>
+When wild-type or
+<italic>cdc42-138</italic>
+cells were treated with pheromone, they formed characteristic pointed mating projections (
+<xref ref-type="fig" rid="F4">Figure 4A</xref>
+). The actin cytoskeleton became polarized, with actin patches concentrated in the projection and cables oriented toward the shmoo tip (
+<xref ref-type="fig" rid="F4">Figure 4A</xref>
+; 85% of wild-type cells and 81% of
+<italic>cdc42-138</italic>
+cells had polarized actin). In contrast,
+<italic>cdc42-V36M</italic>
+cells were round or oblong, without an obvious projection of any kind (
+<xref ref-type="fig" rid="F4">Figure 4A</xref>
+). Actin patches were not tightly localized at any particular point but instead were dispersed throughout the cell (
+<xref ref-type="fig" rid="F4">Figure 4A</xref>
+; only 18% had polarized actin).
+</p>
+<fig id="F4" position="float">
+<label>FIGURE 4:</label>
+<caption>
+<p>
+<italic>cdc42-138</italic>
+is not defective in cell polarization in response to pheromone. (A) Actin localization in
+<italic>cdc42-138</italic>
+and
+<italic>cdc42</italic>
+-
+<italic>V36M</italic>
+. WT (DDY1300),
+<italic>cdc42-138</italic>
+(DDY1354), and
+<italic>cdc42-V36M</italic>
+(MY10547) were treated with α-factor for 90 min, fixed, and stained with Texas red–phalloidin. Representative images are shown. n ≥ 241 cells in three independent experiments. (B) Fus2p-GFP localization in
+<italic>cdc42-138</italic>
+and
+<italic>V36M</italic>
+. The same strains were transformed with
+<italic>
+FUS2::GFP
+<sub>104</sub>
+</italic>
+(pMR5482) and imaged after treatment with α-factor for 90 min. Representative images are shown. n ≥ 55 cells in two independent experiments.
+</p>
+</caption>
+<graphic xlink:href="1208fig4"/>
+</fig>
+<p>
+We also examined the localization of Fus2p. Fus2p-GFP localizes tightly to the shmoo tip in wild-type cells but is usually dispersed or nuclear in polarization mutants such as
+<italic>bni1</italic>
+and
+<italic>spa2</italic>
+(
+<xref ref-type="bibr" rid="B49">
+Paterson
+<italic>et al.</italic>
+, 2008
+</xref>
+). Wild-type and
+<italic>cdc42-138</italic>
+shmoos contained predominantly tip-localized Fus2p-GFP (
+<xref ref-type="fig" rid="F4">Figure 4B</xref>
+; Fus2p-GFP was predominantly polarized in 98 and 80% of cells, respectively). The small but significant (p = 0.004, Fisher's exact test) decrease in Fus2-GFP localization is consistent with an interaction with Cdc42p. In contrast, in the majority of
+<italic>cdc42-V36M</italic>
+cells (56%), Fus2p-GFP was dispersed or partially nuclear. In only 44% of
+<italic>cdc42-V36M</italic>
+cells was Fus2p-GFP localized to a point on the cortex (usually at one of the ends of the oval-shaped cells). However, even in these cells, localization was not wild type; time-lapse imaging of Fus2p-GFP in
+<italic>cdc42-V36M</italic>
+showed that the cortical spots were unstable, moving rapidly away from the cortex and showing significant nuclear localization (Supplemental Movie S2). Similar unstable localization was observed in
+<italic>spa2</italic>
+and
+<italic>bni1</italic>
+mutants (
+<xref ref-type="bibr" rid="B49">
+Paterson
+<italic>et al.</italic>
+, 2008
+</xref>
+).
+</p>
+<p>
+Together, these data indicate that the
+<italic>cdc42-138</italic>
+mutant responds to pheromone and polarizes normally. Therefore, the block in cell fusion is not likely to be a secondary consequence of defects in earlier events in mating. In contrast, the
+<italic>cdc42-V36M</italic>
+mutant polarizes poorly in response to pheromone, suggesting that the fusion defect may be largely due to indirect effects on the cytoskeleton during cell polarization.
+</p>
+</sec>
+<sec>
+<title>Cdc42-138 acts late in cell fusion</title>
+<p>
+Several classes of cell fusion mutants are now known that can be distinguished by their morphological characteristics. Mutations in
+<italic>SPA2, FUS1</italic>
+,
+<italic>FUS2</italic>
+, and
+<italic>RVS161</italic>
+all block prezygotes at the stage of cell wall removal (
+<xref ref-type="bibr" rid="B19">
+Gammie
+<italic>et al.</italic>
+, 1998
+</xref>
+). As discussed earlier,
+<italic>SPA2</italic>
+and
+<italic>BNI1</italic>
+primarily affect polarization, and mutants form broad adhesion zones between the fusing cells. The respective phenotypes can be distinguished at the level of electron microscopy;
+<italic>fus2</italic>
+and
+<italic>rvs161</italic>
+mutants have vesicles tightly clustered at the zone of cell fusion, similar to wild-type zygotes prior to fusion. In contrast,
+<italic>fus1</italic>
+and
+<italic>spa2</italic>
+mutants contain broadly dispersed vesicles that do not localize to a particular point. Double-mutant and suppression analysis showed that
+<italic>fus1</italic>
+and
+<italic>fus2</italic>
+work in overlapping but distinct pathways, whereas
+<italic>fus2</italic>
+and
+<italic>rvs161</italic>
+work together (
+<xref ref-type="bibr" rid="B61">
+Trueheart
+<italic>et al.</italic>
+, 1987
+</xref>
+;
+<xref ref-type="bibr" rid="B5">
+Brizzio
+<italic>et al.</italic>
+, 1998
+</xref>
+;
+<xref ref-type="bibr" rid="B19">
+Gammie
+<italic>et al.</italic>
+, 1998
+</xref>
+).
+</p>
+<p>
+Electron microscopy of
+<italic>cdc42-138</italic>
+bilateral zygotes revealed that they contain intact cell walls between the mating partners (
+<xref ref-type="fig" rid="F5">Figure 5</xref>
+). Vesicles were observed to be tightly clustered in a single region at the zone of cell fusion (
+<xref ref-type="fig" rid="F5">Figure 5, B and C</xref>
+; 35% of sections through
+<italic>cdc42-138</italic>
+prezygotes had vesicles, n = 48; of these, 89% had clustered vesicles, n = 19). This phenotype is very similar to that of
+<italic>fus2</italic>
+(
+<xref ref-type="fig" rid="F5">Figure 5D</xref>
+) and
+<italic>rvs161</italic>
+but distinct from that of
+<italic>spa2</italic>
+and
+<italic>fus1</italic>
+(
+<xref ref-type="bibr" rid="B19">
+Gammie
+<italic>et al.</italic>
+, 1998
+</xref>
+). We also observed dark-staining plaques and membrane invaginations in
+<italic>cdc42-138</italic>
+zygotes (
+<xref ref-type="fig" rid="F5">Figure 5C</xref>
+; 31% had plaques and 5% had invaginations, n = 48). These phenotypes were previously shown to be unique to
+<italic>fus2</italic>
+and
+<italic>rvs161</italic>
+mutants and were not observed in
+<italic>fus1</italic>
+and
+<italic>spa2</italic>
+mutants (
+<xref ref-type="bibr" rid="B19">
+Gammie
+<italic>et al.</italic>
+, 1998
+</xref>
+). Furthermore, the formation of these structures was dependent on
+<italic>FUS1</italic>
+and
+<italic>SPA2</italic>
+function because they were not observed in
+<italic>fus1 fus2</italic>
+or
+<italic>spa2 fus2</italic>
+double mutants. The fact that
+<italic>cdc42-138</italic>
+formed these structures provides evidence that the
+<italic>SPA2</italic>
+and
+<italic>FUS1</italic>
+pathways remain functional.
+</p>
+<fig id="F5" position="float">
+<label>FIGURE 5:</label>
+<caption>
+<p>
+EM of
+<italic>cdc42-138</italic>
+and
+<italic>fus2</italic>
+zygotes.
+<italic>cdc42-138</italic>
+bilateral zygotes (DDY1354 × DDY1355) were examined by electron microscopy. (A) A zygote, showing the unfused nuclei and septum, containing cell wall material. Image is representative of 91 zygotes. (B) The waist regions of the same zygotes, showing vesicles clustered at the zone of cell fusion. Images are representative of 32 zygotes in which vesicles were observed. The vesicles were clustered in 91% of this class. (C) Dark plaques and a membrane invagination at the cell fusion zone. These phenotypes were observed in 21 and 10% of all zygotes examined, respectively. (D) A
+<italic>fus2</italic>
+zygote, for comparison. Scale bar, 0.5 μm.
+</p>
+</caption>
+<graphic xlink:href="1208fig5"/>
+</fig>
+<p>
+To further characterize the morphology of
+<italic>cdc42-138</italic>
+, we measured the breadth of the zygote cell fusion zones (referred as the zygote waistlines). In wild-type matings, unfused prezygotes have an average waistline of 1.0 ± 0.3 μm, which expands to 1.6 ± 0.2 μm soon after nuclear fusion (
+<xref ref-type="bibr" rid="B19">
+Gammie
+<italic>et al.</italic>
+, 1998
+</xref>
+). When only unfused prezygotes were considered,
+<italic>cdc42-138</italic>
+bilateral zygotes had waistlines measuring 1.4 ± 0.3 μm (n = 48). It is surprising that this was significantly narrower than for
+<italic>fus2</italic>
+prezygotes (1.7 ± 0.5 μm, n = 19, p = 0.008, Student's
+<italic>t</italic>
+test). We reasoned that because the
+<italic>cdc42-138</italic>
+mutant has a weaker phenotype than the
+<italic>fus2</italic>
+mutant, a significant portion of the zygotes with broad zones may have fused, leading to a shorter average waistline. In support of this, when the entire population of fused and unfused zygotes was considered, there was no difference between the average waistline of the
+<italic>cdc42-138</italic>
+and
+<italic>fus2</italic>
+mutant zygotes (1.6 ± 0.4 μm, n = 91, vs. 1.7 ± 0.5 μm, n = 20, respectively; p = 0.22). Most important, the data provide additional evidence that the
+<italic>cdc42-138</italic>
+mutant is morphologically dissimilar from polarization mutants, which have significantly wider waistlines than the
+<italic>fus2</italic>
+mutant (
+<xref ref-type="bibr" rid="B19">
+Gammie
+<italic>et al.</italic>
+, 1998
+</xref>
+). Together the data show that the
+<italic>cdc42-138</italic>
+mutant is morphologically most similar to
+<italic>fus2</italic>
+and
+<italic>rvs161</italic>
+mutants. Furthermore, they show that
+<italic>CDC42</italic>
+plays a role in the very latest stages of cell fusion.
+</p>
+</sec>
+<sec>
+<title>FUS2 and CDC42 work together</title>
+<p>
+To test whether
+<italic>FUS2</italic>
+and
+<italic>CDC42</italic>
+act in the same pathway for cell fusion, we constructed a
+<italic>fus2</italic>
+Δ
+<italic>cdc42-138</italic>
+double mutant and compared its phenotype to that of the two single mutants. We reasoned that if
+<italic>cdc42-138</italic>
+specifically compromised Fus2p function in cell fusion (or vice versa), then the double mutants should show no more severe a defect than the most defective single mutant. Such behavior is observed between
+<italic>rvs161</italic>
+and
+<italic>fus2</italic>
+mutations, whereas double mutants between either of these mutations and
+<italic>fus1</italic>
+or
+<italic>spa2</italic>
+mutations are significantly more severe (
+<xref ref-type="bibr" rid="B4">
+Brizzio
+<italic>et al.</italic>
+, 1996
+</xref>
+). For this experiment, we used a cytoplasmic transfer assay (
+<xref ref-type="fig" rid="F6">Figure 6A</xref>
+). In this assay, only full Fus
+<sup>−</sup>
+zygotes with no plasma membrane fusion are scored as being defective. The
+<italic>fus2</italic>
+donor strain was able to transfer cytoplasmic GFP to 92% of wild-type cells (n = 764) but was significantly defective for transfer to
+<italic>fus2</italic>
+(46% transfer, n = 778, p = 0.001, chi-square) and
+<italic>cdc42-138</italic>
+(72% transfer, n = 710, p = 0.001, chi-square;
+<xref ref-type="fig" rid="F6">Figure 6B</xref>
+). If the two proteins act in two independent pathways, then we predict that the defect of the double mutant should be multiplicative, normalized for the frequency observed for wild type (i.e., [0.72 × 0.46]/0.92). Transfer to the
+<italic>cdc42-138 fus2</italic>
+double mutant was somewhat more defective than to
+<italic>fus2</italic>
+alone (42%, n = 554, p = 0.04, chi-square) but significantly different from the multiplicative prediction for independent pathways (36%, p = 0.004, chi-square). Because of the significant difference from the multiplicative model, we conclude that the
+<italic>cdc42-138</italic>
+and
+<italic>fus2</italic>
+mutations largely affect the same pathway for cell fusion. However, the smaller difference from the phenotype of the single mutant suggests that one or both proteins may also contribute an independent function to cell fusion.
+</p>
+<fig id="F6" position="float">
+<label>FIGURE 6:</label>
+<caption>
+<p>
+Fus2p and Cdc42p work in the same pathway. (A) Cytoplasmic transfer assay. Strains of different genotypes were mated to MY10797 (
+<italic>
+fus2 P
+<sup>GPD1</sup>
+-GFP)
+</italic>
+for 2 h at 30°C. An example of a zygote displaying cytoplasmic transfer (top) and one not displaying transfer (bottom) are shown. (B) WT (DDY1300),
+<italic>cdc42-138</italic>
+(DDY1354),
+<italic>fus2</italic>
+(MY10016), and
+<italic>fus2 cdc42-138</italic>
+(MY10310) were mated to MY10797, and the percentage of zygotes showing transfer were counted. The total number of zygotes counted in three independent experiments are shown.
+</p>
+</caption>
+<graphic xlink:href="1208fig6"/>
+</fig>
+</sec>
+<sec>
+<title>Fus2p Interacts with GTP-bound Cdc42p</title>
+<p>
+Our genetic data indicate that Fus2p and Cdc42p work in the same pathway; they do not distinguish which protein acts upstream. Because Fus2p has a Dbl-homology domain required for cell fusion, one possibility is that Fus2p is a guanine nucleotide exchange factor (GEF) for Cdc42p. However, numerous attempts to demonstrate GEF activity have been unsuccessful, even under conditions where Cdc24p (the GEF for Cdc42p) showed strong activity (Ydenberg, Stein, Andrianantoandro, and Rose, unpublished data). We next considered the possibility that Fus2p is a Cdc42p effector, interacting specifically with activated, GTP-bound Cdc42p.
+</p>
+<p>
+We began by confirming the Fus2p-Cdc42p interaction in an in vitro system. Wild-type Cdc42p, Cdc42p-Q61L, the GTP-locked mutant, and Cdc42p-T17N, the GDP-locked mutant, were expressed as GST fusions in
+<italic>Escherichia coli.</italic>
+Equal amounts of purified GST-Cdc42p were added to yeast extracts containing full-length Fus2p, which was internally FLAG-epitope tagged at residue 104. This protein was shown previously to support wild-type levels of cell fusion, in vivo (
+<xref ref-type="bibr" rid="B49">
+Paterson
+<italic>et al.</italic>
+, 2008
+</xref>
+). All three forms of Cdc42p coimmunoprecipitated with Fus2p-FLAG; however roughly 20-times-higher levels of Cdc42p-Q61L (GTP bound) were bound compared with either Cdc42p-T17N (GDP bound) or wild type (
+<xref ref-type="fig" rid="F7">Figure 7A</xref>
+). These results confirm that Cdc42p can bind to Fus2p and suggest that Fus2p is not a GEF for Cdc42p. Indeed, because the interaction was strongest with activated Cdc42p, we conclude that that Fus2p is more likely to be a effector or to play a role in localizing activated Cdc42p to the fusion site.
+</p>
+<fig id="F7" position="float">
+<label>FIGURE 7:</label>
+<caption>
+<p>
+Fus2p binds to Cdc42p in vitro. (A) Fus2p binds most strongly to the activated GTP-bound form of Cdc42p. Wild-type, Cdc42p-Q61L (GTP-locked), and Cdc42p-T17N (GDP-bound) proteins were expressed as GST fusions in
+<italic>E. coli</italic>
+and purified on glutathione Sepharose. The Cdc42p-GST fusions were incubated with yeast cell extracts expressing FLAG epitope–tagged Fus2p for 1 h at 4°C, and interacting proteins were precipitated with anti-FLAG Sepharose. The Cdc42p-GST fusions were detected by Western blot using anti-GST and chemiluminescent imaging. Top, bound Cdc42 proteins. Bottom, input Cdc42 proteins. Numbers indicate the relative level of binding of each Cdc42p species normalized to Cdc42p-Q61L. In the rightmost “no Fus2p” lane, Cdc42p-Q61L was used. (B) Map of Fus2p deletion mutants. The Dbl-homology domain is indicated (Dbl H). The extents of the deletions, in amino acid residues, are indicated. Note that the FLAG epitope is inserted at residue 104. (C) Cdc42p binds to more than one domain of Fus2p. Yeast strains expressing the deletion constructs shown in B were used in binding experiments with GST-Cdc42p-Q61L. The “no Fus2p” control used yeast extracts in which Fus2p was not epitope tagged. FLAG-tagged Fus3-KD (kinase dead) was used as an unrelated protein control. Top, relative levels of bound GST-Cdc42p-Q61L proteins are indicated. Middle, input GST-Cdc42p-Q61L. Bottom, the levels of the input FLAG-tagged Fus2p deletion proteins. Proteins bound to the anti-FLAG Sepharose were eluted and detected by Western blotting with anti-FLAG antibody. The deletion proteins are indicated by a red dot and the Fus3-KD protein with a blue dot, and the heavy and light immunoglobulin chains are indicated (H and L, respectively). The levels of the proteins relative to full-length Fus2p are indicated at the bottom. (D) Nucleotide specificity of binding to the DBH domain. The indicated Cdc42p proteins were incubated with Fus2p
+<sup>105-415</sup>
+. Top, bound Cdc42p proteins; relative levels of binding are indicated. Bottom, input Fus2p
+<sup>105-415</sup>
+. In this experiment some degradation of the Fus2p deletion fragment was observed. In the rightmost three lanes, Cdc42p-Q61L was used. (E) Nucleotide specificity of binding to 415–677. As in D, except that the Cdc42p proteins were incubated with Fus2p
+<sup>415-677</sup>
+. Top, bound Cdc42p proteins; relative levels of binding are indicated. Bottom, input Fus2p
+<sup>415-677</sup>
+. (F) Cdc42p mutations diminished Fus2p binding. The two mutations affecting cell fusion were introduced into the Cdc42p-Q61L construct and used for binding to wild-type Fus2p-FLAG.
+</p>
+</caption>
+<graphic xlink:href="1208fig7"/>
+</fig>
+<p>
+To identify the region required for binding to Cdc42p, various deletions of Fus2p were constructed and used in the coimmunoprecipitation assay, using Cdc42p-Q61L (
+<xref ref-type="fig" rid="F7">Figure 7, B</xref>
+and
+<xref ref-type="fig" rid="F7">C</xref>
+). The most efficient binding was observed with full-length protein and the deletion lacking residues 580–677. Of interest, although the Dbl-homology domain was sufficient to see some binding to Fus2p, it was not required for binding; binding was also observed for protein fragments containing residues 415–677. These results suggest that more than one region of Fus2p interacts with Cdc42p. To analyze this further, we examined the nucleotide specificity of binding to the two regions of Fus2p. Binding to the DBH domain showed strong specificity for binding to the GTP-bound Cdc42p-Q61L but not to the other forms of Cdc42p (
+<xref ref-type="fig" rid="F7">Figure 7D</xref>
+). The 415–677 fragment showed lower specific binding, although it still bound preferentially to Cdc42p-Q61L (
+<xref ref-type="fig" rid="F7">Figure 7E</xref>
+). We conclude that the region of Fus2p that binds Cdc42 extends beyond the DBH domain.
+</p>
+<p>
+As a final test, we examined whether the
+<italic>cdc42</italic>
+mutations affected the interaction with Fus2p. The
+<italic>cdc42-V36M</italic>
+and
+<italic>cdc42-138</italic>
+alleles were constructed in the plasmid expressing the GTP-locked Q61L mutation and the purified proteins tested for binding to Fus2p-FLAG (
+<xref ref-type="fig" rid="F7">Figure 7F</xref>
+). Both proteins showed a significant decrease in binding relative to wild-type Cdc42p (
+<italic>cdc42-V36M</italic>
+and
+<italic>cdc42-138</italic>
+exhibited 7 and 4% binding, respectively). These results corroborate the genetic data and suggest that
+<italic>cdc42-138</italic>
+, as well as
+<italic>cdc42</italic>
+-
+<italic>V36M</italic>
+, may interfere with cell fusion by disrupting the interaction between Cdc42
+<sup>GTP</sup>
+p and Fus2p.
+</p>
+</sec>
+</sec>
+<sec>
+<title>DISCUSSION</title>
+<p>
+Several lines of evidence previously suggested an interaction between Cdc42p and Fus2p. First, they interact by two-hybrid assay (
+<xref ref-type="bibr" rid="B43">
+Nelson
+<italic>et al.</italic>
+, 2004
+</xref>
+). Second,
+<italic>BEM1</italic>
+, encoding a scaffold for Cdc42p and its effectors, is a high-copy suppressor of
+<italic>fus2</italic>
+(
+<xref ref-type="bibr" rid="B17">
+Fitch
+<italic>et al.</italic>
+, 2004
+</xref>
+). Third, high-copy
+<italic>FUS2</italic>
+suppresses the mating defects of
+<italic>bem1</italic>
+mutations (
+<xref ref-type="bibr" rid="B35">
+Leberer
+<italic>et al.</italic>
+, 1996
+</xref>
+). Finally, Fus2p contains a Dbl-homology domain (
+<xref ref-type="bibr" rid="B49">
+Paterson
+<italic>et al.</italic>
+, 2008
+</xref>
+), which is shared with activators of Rho-GTPases. However, Cdc42p has numerous functions and interaction partners and so could potentially have multiple direct and indirect roles during mating.
+</p>
+<p>
+To implicate
+<italic>CDC42</italic>
+specifically in cell fusion, we sought mutant alleles defective in cell fusion but not other steps of mating. One mutation,
+<italic>cdc42-138</italic>
+, caused a strong defect in cell fusion but not in mitotic growth, which was not due to impaired pheromone signaling or cell polarization. The mutant phenotype closely resembled
+<italic>fus2</italic>
+mutations and analysis of double mutants showed that
+<italic>cdc42-138</italic>
+and
+<italic>fus2</italic>
+mutations conferred defects in the same step in cell fusion.
+</p>
+<p>
+The Dbl-homology domain in Fus2p is required for as much as 90% of Fus2p's function in cell fusion. The presence of residual function suggests that Fus2p may have other roles in cell fusion or more than one interaction with Cdc42p. Indeed, we found that Cdc42p interacts with the Dbl-homology domain and additional sequences in Fus2p.
+</p>
+<p>
+Although Fus2p contains a Dbl-homology domain found in other Cdc42p GEFs, we did not detect GEF activity (unpublished data). Instead, we found that Fus2p interacted more strongly with Cdc42-Q61L, the GTP-bound form of Cdc42p, in vitro, consistent with the two-hybrid data (
+<xref ref-type="bibr" rid="B43">
+Nelson
+<italic>et al.</italic>
+, 2004
+</xref>
+). Because GEFs are expected to bind more strongly to the GDP-bound G-protein, these findings suggest that Fus2p is not a GEF but may instead serve either as a mating-specific effector for Cdc42p or to localize the activated Cdc42p to the cell fusion zone. It is notable that another putative GEF, Lte1p, requires its GEF domain for cortical localization and not for activation of Tem1p (
+<xref ref-type="bibr" rid="B21">
+Geymonat
+<italic>et al.</italic>
+, 2009
+</xref>
+).
+</p>
+<p>
+If Fus2p is an effector, what might be the role of the Fus2p–Cdc42p interaction in promoting cell fusion? Fus2p binds the BAR domain–containing protein Rvs161p, and the interaction is essential for cell fusion (
+<xref ref-type="bibr" rid="B5">
+Brizzio
+<italic>et al.</italic>
+, 1998
+</xref>
+). BAR-domain proteins preferentially bind to curved membranes (
+<xref ref-type="bibr" rid="B50">
+Peter
+<italic>et al.</italic>
+, 2004
+</xref>
+), and Rvs161p, together with Rvs167p, binds to membranes and promotes curvature in vitro (
+<xref ref-type="bibr" rid="B18">
+Friesen
+<italic>et al.</italic>
+, 2006
+</xref>
+;
+<xref ref-type="bibr" rid="B67">
+Youn
+<italic>et al.</italic>
+, 2009
+</xref>
+). Mutations in Rvs161p that inhibit membrane binding also inhibit mating (
+<xref ref-type="bibr" rid="B67">
+Youn
+<italic>et al.</italic>
+, 2009
+</xref>
+), suggesting that Fus2p/Rvs161p's role in mating requires membrane interaction.
+</p>
+<p>
+Fus2p localizes near clustered vesicles, and both Fus2p and the vesicles are partly delocalized in
+<italic>fus1</italic>
+mutants (
+<xref ref-type="bibr" rid="B19">
+Gammie
+<italic>et al.</italic>
+, 1998
+</xref>
+;
+<xref ref-type="bibr" rid="B49">
+Paterson
+<italic>et al.</italic>
+, 2008
+</xref>
+). Deletion of neither Fus2p's Dbl-homology domain nor
+<italic>cdc42-138</italic>
+affected Fus2p localization. Moreover, vesicles clustered normally in
+<italic>cdc42-138</italic>
+. These data suggest that the Cdc42p interaction might regulate an activity associated with Fus2p/Rvs161p rather than its localization. Recent work showed that membrane bending by the vesicle protein synaptotagmin is required for vesicle fusion (
+<xref ref-type="bibr" rid="B29">
+Hui
+<italic>et al.</italic>
+, 2009
+</xref>
+). Perhaps Cdc42p regulates the degree of curvature induced by Fus2p/Rvs161p, deforming vesicle and/or target membranes in aid of membrane fusion. Alternatively, Fus2p/Rvs161p might interact with the curved outer surface of the vesicle fusion pore, stabilizing it to promote fusion. In either case, Fus2p/Rvs161p may play a role in facilitating the exocytosis of secreted proteins required for cell wall dissolution.
+</p>
+<sec>
+<title>A role for the Rho-insert domain</title>
+<p>
+The Rho-insert domain is a ∼20-residue loop containing a 13-residue α-helix unique to the Rho subfamily of small G proteins (
+<xref ref-type="bibr" rid="B16">
+Feltham
+<italic>et al.</italic>
+, 1997
+</xref>
+). The residues of Cdc42p required for cell fusion (D121 and D122) are within four charged amino acids at one end of the Rho-insert domain. Previous work in yeast was not informative as to possible function; individual mutations to alanine did not affect growth; mutation of all four was lethal (
+<xref ref-type="bibr" rid="B32">
+Kozminski
+<italic>et al.</italic>
+, 2000
+</xref>
+). A role in cell fusion represents the first specific function identified for this region of the protein in yeast.
+</p>
+<p>
+Although little is known about Cdc42p's Rho-insert domain in yeast, hints may be gleaned from human Cdc42 and Rac1, where it is involved in the interactions with a variety of proteins, including Rho GDP dissociation inhibitors (
+<xref ref-type="bibr" rid="B64">
+Wu
+<italic>et al.</italic>
+, 1997
+</xref>
+;
+<xref ref-type="bibr" rid="B55">
+Richman
+<italic>et al.</italic>
+, 2004
+</xref>
+), formins (
+<xref ref-type="bibr" rid="B55">
+Richman
+<italic>et al.</italic>
+, 2004
+</xref>
+;
+<xref ref-type="bibr" rid="B33">
+Lammers
+<italic>et al.</italic>
+, 2008
+</xref>
+), and IQGAPs (
+<xref ref-type="bibr" rid="B40">
+McCallum
+<italic>et al.</italic>
+, 1996
+</xref>
+;
+<xref ref-type="bibr" rid="B36">
+Li
+<italic>et al.</italic>
+, 1999
+</xref>
+;
+<xref ref-type="bibr" rid="B48">
+Owen
+<italic>et al.</italic>
+, 2008
+</xref>
+). It is possible that in yeast other protein interactions may be affected in addition to Fus2p. Although the yeast formin Bni1p is required for cell fusion, it also is required for cell polarization (
+<xref ref-type="bibr" rid="B15">
+Evangelista
+<italic>et al.</italic>
+, 1997
+</xref>
+;
+<xref ref-type="bibr" rid="B39">
+Matheos
+<italic>et al.</italic>
+, 2004
+</xref>
+;
+<xref ref-type="bibr" rid="B49">
+Paterson
+<italic>et al.</italic>
+, 2008
+</xref>
+), likely acting prior to the function identified by
+<italic>cdc42-138</italic>
+. Of interest, the yeast IQGAP, Iqg1p, regulates exocytosis by localizing Sec3p to polarized growth sites (
+<xref ref-type="bibr" rid="B47">
+Osman
+<italic>et al.</italic>
+, 2002
+</xref>
+), and Sec3p interacts with activated Cdc42p (
+<xref ref-type="bibr" rid="B68">
+Zhang
+<italic>et al.</italic>
+, 2001
+</xref>
+,
+<xref ref-type="bibr" rid="B69">2008</xref>
+). Continuous secretion has been shown to be required for the late stages of cell fusion (
+<xref ref-type="bibr" rid="B24">Grote, 2010</xref>
+). However, a specific requirement for either Iqpg1p or Sec3p in cell fusion has not been tested.
+</p>
+</sec>
+<sec>
+<title>
+Cdc42 plays roles at multiple stages of mating and cell fusion
+</title>
+<p>
+Analyzing the many roles of GTPases has required extensive use of point mutations to specifically interfere with individual functions (
+<xref ref-type="bibr" rid="B41">
+Mosch
+<italic>et al.</italic>
+, 1999
+</xref>
+;
+<xref ref-type="bibr" rid="B32">
+Kozminski
+<italic>et al.</italic>
+, 2000
+</xref>
+;
+<xref ref-type="bibr" rid="B1">
+Adamo
+<italic>et al.</italic>
+, 2001
+</xref>
+;
+<xref ref-type="bibr" rid="B56">
+Saka
+<italic>et al.</italic>
+, 2001
+</xref>
+;
+<xref ref-type="bibr" rid="B3">
+Barale
+<italic>et al.</italic>
+, 2006
+</xref>
+;
+<xref ref-type="bibr" rid="B27">
+Heinrich
+<italic>et al.</italic>
+, 2007
+</xref>
+). For example, this approach demonstrated that
+<italic>cdc42-V36M</italic>
+affects cell fusion but not mitotic growth (
+<xref ref-type="bibr" rid="B3">
+Barale
+<italic>et al.</italic>
+, 2006
+</xref>
+). We found that
+<italic>cdc42-V36M</italic>
+did not polarize in response to pheromone and showed unstable localization of Fus2p-GFP (
+<xref ref-type="fig" rid="F3">Figure 3</xref>
+), closely resembling
+<italic>spa2</italic>
+and
+<italic>bni1</italic>
+. Fus1p-GFP also failed to localize in
+<italic>cdc42-V36M</italic>
+(
+<xref ref-type="bibr" rid="B3">
+Barale
+<italic>et al.</italic>
+, 2006
+</xref>
+). We conclude that
+<italic>cdc42-V36M</italic>
+is primarily defective for polarization and may affect cell fusion indirectly, possibly through Bni1p. The
+<italic>cdc42-V36M</italic>
+mutant may also have a specific defect in cell fusion, which is masked by the earlier polarization defect.
+</p>
+<p>
+In contrast,
+<italic>cdc42-138</italic>
+mutant cells polarized normally and were specifically defective in cell fusion. Epistasis analysis showed that Spa2p acts upstream of Fus1p, which in turn acts upstream of Fus2p (
+<xref ref-type="bibr" rid="B19">
+Gammie
+<italic>et al.</italic>
+, 1998
+</xref>
+). The morphology of
+<italic>cdc42-138</italic>
+most closely resembled
+<italic>fus2</italic>
+, arguing that this allele disrupts a function downstream of Fus1p and Spa2p. In confirmation, double-mutant analysis showed that
+<italic>fus2</italic>
+and
+<italic>cdc42-138</italic>
+act at the same step.
+</p>
+<p>
+We conclude that Cdc42p plays multiple roles during cell fusion. Roles in pheromone signaling, via Ste20p (
+<xref ref-type="bibr" rid="B60">
+Simon
+<italic>et al.</italic>
+, 1995
+</xref>
+;
+<xref ref-type="bibr" rid="B70">
+Zhao
+<italic>et al.</italic>
+, 1995
+</xref>
+), and polarization, via Bni1p (
+<xref ref-type="bibr" rid="B15">
+Evangelista
+<italic>et al.</italic>
+, 1997
+</xref>
+), are well established. We propose a separate function in cell fusion mediated by the Rho-insert domain in association with Fus2p/Rvs161p.
+</p>
+</sec>
+<sec>
+<title>
+A conserved role of Cdc42 homologues in eukaryotic cell fusion?
+</title>
+<p>
+Among metazoan cell fusion events,
+<italic>Drosophila</italic>
+myoblast fusion may be the best understood (
+<xref ref-type="bibr" rid="B9">Chen and Olson, 2004</xref>
+). Ultrastructural studies revealed clustered, electron-dense vesicles across the cell fusion zone (
+<xref ref-type="bibr" rid="B12">
+Doberstein
+<italic>et al.</italic>
+, 1997
+</xref>
+), similar to yeast cell fusion and vertebrate myoblast fusion (
+<xref ref-type="bibr" rid="B37">Lipton and Konigsberg, 1972</xref>
+). Recent work showed that, as in yeast, fusion occurs at a single site, coincident with accumulation of actin (
+<xref ref-type="bibr" rid="B57">
+Sens
+<italic>et al.</italic>
+, 2010
+</xref>
+). Cdc42p homologues Drac1 and Drac2 are also required for myoblast fusion (
+<xref ref-type="bibr" rid="B25">
+Hakeda-Suzuki
+<italic>et al.</italic>
+, 2002
+</xref>
+) and most likely activated by an unconventional GEF (
+<xref ref-type="bibr" rid="B14">
+Erickson
+<italic>et al.</italic>
+, 1997
+</xref>
+;
+<xref ref-type="bibr" rid="B6">
+Brugnera
+<italic>et al.</italic>
+, 2002
+</xref>
+). Moreover, Cdc42p is required for mouse myoblast fusion (
+<xref ref-type="bibr" rid="B71">
+Vasyutina
+<italic>et al.</italic>
+, 2009
+</xref>
+). The conserved requirement for Cdc42p-related proteins in cell fusion suggests that yeast cell fusion will yield important insights into the mechanism in higher cells.
+</p>
+</sec>
+</sec>
+<sec sec-type="materials|methods">
+<title>MATERIALS AND METHODS</title>
+<sec>
+<title>
+General yeast methods, strains, and plasmid construction
+</title>
+<p>
+Yeast media, general methods, and transformations were performed as described previously (
+<xref ref-type="bibr" rid="B2">
+Adams
+<italic>et al.</italic>
+, 1997
+</xref>
+) with minor modifications. Strains and plasmids are listed in
+<xref ref-type="table" rid="T1">Tables 1</xref>
+and
+<xref ref-type="table" rid="T2">2</xref>
+, respectively.
+</p>
+<table-wrap id="T1" position="float">
+<label>TABLE 1:</label>
+<caption>
+<p>Strains used this study.</p>
+</caption>
+<table frame="hsides" rules="groups">
+<thead valign="bottom">
+<tr>
+<th align="left" rowspan="1" colspan="1">Strain</th>
+<th align="left" rowspan="1" colspan="1">Genotype</th>
+<th align="left" rowspan="1" colspan="1">Reference</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr>
+<td align="left" rowspan="1" colspan="1">JY428</td>
+<td align="left" rowspan="1" colspan="1">
+α
+<italic>fus2</italic>
+Δ
+<italic>3 his4-34 trp1</italic>
+Δ
+<italic>1 ura3-52</italic>
+</td>
+<td align="left" rowspan="1" colspan="1">G. Fink (Whitehead Institute, Cambridge, MA)</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">JY429</td>
+<td align="left" rowspan="1" colspan="1">
+α
+<italic>fus1</italic>
+Δ
+<italic>1 fus2</italic>
+Δ
+<italic>3 trp1</italic>
+Δ
+<italic>1 ura3-52</italic>
+</td>
+<td align="left" rowspan="1" colspan="1">G. Fink</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">JY431</td>
+<td align="left" rowspan="1" colspan="1">
+α
+<italic>his4-34 trp1</italic>
+Δ
+<italic>1 ura3-52</italic>
+</td>
+<td align="left" rowspan="1" colspan="1">G. Fink</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">
+DDY1300
+<sup>a</sup>
+</td>
+<td align="left" rowspan="1" colspan="1">
+a
+<italic>ura3-52 leu2-3112 his3</italic>
+Δ
+<italic>200 lys2-801 CDC42::LEU2</italic>
+</td>
+<td align="left" rowspan="1" colspan="1">
+<xref ref-type="bibr" rid="B32">
+Kozminski
+<italic>et al.</italic>
+(2000
+</xref>
+)
+</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">DDY1301</td>
+<td align="left" rowspan="1" colspan="1">
+α
+<italic>ura3-52 leu2-3112 his3</italic>
+Δ
+<italic>200 lys2-801 CDC42::LEU2</italic>
+</td>
+<td align="left" rowspan="1" colspan="1">
+<xref ref-type="bibr" rid="B32">
+Kozminski
+<italic>et al.</italic>
+(2000
+</xref>
+)
+</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">DDY1354</td>
+<td align="left" rowspan="1" colspan="1">
+a
+<italic>ura3-52 leu2-3112 his3</italic>
+Δ
+<italic>200 lys2-801 cdc42-138::LEU2</italic>
+</td>
+<td align="left" rowspan="1" colspan="1">
+<xref ref-type="bibr" rid="B32">
+Kozminski
+<italic>et al.</italic>
+(2000
+</xref>
+)
+</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">DDY1355</td>
+<td align="left" rowspan="1" colspan="1">
+α
+<italic>ura3-52 leu2-3112 his3</italic>
+Δ
+<italic>200 lys2-801 cdc42-138::LEU2</italic>
+</td>
+<td align="left" rowspan="1" colspan="1">
+<xref ref-type="bibr" rid="B32">
+Kozminski
+<italic>et al.</italic>
+(2000
+</xref>
+)
+</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">MY9181</td>
+<td align="left" rowspan="1" colspan="1">
+a
+<italic>ura3</italic>
+Δ0
+<italic>leu2</italic>
+Δ0
+<italic>his3</italic>
+Δ1
+<italic>met15</italic>
+Δ0
+<italic>fus2</italic>
+Δ
+<italic>::HIS3</italic>
+</td>
+<td align="left" rowspan="1" colspan="1">
+<xref ref-type="bibr" rid="B49">
+Paterson
+<italic>et al.</italic>
+(2008
+</xref>
+)
+</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">MY10016</td>
+<td align="left" rowspan="1" colspan="1">
+a
+<italic>ura3-52 leu2-3112 his3</italic>
+Δ
+<italic>200 lys2-801 CDC42::LEU2 fus2</italic>
+Δ
+<italic>::HIS3</italic>
+</td>
+<td align="left" rowspan="1" colspan="1">This study</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">MY10303</td>
+<td align="left" rowspan="1" colspan="1">
+α
+<italic>ura3-52 leu2-3112 his3</italic>
+Δ
+<italic>200 ade2-1 fus2</italic>
+Δ
+<italic>::HIS3</italic>
+</td>
+<td align="left" rowspan="1" colspan="1">This study</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">MY10310</td>
+<td align="left" rowspan="1" colspan="1">
+a
+<italic>ura3-52 leu2-3112 his3</italic>
+Δ
+<italic>200 lys2-801 cdc42-138::LEU2 fus2</italic>
+Δ
+<italic>::HIS3</italic>
+</td>
+<td align="left" rowspan="1" colspan="1">This study</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">MY10547</td>
+<td align="left" rowspan="1" colspan="1">
+a
+<italic>ura3-52 leu2-3112 his3</italic>
+Δ
+<italic>200 lys2-801 cdc42-V36M::LEU2</italic>
+</td>
+<td align="left" rowspan="1" colspan="1">This study</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">MY10554</td>
+<td align="left" rowspan="1" colspan="1">
+α
+<italic>ura3-52 leu2-3112 his3</italic>
+Δ
+<italic>200 ade2-1 cdc42-V36M::LEU2</italic>
+</td>
+<td align="left" rowspan="1" colspan="1">This study</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">MY10797</td>
+<td align="left" rowspan="1" colspan="1">
+α
+<italic>fus2</italic>
+Δ
+<italic>3 his4-34 trp1</italic>
+Δ
+<italic>
+1 ura3-52 SSO1::P
+<sup>GPD1</sup>
+-GFP::URA3
+</italic>
+</td>
+<td align="left" rowspan="1" colspan="1">This study</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">MY10798</td>
+<td align="left" rowspan="1" colspan="1">
+α
+<italic>fus1</italic>
+Δ
+<italic>1 fus2</italic>
+Δ
+<italic>3 trp1</italic>
+Δ
+<italic>
+1 ura3-52 SSO1::P
+<sup>GPD1</sup>
+-GFP::URA3
+</italic>
+</td>
+<td align="left" rowspan="1" colspan="1">This study</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">MY10925</td>
+<td align="left" rowspan="1" colspan="1">
+a
+<italic>ura3-52 leu2-3112 his3</italic>
+Δ
+<italic>200 lys2-801 CDC42::LEU2 STE20</italic>
+Δ
+<italic>CRIB</italic>
+</td>
+<td align="left" rowspan="1" colspan="1">This study</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">MY10926</td>
+<td align="left" rowspan="1" colspan="1">
+a
+<italic>ura3-52 leu2-3112 his3</italic>
+Δ
+<italic>200 lys2-801 cdc42-138::LEU2 STE20</italic>
+Δ
+<italic>CRIB</italic>
+</td>
+<td align="left" rowspan="1" colspan="1">This study</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">MY10933</td>
+<td align="left" rowspan="1" colspan="1">
+a
+<italic>ura3-52 leu2-3112 his3</italic>
+Δ
+<italic>200 lys2-801 CDC42::LEU2 fus2</italic>
+<sup>
+Δ
+<italic>Dbl</italic>
+</sup>
+<italic>::GFP</italic>
+</td>
+<td align="left" rowspan="1" colspan="1">This study</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">MY12402</td>
+<td align="left" rowspan="1" colspan="1">
+a
+<italic>ura3-52 leu2-3112 his3</italic>
+Δ
+<italic>200 pep4::HIS3 bar1::kanMX fus2::natMX</italic>
+</td>
+<td align="left" rowspan="1" colspan="1">This study</td>
+</tr>
+</tbody>
+</table>
+<table-wrap-foot>
+<fn>
+<p>
+<sup>a</sup>
+Strains containing
+<italic>cdc42-105</italic>
+,
+<italic>cdc42-107</italic>
+, and
+<italic>cdc42-137</italic>
+are isogenic to DDY1300 (or DDY1301). See
+<xref ref-type="bibr" rid="B32">
+Kozminski
+<italic>et al.</italic>
+(2000
+</xref>
+).
+</p>
+</fn>
+</table-wrap-foot>
+</table-wrap>
+<table-wrap id="T2" position="float">
+<label>TABLE 2:</label>
+<caption>
+<p>Plasmids used in this study.</p>
+</caption>
+<table frame="hsides" rules="groups">
+<thead valign="bottom">
+<tr>
+<th align="left" rowspan="1" colspan="1">Plasmid</th>
+<th align="left" rowspan="1" colspan="1">Markers</th>
+<th align="left" rowspan="1" colspan="1">Reference</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr>
+<td align="left" rowspan="1" colspan="1">pSB231</td>
+<td align="left" rowspan="1" colspan="1">
+<italic>CEN URA3 fus1-LacZ</italic>
+</td>
+<td align="left" rowspan="1" colspan="1">
+<xref ref-type="bibr" rid="B61">
+Trueheart
+<italic>et al.</italic>
+(1987
+</xref>
+)
+</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">pMR5469</td>
+<td align="left" rowspan="1" colspan="1">
+<italic>
+CEN URA3 P
+<sup>GAL1</sup>
+-FUS2::GFP
+<sub>104</sub>
+</italic>
+</td>
+<td align="left" rowspan="1" colspan="1">
+<xref ref-type="bibr" rid="B49">
+Paterson
+<italic>et al.</italic>
+(2008
+</xref>
+)
+</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">pMR5482</td>
+<td align="left" rowspan="1" colspan="1">
+<italic>
+CEN URA3 FUS2::GFP
+<sub>104</sub>
+</italic>
+</td>
+<td align="left" rowspan="1" colspan="1">
+<xref ref-type="bibr" rid="B49">
+Paterson
+<italic>et al.</italic>
+(2008
+</xref>
+)
+</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">pMR5883</td>
+<td align="left" rowspan="1" colspan="1">
+<italic>
+CEN URA3 P
+<sup>GAL1</sup>
+-fus2
+<sup>Δ105-414</sup>
+::GFP
+</italic>
+</td>
+<td align="left" rowspan="1" colspan="1">This study</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">pMR5480</td>
+<td align="left" rowspan="1" colspan="1">
+<italic>FUS2</italic>
+::
+<italic>
+FLAG
+<sub>104</sub>
+URA3 CEN
+</italic>
+</td>
+<td align="left" rowspan="1" colspan="1">
+<xref ref-type="bibr" rid="B49">
+Paterson
+<italic>et al</italic>
+. 2008
+</xref>
+</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">pMR6404</td>
+<td align="left" rowspan="1" colspan="1">
+<italic>FUS2</italic>
+<sup>1-580</sup>
+<italic>
+::FLAG
+<sub>104</sub>
+URA3 CEN
+</italic>
+</td>
+<td align="left" rowspan="1" colspan="1">This study</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">
+<italic>pMR6405</italic>
+</td>
+<td align="left" rowspan="1" colspan="1">
+<italic>FUS2</italic>
+<sup>105-677</sup>
+<italic>
+::FLAG
+<sub>104</sub>
+URA3 CEN
+</italic>
+</td>
+<td align="left" rowspan="1" colspan="1">This study</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">pMR6406</td>
+<td align="left" rowspan="1" colspan="1">
+<italic>FUS2</italic>
+<sup>105-580</sup>
+<italic>
+::FLAG
+<sub>104</sub>
+URA3 CEN
+</italic>
+</td>
+<td align="left" rowspan="1" colspan="1">This study</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">pMR6407</td>
+<td align="left" rowspan="1" colspan="1">
+<italic>FUS2</italic>
+<sup>1-104</sup>
+<italic>
+-FLAG
+<sub>104</sub>
+</italic>
+-
+<italic>FUS2</italic>
+<sup>415-677</sup>
+<italic>URA3 CEN</italic>
+</td>
+<td align="left" rowspan="1" colspan="1">This study</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">pMR6408</td>
+<td align="left" rowspan="1" colspan="1">
+<italic>FUS2</italic>
+<sup>415-677</sup>
+<italic>
+::FLAG
+<sub>104</sub>
+URA3 CEN
+</italic>
+</td>
+<td align="left" rowspan="1" colspan="1">This study</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">pMR6409</td>
+<td align="left" rowspan="1" colspan="1">
+<italic>FUS2</italic>
+<sup>105-415</sup>
+<italic>
+::FLAG
+<sub>104</sub>
+URA3 CEN
+</italic>
+</td>
+<td align="left" rowspan="1" colspan="1">This study</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">pMR6115</td>
+<td align="left" rowspan="1" colspan="1">
+<italic>GST-CDC42</italic>
+<sup>V36M, Q61L</sup>
+</td>
+<td align="left" rowspan="1" colspan="1">This study</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">pMR6116</td>
+<td align="left" rowspan="1" colspan="1">
+<italic>GST-CDC42</italic>
+<sup>Q61L D122A</sup>
+</td>
+<td align="left" rowspan="1" colspan="1">This study</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">pB2082</td>
+<td align="left" rowspan="1" colspan="1">
+<italic>GST-CDC42</italic>
+<sup>Q61L</sup>
+</td>
+<td align="left" rowspan="1" colspan="1">
+<xref ref-type="bibr" rid="B22">
+Gladfelter
+<italic>et al</italic>
+. (2002
+</xref>
+)
+</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">pB2083</td>
+<td align="left" rowspan="1" colspan="1">
+<italic>GST-CDC42</italic>
+<sup>T17N</sup>
+</td>
+<td align="left" rowspan="1" colspan="1">
+<xref ref-type="bibr" rid="B22">
+Gladfelter
+<italic>et al</italic>
+. (2002
+</xref>
+)
+</td>
+</tr>
+<tr>
+<td align="left" rowspan="1" colspan="1">pB2084</td>
+<td align="left" rowspan="1" colspan="1">
+<italic>GST-CDC42</italic>
+</td>
+<td align="left" rowspan="1" colspan="1">
+<xref ref-type="bibr" rid="B22">
+Gladfelter
+<italic>et al</italic>
+. (2002
+</xref>
+)
+</td>
+</tr>
+</tbody>
+</table>
+</table-wrap>
+<p>
+To create MY10016, the
+<italic>fus2</italic>
+Δ
+<italic>::HIS3</italic>
+deletion was amplified from MY9181 and transformed into DDY1300. Correct integration was confirmed by PCR across the
+<italic>FUS2</italic>
+locus. MY10547 and MY10554 were created as described (
+<xref ref-type="bibr" rid="B32">
+Kozminski
+<italic>et al.</italic>
+, 2000
+</xref>
+). To create MY10925 and MY10926, pPP1043 (
+<xref ref-type="bibr" rid="B34">
+Lamson
+<italic>et al.</italic>
+, 2002
+</xref>
+) was cut with
+<italic>Bam</italic>
+HI and integrated in DDY1300 and DDY1354, respectively, by the loop-in/loop-out procedure. Correct loop-outs were confirmed by PCR across the
+<italic>STE20</italic>
+locus. To create MY10797 and MY10798, pEG746 (
+<xref ref-type="bibr" rid="B30">
+Jin
+<italic>et al.</italic>
+, 2004
+</xref>
+) was cut with
+<italic>Bgl</italic>
+II and transformed into JY428 and JY429, respectively. The integration was confirmed by examining the resulting strains for GFP fluorescence.
+</p>
+<p>
+pMR5883 was created by a multistep cloning procedure in the vector pRS416 (
+<xref ref-type="bibr" rid="B59">Sikorski and Hieter, 1989</xref>
+). A similar procedure was used to create pMR5917, which is equivalent but in the integration vector pRS406. pMR5917 was cut with
+<italic>Hin</italic>
+dIII and
+<italic>fus2</italic>
+<sup>
+Δ
+<italic>105-414</italic>
+</sup>
+<italic>::GFP</italic>
+integrated in DDY1300 by the loop-in/loop-out procedure. A loop-out containing GFP fluorescence was denoted MY10933.
+</p>
+<p>
+To create pMR6115 and pMR6116, mutations were introduced into pB2082 by site-directed PCR mutagenesis (Phusion; Thermo Fisher Scientific, Waltham, MA). Deletion mutants in
+<italic>FUS2</italic>
+were generated by site-directed PCR mutagenesis using pMR5480 (
+<xref ref-type="bibr" rid="B49">
+Paterson
+<italic>et al.</italic>
+, 2008
+</xref>
+) as a template. Deletions were confirmed by sequencing, and pheromone-induced protein expression was confirmed by trichloroacetic acid (TCA) precipitation–Western blot.
+</p>
+<p>
+β-Galactosidase assays were performed essentially as described (
+<xref ref-type="bibr" rid="B2">
+Adams
+<italic>et al.</italic>
+, 1997
+</xref>
+), using cell extracts prepared from ∼1.2 × 10
+<sup>8</sup>
+cells. Actin staining was performed as described with minor modifications (
+<xref ref-type="bibr" rid="B2">
+Adams
+<italic>et al.</italic>
+, 1997
+</xref>
+), using cells treated with 6 μM α-factor for 90 min.
+</p>
+</sec>
+<sec>
+<title>Binding assays</title>
+<p>
+GST-Cdc42p and derivatives were expressed and purified from
+<italic>E. coli</italic>
+as described (
+<xref ref-type="bibr" rid="B22">
+Gladfelter
+<italic>et al.</italic>
+, 2002
+</xref>
+) with minor modifications. For expression of Fus2p-FLAG in yeast, MY9181, transformed with pMR5480 (or derivative), was grown to early exponential phase (OD
+<sub>600</sub>
+= 0.2) and treated with 10 μg/ml synthetic mating pheromone (Syn/Seq Facility, Department of Molecular Biology, Princeton University, Princeton, NJ) for 2 h. Cell extracts were prepared as in
+<xref ref-type="bibr" rid="B5">
+Brizzio
+<italic>et al.</italic>
+(1998
+</xref>
+). The cleared lysate was divided into three fractions, and each fraction was incubated with 5 μg of bacterially expressed GST-Cdc42 or derivative as indicated. Binding proceeded for 1 h at 4°C, with gentle rotation. After incubation, 30 μl of equilibrated anti-FLAG Sepharose (Sigma-Aldrich, St. Louis, MO) was added to each reaction and the incubation continued at 4°C for 1 h. The anti-FLAG Sepharose was washed five times and finally resuspended in SDS loading buffer. Experiments using the Fus2p deletion mutants were performed similarly, except that constructs were transformed into MY12402, which harbored deletions of the
+<italic>fus2</italic>
+,
+<italic>pep4</italic>
+, and
+<italic>bar1</italic>
+genes.
+</p>
+</sec>
+<sec>
+<title>Mating and cell fusion assays</title>
+<p>
+Plate mating assays were performed as described (
+<xref ref-type="bibr" rid="B20">Gammie and Rose, 2002</xref>
+) by replica plating strains together on yeast extract/peptone/dextrose (YEPD) and selecting diploids by replica plating to minimal media or drop-in media. Microscopic examination of zygotes and cytoplasmic transfer assays were performed as described (
+<xref ref-type="bibr" rid="B23">Grote, 2008</xref>
+), using ∼1.0 × 10
+<sup>6</sup>
+cells of each mating type. Zygotes were processed for electron microscopy as described (
+<xref ref-type="bibr" rid="B19">
+Gammie
+<italic>et al.</italic>
+, 1998
+</xref>
+), using ∼1.2 × 10
+<sup>8</sup>
+cells of each mating type, separated over five filters and mated on YEPD for 2 h.
+</p>
+</sec>
+<sec>
+<title>Cell imaging</title>
+<p>
+Images were acquired using the DeltaVision Microscopy System (Applied Precision, Issaquah, WA) using a TE200 inverted microscope (Nikon, Melville, NY) and a Coolsnap HQ CCD camera (Photometrics, Tucson, AZ) and a 100× objective with a numerical aperture of 1.4. Fus2p-GFP images were acquired as previously described (
+<xref ref-type="bibr" rid="B66">Ydenberg and Rose, 2009</xref>
+). Figures were prepared for publication using Adobe Photoshop and Adobe Illustrator (Adobe, San Jose, CA). For presentation purposes, pixel density was increased using bicubic resampling, where necessary.
+</p>
+</sec>
+<sec>
+<title>Western blotting</title>
+<p>
+For Western analysis of Fus2p-GFP, protein was prepared from ∼6.0 × 10
+<sup>6</sup>
+exponential phase cells by TCA precipitation, separated by SDS–PAGE, and transferred to a nitrocellulose filter. GFP-tagged Fus2p was detected using mouse anti-GFP (Roche, Indianapolis, IN) at 1:1000. FLAG-tagged Fus2p was detected with anti-FLAG (Sigma-Aldrich) at 1:5000. Rabbit anti-Kar2 (our laboratory) was used at 1:50,000. Glutathione
+<italic>S</italic>
+-transferase (GST)–tagged Cdc42p was detected with anti-GST (Cell Signaling Technologies, Beverly, MA) at 1:1000.
+</p>
+</sec>
+</sec>
+<sec sec-type="supplementary-material">
+<title>Supplementary Material</title>
+<supplementary-material id="PMC_1" content-type="local-data">
+<caption>
+<title>Supplemental Materials</title>
+</caption>
+<media mimetype="text" mime-subtype="html" xlink:href="supp_23_7_1208__index.html"/>
+<media xlink:role="associated-file" mimetype="application" mime-subtype="pdf" xlink:href="supp_E11-08-0723_CombinedSupMats.pdf"/>
+<media xlink:role="associated-file" mimetype="video" mime-subtype="x-msvideo" xlink:href="supp_E11-08-0723_mc-E11-08-0723-s02.avi"/>
+</supplementary-material>
+</sec>
+</body>
+<back>
+<fn-group>
+<fn fn-type="other">
+<p>
+This article was published online ahead of print in MBoC in Press (
+<ext-link ext-link-type="uri" xlink:href="http://www.molbiolcell.org/cgi/doi/10.1091/mbc.E11-08-0723">
+http://www.molbiolcell.org/cgi/doi/10.1091/mbc.E11-08-0723
+</ext-link>
+) on February 9, 2012.
+</p>
+</fn>
+</fn-group>
+<ack>
+<p>
+We thank Danny Lew, Keith Kozminski, Peter Pryciak, Eric Grote, and Robert Arkowitz for providing strains and reagents and Satoshi Yoshida and Bruce Goode for critical comments on the manuscript. This work was supported by National Institute of General Medical Sciences Grant GM37739 to M.D.R.
+</p>
+</ack>
+<glossary>
+<title>Abbreviations used:</title>
+<def-list>
+<def-item>
+<term id="G1">BAR</term>
+<def>
+<p>Bin1, amphiphysin, Rvs</p>
+</def>
+</def-item>
+<def-item>
+<term id="G2">GAP</term>
+<def>
+<p>GTPase activating protein</p>
+</def>
+</def-item>
+<def-item>
+<term id="G3">GEF</term>
+<def>
+<p>GTP exchange factor</p>
+</def>
+</def-item>
+</def-list>
+</glossary>
+<ref-list>
+<title>REFERENCES</title>
+<ref id="B1">
+<element-citation publication-type="journal">
+<person-group person-group-type="author">
+<name>
+<surname>Adamo</surname>
+<given-names>JE</given-names>
+</name>
+<name>
+<surname>Moskow</surname>
+<given-names>JJ</given-names>
+</name>
+<name>
+<surname>Gladfelter</surname>
+<given-names>AS</given-names>
+</name>
+<name>
+<surname>Viterbo</surname>
+<given-names>D</given-names>
+</name>
+<name>
+<surname>Lew</surname>
+<given-names>DJ</given-names>
+</name>
+<name>
+<surname>Brennwald</surname>
+<given-names>PJ</given-names>
+</name>
+</person-group>
+<article-title>
+Yeast Cdc42 functions at a late step in exocytosis, specifically during polarized growth of the emerging bud
+</article-title>
+<source>J Cell Biol</source>
+<year>2001</year>
+<volume>155</volume>
+<fpage>581</fpage>
+<lpage>592</lpage>
+<pub-id pub-id-type="pmid">11706050</pub-id>
+</element-citation>
+</ref>
+<ref id="B2">
+<element-citation publication-type="book">
+<person-group person-group-type="author">
+<name>
+<surname>Adams</surname>
+<given-names>A</given-names>
+</name>
+<name>
+<surname>Gottschling</surname>
+<given-names>DE</given-names>
+</name>
+<name>
+<surname>Kaiser</surname>
+<given-names>CA</given-names>
+</name>
+<name>
+<surname>Stearns</surname>
+<given-names>T</given-names>
+</name>
+</person-group>
+<source>Methods in Yeast Genetics</source>
+<year>1997</year>
+<publisher-loc>Cold Spring Harbor, NY</publisher-loc>
+<publisher-name>Cold Spring Harbor Laboratory Press</publisher-name>
+</element-citation>
+</ref>
+<ref id="B3">
+<element-citation publication-type="journal">
+<person-group person-group-type="author">
+<name>
+<surname>Barale</surname>
+<given-names>S</given-names>
+</name>
+<name>
+<surname>McCusker</surname>
+<given-names>D</given-names>
+</name>
+<name>
+<surname>Arkowitz</surname>
+<given-names>RA</given-names>
+</name>
+</person-group>
+<article-title>
+Cdc42p GDP/GTP cycling is necessary for efficient cell fusion during yeast mating
+</article-title>
+<source>Mol Biol Cell</source>
+<year>2006</year>
+<volume>17</volume>
+<fpage>2824</fpage>
+<lpage>2838</lpage>
+<pub-id pub-id-type="pmid">16571678</pub-id>
+</element-citation>
+</ref>
+<ref id="B4">
+<element-citation publication-type="journal">
+<person-group person-group-type="author">
+<name>
+<surname>Brizzio</surname>
+<given-names>V</given-names>
+</name>
+<name>
+<surname>Gammie</surname>
+<given-names>AE</given-names>
+</name>
+<name>
+<surname>Nijbroek</surname>
+<given-names>G</given-names>
+</name>
+<name>
+<surname>Michaelis</surname>
+<given-names>S</given-names>
+</name>
+<name>
+<surname>Rose</surname>
+<given-names>MD</given-names>
+</name>
+</person-group>
+<article-title>
+Cell fusion during yeast mating requires high levels of a-factor mating pheromone
+</article-title>
+<source>J Cell Biol</source>
+<year>1996</year>
+<volume>135</volume>
+<fpage>1727</fpage>
+<lpage>1739</lpage>
+<pub-id pub-id-type="pmid">8991086</pub-id>
+</element-citation>
+</ref>
+<ref id="B5">
+<element-citation publication-type="journal">
+<person-group person-group-type="author">
+<name>
+<surname>Brizzio</surname>
+<given-names>V</given-names>
+</name>
+<name>
+<surname>Gammie</surname>
+<given-names>AE</given-names>
+</name>
+<name>
+<surname>Rose</surname>
+<given-names>MD</given-names>
+</name>
+</person-group>
+<article-title>
+Rvs161p interacts with Fus2p to promote cell fusion in
+<italic>Saccharomyces cerevisiae</italic>
+</article-title>
+<source>J Cell Biol</source>
+<year>1998</year>
+<volume>141</volume>
+<fpage>567</fpage>
+<lpage>584</lpage>
+<pub-id pub-id-type="pmid">9566960</pub-id>
+</element-citation>
+</ref>
+<ref id="B6">
+<element-citation publication-type="journal">
+<person-group person-group-type="author">
+<name>
+<surname>Brugnera</surname>
+<given-names>E</given-names>
+</name>
+<name>
+<surname>Haney</surname>
+<given-names>L</given-names>
+</name>
+<name>
+<surname>Grimsley</surname>
+<given-names>C</given-names>
+</name>
+<name>
+<surname>Lu</surname>
+<given-names>M</given-names>
+</name>
+<name>
+<surname>Walk</surname>
+<given-names>SF</given-names>
+</name>
+<name>
+<surname>Tosello-Trampont</surname>
+<given-names>AC</given-names>
+</name>
+<name>
+<surname>Macara</surname>
+<given-names>IG</given-names>
+</name>
+<name>
+<surname>Madhani</surname>
+<given-names>H</given-names>
+</name>
+<name>
+<surname>Fink</surname>
+<given-names>GR</given-names>
+</name>
+<name>
+<surname>Ravichandran</surname>
+<given-names>KS</given-names>
+</name>
+</person-group>
+<article-title>
+Unconventional Rac-GEF activity is mediated through the Dock180-ELMO complex
+</article-title>
+<source>Nat Cell Biol</source>
+<year>2002</year>
+<volume>4</volume>
+<fpage>574</fpage>
+<lpage>582</lpage>
+<pub-id pub-id-type="pmid">12134158</pub-id>
+</element-citation>
+</ref>
+<ref id="B7">
+<element-citation publication-type="journal">
+<person-group person-group-type="author">
+<name>
+<surname>Casamayor</surname>
+<given-names>A</given-names>
+</name>
+<name>
+<surname>Snyder</surname>
+<given-names>M</given-names>
+</name>
+</person-group>
+<article-title>
+Bud-site selection and cell polarity in budding yeast
+</article-title>
+<source>Curr Opin Microbiol</source>
+<year>2002</year>
+<volume>5</volume>
+<fpage>179</fpage>
+<lpage>186</lpage>
+<pub-id pub-id-type="pmid">11934615</pub-id>
+</element-citation>
+</ref>
+<ref id="B8">
+<element-citation publication-type="journal">
+<person-group person-group-type="author">
+<name>
+<surname>Chant</surname>
+<given-names>J</given-names>
+</name>
+</person-group>
+<article-title>Cell polarity in yeast</article-title>
+<source>Annu Rev Cell Dev Biol</source>
+<year>1999</year>
+<volume>15</volume>
+<fpage>365</fpage>
+<lpage>391</lpage>
+<pub-id pub-id-type="pmid">10611966</pub-id>
+</element-citation>
+</ref>
+<ref id="B9">
+<element-citation publication-type="journal">
+<person-group person-group-type="author">
+<name>
+<surname>Chen</surname>
+<given-names>EH</given-names>
+</name>
+<name>
+<surname>Olson</surname>
+<given-names>EN</given-names>
+</name>
+</person-group>
+<article-title>
+Towards a molecular pathway for myoblast fusion in
+<italic>Drosophila</italic>
+</article-title>
+<source>Trends Cell Biol</source>
+<year>2004</year>
+<volume>14</volume>
+<fpage>452</fpage>
+<lpage>460</lpage>
+<pub-id pub-id-type="pmid">15308212</pub-id>
+</element-citation>
+</ref>
+<ref id="B10">
+<element-citation publication-type="journal">
+<person-group person-group-type="author">
+<name>
+<surname>Chen</surname>
+<given-names>EH</given-names>
+</name>
+<name>
+<surname>Olson</surname>
+<given-names>EN</given-names>
+</name>
+</person-group>
+<article-title>Unveiling the mechanisms of cell-cell fusion</article-title>
+<source>Science</source>
+<year>2005</year>
+<volume>308</volume>
+<fpage>369</fpage>
+<lpage>373</lpage>
+<pub-id pub-id-type="pmid">15831748</pub-id>
+</element-citation>
+</ref>
+<ref id="B11">
+<element-citation publication-type="journal">
+<person-group person-group-type="author">
+<name>
+<surname>Crouzet</surname>
+<given-names>M</given-names>
+</name>
+<name>
+<surname>Urdaci</surname>
+<given-names>M</given-names>
+</name>
+<name>
+<surname>Dulau</surname>
+<given-names>L</given-names>
+</name>
+<name>
+<surname>Aigle</surname>
+<given-names>M</given-names>
+</name>
+</person-group>
+<article-title>
+Yeast mutant affected for viability upon nutrient starvation: characterization and cloning of the RVS161 gene
+</article-title>
+<source>Yeast</source>
+<year>1991</year>
+<volume>7</volume>
+<fpage>727</fpage>
+<lpage>743</lpage>
+<pub-id pub-id-type="pmid">1776363</pub-id>
+</element-citation>
+</ref>
+<ref id="B12">
+<element-citation publication-type="journal">
+<person-group person-group-type="author">
+<name>
+<surname>Doberstein</surname>
+<given-names>SK</given-names>
+</name>
+<name>
+<surname>Fetter</surname>
+<given-names>RD</given-names>
+</name>
+<name>
+<surname>Mehta</surname>
+<given-names>AY</given-names>
+</name>
+<name>
+<surname>Goodman</surname>
+<given-names>CS</given-names>
+</name>
+</person-group>
+<article-title>
+Genetic analysis of myoblast fusion: blown fuse is required for progression beyond the prefusion complex
+</article-title>
+<source>J Cell Biol</source>
+<year>1997</year>
+<volume>136</volume>
+<fpage>1249</fpage>
+<lpage>1261</lpage>
+<pub-id pub-id-type="pmid">9087441</pub-id>
+</element-citation>
+</ref>
+<ref id="B13">
+<element-citation publication-type="journal">
+<person-group person-group-type="author">
+<name>
+<surname>Dorer</surname>
+<given-names>R</given-names>
+</name>
+<name>
+<surname>Boone</surname>
+<given-names>C</given-names>
+</name>
+<name>
+<surname>Kimbrough</surname>
+<given-names>T</given-names>
+</name>
+<name>
+<surname>Kim</surname>
+<given-names>J</given-names>
+</name>
+<name>
+<surname>Hartwell</surname>
+<given-names>LH</given-names>
+</name>
+</person-group>
+<article-title>
+Genetic analysis of default mating behavior in
+<italic>Saccharomyces cerevisiae</italic>
+</article-title>
+<source>Genetics</source>
+<year>1997</year>
+<volume>146</volume>
+<fpage>39</fpage>
+<lpage>55</lpage>
+<pub-id pub-id-type="pmid">9135999</pub-id>
+</element-citation>
+</ref>
+<ref id="B14">
+<element-citation publication-type="journal">
+<person-group person-group-type="author">
+<name>
+<surname>Erickson</surname>
+<given-names>MR</given-names>
+</name>
+<name>
+<surname>Galletta</surname>
+<given-names>BJ</given-names>
+</name>
+<name>
+<surname>Abmayr</surname>
+<given-names>SM</given-names>
+</name>
+</person-group>
+<article-title>
+<italic>Drosophila</italic>
+myoblast city encodes a conserved protein that is essential for myoblast fusion, dorsal closure, and cytoskeletal organization
+</article-title>
+<source>J Cell Biol</source>
+<year>1997</year>
+<volume>138</volume>
+<fpage>589</fpage>
+<lpage>603</lpage>
+<pub-id pub-id-type="pmid">9245788</pub-id>
+</element-citation>
+</ref>
+<ref id="B15">
+<element-citation publication-type="journal">
+<person-group person-group-type="author">
+<name>
+<surname>Evangelista</surname>
+<given-names>M</given-names>
+</name>
+<name>
+<surname>Blundell</surname>
+<given-names>K</given-names>
+</name>
+<name>
+<surname>Longtine</surname>
+<given-names>MS</given-names>
+</name>
+<name>
+<surname>Chow</surname>
+<given-names>CJ</given-names>
+</name>
+<name>
+<surname>Adames</surname>
+<given-names>N</given-names>
+</name>
+<name>
+<surname>Pringle</surname>
+<given-names>JR</given-names>
+</name>
+<name>
+<surname>Peter</surname>
+<given-names>M</given-names>
+</name>
+<name>
+<surname>Boone</surname>
+<given-names>C</given-names>
+</name>
+</person-group>
+<article-title>
+Bni1p, a yeast formin linking cdc42p and the actin cytoskeleton during polarized morphogenesis
+</article-title>
+<source>Science</source>
+<year>1997</year>
+<volume>276</volume>
+<fpage>118</fpage>
+<lpage>122</lpage>
+<pub-id pub-id-type="pmid">9082982</pub-id>
+</element-citation>
+</ref>
+<ref id="B16">
+<element-citation publication-type="journal">
+<person-group person-group-type="author">
+<name>
+<surname>Feltham</surname>
+<given-names>JL</given-names>
+</name>
+<name>
+<surname>Dotsch</surname>
+<given-names>V</given-names>
+</name>
+<name>
+<surname>Raza</surname>
+<given-names>S</given-names>
+</name>
+<name>
+<surname>Manor</surname>
+<given-names>D</given-names>
+</name>
+<name>
+<surname>Cerione</surname>
+<given-names>RA</given-names>
+</name>
+<name>
+<surname>Sutcliffe</surname>
+<given-names>MJ</given-names>
+</name>
+<name>
+<surname>Wagner</surname>
+<given-names>G</given-names>
+</name>
+<name>
+<surname>Oswald</surname>
+<given-names>RE</given-names>
+</name>
+</person-group>
+<article-title>
+Definition of the switch surface in the solution structure of Cdc42Hs
+</article-title>
+<source>Biochemistry</source>
+<year>1997</year>
+<volume>36</volume>
+<fpage>8755</fpage>
+<lpage>8766</lpage>
+<pub-id pub-id-type="pmid">9220962</pub-id>
+</element-citation>
+</ref>
+<ref id="B17">
+<element-citation publication-type="journal">
+<person-group person-group-type="author">
+<name>
+<surname>Fitch</surname>
+<given-names>PG</given-names>
+</name>
+<name>
+<surname>Gammie</surname>
+<given-names>AE</given-names>
+</name>
+<name>
+<surname>Lee</surname>
+<given-names>DJ</given-names>
+</name>
+<name>
+<surname>de Candal</surname>
+<given-names>VB</given-names>
+</name>
+<name>
+<surname>Rose</surname>
+<given-names>MD</given-names>
+</name>
+</person-group>
+<article-title>
+Lrg1p Is a Rho1 GTPase-activating protein required for efficient cell fusion in yeast
+</article-title>
+<source>Genetics</source>
+<year>2004</year>
+<volume>168</volume>
+<fpage>733</fpage>
+<lpage>746</lpage>
+<pub-id pub-id-type="pmid">15514049</pub-id>
+</element-citation>
+</ref>
+<ref id="B18">
+<element-citation publication-type="journal">
+<person-group person-group-type="author">
+<name>
+<surname>Friesen</surname>
+<given-names>H</given-names>
+</name>
+<name>
+<surname>Humphries</surname>
+<given-names>C</given-names>
+</name>
+<name>
+<surname>Ho</surname>
+<given-names>Y</given-names>
+</name>
+<name>
+<surname>Schub</surname>
+<given-names>O</given-names>
+</name>
+<name>
+<surname>Colwill</surname>
+<given-names>K</given-names>
+</name>
+<name>
+<surname>Andrews</surname>
+<given-names>B</given-names>
+</name>
+</person-group>
+<article-title>
+Characterization of the yeast amphiphysins Rvs161p and Rvs167p reveals roles for the Rvs heterodimer in vivo
+</article-title>
+<source>Mol Biol Cell</source>
+<year>2006</year>
+<volume>17</volume>
+<fpage>1306</fpage>
+<lpage>1321</lpage>
+<pub-id pub-id-type="pmid">16394103</pub-id>
+</element-citation>
+</ref>
+<ref id="B19">
+<element-citation publication-type="journal">
+<person-group person-group-type="author">
+<name>
+<surname>Gammie</surname>
+<given-names>AE</given-names>
+</name>
+<name>
+<surname>Brizzio</surname>
+<given-names>V</given-names>
+</name>
+<name>
+<surname>Rose</surname>
+<given-names>MD</given-names>
+</name>
+</person-group>
+<article-title>
+Distinct morphological phenotypes of cell fusion mutants
+</article-title>
+<source>Mol Biol Cell</source>
+<year>1998</year>
+<volume>9</volume>
+<fpage>1395</fpage>
+<lpage>1410</lpage>
+<pub-id pub-id-type="pmid">9614182</pub-id>
+</element-citation>
+</ref>
+<ref id="B20">
+<element-citation publication-type="journal">
+<person-group person-group-type="author">
+<name>
+<surname>Gammie</surname>
+<given-names>AE</given-names>
+</name>
+<name>
+<surname>Rose</surname>
+<given-names>MD</given-names>
+</name>
+</person-group>
+<article-title>Assays of cell and nuclear fusion</article-title>
+<source>Methods Enzymol</source>
+<year>2002</year>
+<volume>351</volume>
+<fpage>477</fpage>
+<lpage>498</lpage>
+<pub-id pub-id-type="pmid">12073365</pub-id>
+</element-citation>
+</ref>
+<ref id="B21">
+<element-citation publication-type="journal">
+<person-group person-group-type="author">
+<name>
+<surname>Geymonat</surname>
+<given-names>M</given-names>
+</name>
+<name>
+<surname>Spanos</surname>
+<given-names>A</given-names>
+</name>
+<name>
+<surname>de Bettignies</surname>
+<given-names>G</given-names>
+</name>
+<name>
+<surname>Sedgwick</surname>
+<given-names>SG</given-names>
+</name>
+</person-group>
+<article-title>
+Lte1 contributes to Bfa1 localization rather than stimulating nucleotide exchange by Tem1
+</article-title>
+<source>J Cell Biol</source>
+<year>2009</year>
+<volume>187</volume>
+<fpage>497</fpage>
+<lpage>511</lpage>
+<pub-id pub-id-type="pmid">19948498</pub-id>
+</element-citation>
+</ref>
+<ref id="B22">
+<element-citation publication-type="journal">
+<person-group person-group-type="author">
+<name>
+<surname>Gladfelter</surname>
+<given-names>AS</given-names>
+</name>
+<name>
+<surname>Bose</surname>
+<given-names>I</given-names>
+</name>
+<name>
+<surname>Zyla</surname>
+<given-names>TR</given-names>
+</name>
+<name>
+<surname>Bardes</surname>
+<given-names>ES</given-names>
+</name>
+<name>
+<surname>Lew</surname>
+<given-names>DJ</given-names>
+</name>
+</person-group>
+<article-title>
+Septin ring assembly involves cycles of GTP loading and hydrolysis by Cdc42p
+</article-title>
+<source>J Cell Biol</source>
+<year>2002</year>
+<volume>156</volume>
+<fpage>315</fpage>
+<lpage>326</lpage>
+<pub-id pub-id-type="pmid">11807094</pub-id>
+</element-citation>
+</ref>
+<ref id="B23">
+<element-citation publication-type="journal">
+<person-group person-group-type="author">
+<name>
+<surname>Grote</surname>
+<given-names>E</given-names>
+</name>
+</person-group>
+<article-title>Cell fusion assays for yeast mating pairs</article-title>
+<source>Methods Mol Biol</source>
+<year>2008</year>
+<volume>475</volume>
+<fpage>165</fpage>
+<lpage>196</lpage>
+<pub-id pub-id-type="pmid">18979244</pub-id>
+</element-citation>
+</ref>
+<ref id="B24">
+<element-citation publication-type="journal">
+<person-group person-group-type="author">
+<name>
+<surname>Grote</surname>
+<given-names>E</given-names>
+</name>
+</person-group>
+<article-title>
+Secretion is required for late events in the cell-fusion pathway of mating yeast
+</article-title>
+<source>J Cell Sci</source>
+<year>2010</year>
+<volume>123</volume>
+<fpage>1902</fpage>
+<lpage>1912</lpage>
+<pub-id pub-id-type="pmid">20460435</pub-id>
+</element-citation>
+</ref>
+<ref id="B25">
+<element-citation publication-type="journal">
+<person-group person-group-type="author">
+<name>
+<surname>Hakeda-Suzuki</surname>
+<given-names>S</given-names>
+</name>
+<name>
+<surname>Ng</surname>
+<given-names>J</given-names>
+</name>
+<name>
+<surname>Tzu</surname>
+<given-names>J</given-names>
+</name>
+<name>
+<surname>Dietzl</surname>
+<given-names>G</given-names>
+</name>
+<name>
+<surname>Sun</surname>
+<given-names>Y</given-names>
+</name>
+<name>
+<surname>Harms</surname>
+<given-names>M</given-names>
+</name>
+<name>
+<surname>Nardine</surname>
+<given-names>T</given-names>
+</name>
+<name>
+<surname>Luo</surname>
+<given-names>L</given-names>
+</name>
+<name>
+<surname>Dickson</surname>
+<given-names>BJ</given-names>
+</name>
+</person-group>
+<article-title>
+Rac function and regulation during
+<italic>Drosophila</italic>
+development
+</article-title>
+<source>Nature</source>
+<year>2002</year>
+<volume>416</volume>
+<fpage>438</fpage>
+<lpage>442</lpage>
+<pub-id pub-id-type="pmid">11919634</pub-id>
+</element-citation>
+</ref>
+<ref id="B26">
+<element-citation publication-type="journal">
+<person-group person-group-type="author">
+<name>
+<surname>Heiman</surname>
+<given-names>MG</given-names>
+</name>
+<name>
+<surname>Walter</surname>
+<given-names>P</given-names>
+</name>
+</person-group>
+<article-title>
+Prm1p, a pheromone-regulated multispanning membrane protein, facilitates plasma membrane fusion during yeast mating
+</article-title>
+<source>J Cell Biol</source>
+<year>2000</year>
+<volume>151</volume>
+<fpage>719</fpage>
+<lpage>730</lpage>
+<pub-id pub-id-type="pmid">11062271</pub-id>
+</element-citation>
+</ref>
+<ref id="B27">
+<element-citation publication-type="journal">
+<person-group person-group-type="author">
+<name>
+<surname>Heinrich</surname>
+<given-names>M</given-names>
+</name>
+<name>
+<surname>Kohler</surname>
+<given-names>T</given-names>
+</name>
+<name>
+<surname>Mosch</surname>
+<given-names>HU</given-names>
+</name>
+</person-group>
+<article-title>
+Role of Cdc42-Cla4 interaction in the pheromone response of
+<italic>Saccharomyces cerevisiae</italic>
+</article-title>
+<source>Eukaryot Cell</source>
+<year>2007</year>
+<volume>6</volume>
+<fpage>317</fpage>
+<lpage>327</lpage>
+<pub-id pub-id-type="pmid">17189484</pub-id>
+</element-citation>
+</ref>
+<ref id="B28">
+<element-citation publication-type="journal">
+<person-group person-group-type="author">
+<name>
+<surname>Horsley</surname>
+<given-names>V</given-names>
+</name>
+<name>
+<surname>Pavlath</surname>
+<given-names>GK</given-names>
+</name>
+</person-group>
+<article-title>
+Forming a multinucleated cell: molecules that regulate myoblast fusion
+</article-title>
+<source>Cells Tissues Organs</source>
+<year>2004</year>
+<volume>176</volume>
+<fpage>67</fpage>
+<lpage>78</lpage>
+<pub-id pub-id-type="pmid">14745236</pub-id>
+</element-citation>
+</ref>
+<ref id="B29">
+<element-citation publication-type="journal">
+<person-group person-group-type="author">
+<name>
+<surname>Hui</surname>
+<given-names>E</given-names>
+</name>
+<name>
+<surname>Johnson</surname>
+<given-names>CP</given-names>
+</name>
+<name>
+<surname>Yao</surname>
+<given-names>J</given-names>
+</name>
+<name>
+<surname>Dunning</surname>
+<given-names>FM</given-names>
+</name>
+<name>
+<surname>Chapman</surname>
+<given-names>ER</given-names>
+</name>
+</person-group>
+<article-title>
+Synaptotagmin-mediated bending of the target membrane is a critical step in Ca(2+)-regulated fusion
+</article-title>
+<source>Cell</source>
+<year>2009</year>
+<volume>138</volume>
+<fpage>709</fpage>
+<lpage>721</lpage>
+<pub-id pub-id-type="pmid">19703397</pub-id>
+</element-citation>
+</ref>
+<ref id="B30">
+<element-citation publication-type="journal">
+<person-group person-group-type="author">
+<name>
+<surname>Jin</surname>
+<given-names>H</given-names>
+</name>
+<name>
+<surname>Carlile</surname>
+<given-names>C</given-names>
+</name>
+<name>
+<surname>Nolan</surname>
+<given-names>S</given-names>
+</name>
+<name>
+<surname>Grote</surname>
+<given-names>E</given-names>
+</name>
+</person-group>
+<article-title>
+Prm1 prevents contact-dependent lysis of yeast mating pairs
+</article-title>
+<source>Eukaryot Cell</source>
+<year>2004</year>
+<volume>3</volume>
+<fpage>1664</fpage>
+<lpage>1673</lpage>
+<pub-id pub-id-type="pmid">15590839</pub-id>
+</element-citation>
+</ref>
+<ref id="B31">
+<element-citation publication-type="journal">
+<person-group person-group-type="author">
+<name>
+<surname>Johnson</surname>
+<given-names>DI</given-names>
+</name>
+</person-group>
+<article-title>
+Cdc42: An essential Rho-type GTPase controlling eukaryotic cell polarity
+</article-title>
+<source>Microbiol Mol Biol Rev</source>
+<year>1999</year>
+<volume>63</volume>
+<fpage>54</fpage>
+<lpage>105</lpage>
+<pub-id pub-id-type="pmid">10066831</pub-id>
+</element-citation>
+</ref>
+<ref id="B32">
+<element-citation publication-type="journal">
+<person-group person-group-type="author">
+<name>
+<surname>Kozminski</surname>
+<given-names>KG</given-names>
+</name>
+<name>
+<surname>Chen</surname>
+<given-names>AJ</given-names>
+</name>
+<name>
+<surname>Rodal</surname>
+<given-names>AA</given-names>
+</name>
+<name>
+<surname>Drubin</surname>
+<given-names>DG</given-names>
+</name>
+</person-group>
+<article-title>
+Functions and functional domains of the GTPase Cdc42p
+</article-title>
+<source>Mol Biol Cell</source>
+<year>2000</year>
+<volume>11</volume>
+<fpage>339</fpage>
+<lpage>354</lpage>
+<pub-id pub-id-type="pmid">10637312</pub-id>
+</element-citation>
+</ref>
+<ref id="B33">
+<element-citation publication-type="journal">
+<person-group person-group-type="author">
+<name>
+<surname>Lammers</surname>
+<given-names>M</given-names>
+</name>
+<name>
+<surname>Meyer</surname>
+<given-names>S</given-names>
+</name>
+<name>
+<surname>Kuhlmann</surname>
+<given-names>D</given-names>
+</name>
+<name>
+<surname>Wittinghofer</surname>
+<given-names>A</given-names>
+</name>
+</person-group>
+<article-title>
+Specificity of interactions between mDia isoforms and Rho proteins
+</article-title>
+<source>J Biol Chem</source>
+<year>2008</year>
+<volume>283</volume>
+<fpage>35236</fpage>
+<lpage>35246</lpage>
+<pub-id pub-id-type="pmid">18829452</pub-id>
+</element-citation>
+</ref>
+<ref id="B34">
+<element-citation publication-type="journal">
+<person-group person-group-type="author">
+<name>
+<surname>Lamson</surname>
+<given-names>RE</given-names>
+</name>
+<name>
+<surname>Winters</surname>
+<given-names>MJ</given-names>
+</name>
+<name>
+<surname>Pryciak</surname>
+<given-names>PM</given-names>
+</name>
+</person-group>
+<article-title>
+Cdc42 regulation of kinase activity and signaling by the yeast p21-activated kinase Ste20
+</article-title>
+<source>Mol Cell Biol</source>
+<year>2002</year>
+<volume>22</volume>
+<fpage>2939</fpage>
+<lpage>2951</lpage>
+<pub-id pub-id-type="pmid">11940652</pub-id>
+</element-citation>
+</ref>
+<ref id="B35">
+<element-citation publication-type="journal">
+<person-group person-group-type="author">
+<name>
+<surname>Leberer</surname>
+<given-names>E</given-names>
+</name>
+<name>
+<surname>Chenevert</surname>
+<given-names>J</given-names>
+</name>
+<name>
+<surname>Leeuw</surname>
+<given-names>T</given-names>
+</name>
+<name>
+<surname>Harcus</surname>
+<given-names>D</given-names>
+</name>
+<name>
+<surname>Herskowitz</surname>
+<given-names>I</given-names>
+</name>
+<name>
+<surname>Thomas</surname>
+<given-names>DY</given-names>
+</name>
+</person-group>
+<article-title>
+Genetic interactions indicate a role for Mdg1p and the SH3 domain protein Bem1p in linking the G-protein mediated yeast pheromone signalling pathway to regulators of cell polarity
+</article-title>
+<source>Mol Gen Genet</source>
+<year>1996</year>
+<volume>252</volume>
+<fpage>608</fpage>
+<lpage>621</lpage>
+<pub-id pub-id-type="pmid">8914522</pub-id>
+</element-citation>
+</ref>
+<ref id="B36">
+<element-citation publication-type="journal">
+<person-group person-group-type="author">
+<name>
+<surname>Li</surname>
+<given-names>R</given-names>
+</name>
+<name>
+<surname>Debreceni</surname>
+<given-names>B</given-names>
+</name>
+<name>
+<surname>Jia</surname>
+<given-names>B</given-names>
+</name>
+<name>
+<surname>Gao</surname>
+<given-names>Y</given-names>
+</name>
+<name>
+<surname>Tigyi</surname>
+<given-names>G</given-names>
+</name>
+<name>
+<surname>Zheng</surname>
+<given-names>Y</given-names>
+</name>
+</person-group>
+<article-title>
+Localization of the PAK1-, WASP-, and IQGAP1-specifying regions of Cdc42
+</article-title>
+<source>J Biol Chem</source>
+<year>1999</year>
+<volume>274</volume>
+<fpage>29648</fpage>
+<lpage>29654</lpage>
+<pub-id pub-id-type="pmid">10514434</pub-id>
+</element-citation>
+</ref>
+<ref id="B37">
+<element-citation publication-type="journal">
+<person-group person-group-type="author">
+<name>
+<surname>Lipton</surname>
+<given-names>BH</given-names>
+</name>
+<name>
+<surname>Konigsberg</surname>
+<given-names>IR</given-names>
+</name>
+</person-group>
+<article-title>
+A fine-structural analysis of the fusion of myogenic cells
+</article-title>
+<source>J Cell Biol</source>
+<year>1972</year>
+<volume>53</volume>
+<fpage>348</fpage>
+<lpage>364</lpage>
+<pub-id pub-id-type="pmid">4554365</pub-id>
+</element-citation>
+</ref>
+<ref id="B38">
+<element-citation publication-type="book">
+<person-group person-group-type="author">
+<name>
+<surname>Marsh</surname>
+<given-names>L</given-names>
+</name>
+<name>
+<surname>Rose</surname>
+<given-names>MD</given-names>
+</name>
+</person-group>
+<person-group person-group-type="editor">
+<name>
+<surname>Pringle</surname>
+<given-names>JRB</given-names>
+</name>
+<name>
+<surname>Jones</surname>
+<given-names>EW</given-names>
+</name>
+</person-group>
+<article-title>
+The pathway of cell and nuclear fusion during mating in
+<italic>S. cerevisiae</italic>
+</article-title>
+<source>
+In: The Molecular and Cellular Biology of the Yeast
+<italic>Saccharomyces</italic>
+: Cell Cycle and Cell Biology
+</source>
+<year>1997</year>
+<publisher-loc>Cold Spring Harbor, NY</publisher-loc>
+<publisher-name>Cold Spring Harbor Laboratory Press</publisher-name>
+<fpage>827</fpage>
+<lpage>888</lpage>
+</element-citation>
+</ref>
+<ref id="B39">
+<element-citation publication-type="journal">
+<person-group person-group-type="author">
+<name>
+<surname>Matheos</surname>
+<given-names>D</given-names>
+</name>
+<name>
+<surname>Metodiev</surname>
+<given-names>M</given-names>
+</name>
+<name>
+<surname>Muller</surname>
+<given-names>E</given-names>
+</name>
+<name>
+<surname>Stone</surname>
+<given-names>D</given-names>
+</name>
+<name>
+<surname>Rose</surname>
+<given-names>MD</given-names>
+</name>
+</person-group>
+<article-title>
+Pheromone-induced polarization is dependent on the Fus3p MAPK acting through the formin Bni1p
+</article-title>
+<source>J Cell Biol</source>
+<year>2004</year>
+<volume>165</volume>
+<fpage>99</fpage>
+<lpage>109</lpage>
+<pub-id pub-id-type="pmid">15067022</pub-id>
+</element-citation>
+</ref>
+<ref id="B40">
+<element-citation publication-type="journal">
+<person-group person-group-type="author">
+<name>
+<surname>McCallum</surname>
+<given-names>SJ</given-names>
+</name>
+<name>
+<surname>Wu</surname>
+<given-names>WJ</given-names>
+</name>
+<name>
+<surname>Cerione</surname>
+<given-names>RA</given-names>
+</name>
+</person-group>
+<article-title>
+Identification of a putative effector for Cdc42Hs with high sequence similarity to the RasGAP-related protein IQGAP1 and a Cdc42Hs binding partner with similarity to IQGAP2
+</article-title>
+<source>J Biol Chem</source>
+<year>1996</year>
+<volume>271</volume>
+<fpage>21732</fpage>
+<lpage>21737</lpage>
+<pub-id pub-id-type="pmid">8702968</pub-id>
+</element-citation>
+</ref>
+<ref id="B41">
+<element-citation publication-type="journal">
+<person-group person-group-type="author">
+<name>
+<surname>Mosch</surname>
+<given-names>HU</given-names>
+</name>
+<name>
+<surname>Kubler</surname>
+<given-names>E</given-names>
+</name>
+<name>
+<surname>Krappmann</surname>
+<given-names>S</given-names>
+</name>
+<name>
+<surname>Fink</surname>
+<given-names>GR</given-names>
+</name>
+<name>
+<surname>Braus</surname>
+<given-names>GH</given-names>
+</name>
+</person-group>
+<article-title>
+Crosstalk between the Ras2p-controlled mitogen-activated protein kinase and cAMP pathways during invasive growth of
+<italic>Saccharomyces cerevisiae</italic>
+</article-title>
+<source>Mol Biol Cell</source>
+<year>1999</year>
+<volume>10</volume>
+<fpage>1325</fpage>
+<lpage>1335</lpage>
+<pub-id pub-id-type="pmid">10233147</pub-id>
+</element-citation>
+</ref>
+<ref id="B42">
+<element-citation publication-type="journal">
+<person-group person-group-type="author">
+<name>
+<surname>Moskow</surname>
+<given-names>JJ</given-names>
+</name>
+<name>
+<surname>Gladfelter</surname>
+<given-names>AS</given-names>
+</name>
+<name>
+<surname>Lamson</surname>
+<given-names>RE</given-names>
+</name>
+<name>
+<surname>Pryciak</surname>
+<given-names>PM</given-names>
+</name>
+<name>
+<surname>Lew</surname>
+<given-names>DJ</given-names>
+</name>
+</person-group>
+<article-title>
+Role of Cdc42p in pheromone-stimulated signal transduction in
+<italic>Saccharomyces cerevisiae</italic>
+</article-title>
+<source>Mol Cell Biol</source>
+<year>2000</year>
+<volume>20</volume>
+<fpage>7559</fpage>
+<lpage>7571</lpage>
+<pub-id pub-id-type="pmid">11003652</pub-id>
+</element-citation>
+</ref>
+<ref id="B43">
+<element-citation publication-type="journal">
+<person-group person-group-type="author">
+<name>
+<surname>Nelson</surname>
+<given-names>B</given-names>
+</name>
+<name>
+<surname>Parsons</surname>
+<given-names>AB</given-names>
+</name>
+<name>
+<surname>Evangelista</surname>
+<given-names>M</given-names>
+</name>
+<name>
+<surname>Schaefer</surname>
+<given-names>K</given-names>
+</name>
+<name>
+<surname>Kennedy</surname>
+<given-names>K</given-names>
+</name>
+<name>
+<surname>Ritchie</surname>
+<given-names>S</given-names>
+</name>
+<name>
+<surname>Petryshen</surname>
+<given-names>TL</given-names>
+</name>
+<name>
+<surname>Boone</surname>
+<given-names>C</given-names>
+</name>
+</person-group>
+<article-title>
+Fus1p interacts with components of the Hog1p mitogen-activated protein kinase and Cdc42p morphogenesis signaling pathways to control cell fusion during yeast mating
+</article-title>
+<source>Genetics</source>
+<year>2004</year>
+<volume>166</volume>
+<fpage>67</fpage>
+<lpage>77</lpage>
+<pub-id pub-id-type="pmid">15020407</pub-id>
+</element-citation>
+</ref>
+<ref id="B44">
+<element-citation publication-type="journal">
+<person-group person-group-type="author">
+<name>
+<surname>Nern</surname>
+<given-names>A</given-names>
+</name>
+<name>
+<surname>Arkowitz</surname>
+<given-names>RA</given-names>
+</name>
+</person-group>
+<article-title>
+A GTP-exchange factor required for cell orientation
+</article-title>
+<source>Nature</source>
+<year>1998</year>
+<volume>391</volume>
+<fpage>195</fpage>
+<lpage>198</lpage>
+<pub-id pub-id-type="pmid">9428768</pub-id>
+</element-citation>
+</ref>
+<ref id="B45">
+<element-citation publication-type="journal">
+<person-group person-group-type="author">
+<name>
+<surname>Nern</surname>
+<given-names>A</given-names>
+</name>
+<name>
+<surname>Arkowitz</surname>
+<given-names>RA</given-names>
+</name>
+</person-group>
+<article-title>
+A Cdc24p-Far1p-Gbetagamma protein complex required for yeast orientation during mating
+</article-title>
+<source>J Cell Biol</source>
+<year>1999</year>
+<volume>144</volume>
+<fpage>1187</fpage>
+<lpage>1202</lpage>
+<pub-id pub-id-type="pmid">10087263</pub-id>
+</element-citation>
+</ref>
+<ref id="B46">
+<element-citation publication-type="journal">
+<person-group person-group-type="author">
+<name>
+<surname>Nern</surname>
+<given-names>A</given-names>
+</name>
+<name>
+<surname>Arkowitz</surname>
+<given-names>RA</given-names>
+</name>
+</person-group>
+<article-title>
+G proteins mediate changes in cell shape by stabilizing the axis of polarity
+</article-title>
+<source>Mol Cell</source>
+<year>2000</year>
+<volume>5</volume>
+<fpage>853</fpage>
+<lpage>864</lpage>
+<pub-id pub-id-type="pmid">10882121</pub-id>
+</element-citation>
+</ref>
+<ref id="B47">
+<element-citation publication-type="journal">
+<person-group person-group-type="author">
+<name>
+<surname>Osman</surname>
+<given-names>MA</given-names>
+</name>
+<name>
+<surname>Konopka</surname>
+<given-names>JB</given-names>
+</name>
+<name>
+<surname>Cerione</surname>
+<given-names>RA</given-names>
+</name>
+</person-group>
+<article-title>
+Iqg1p links spatial and secretion landmarks to polarity and cytokinesis
+</article-title>
+<source>J Cell Biol</source>
+<year>2002</year>
+<volume>159</volume>
+<fpage>601</fpage>
+<lpage>611</lpage>
+<pub-id pub-id-type="pmid">12446742</pub-id>
+</element-citation>
+</ref>
+<ref id="B48">
+<element-citation publication-type="journal">
+<person-group person-group-type="author">
+<name>
+<surname>Owen</surname>
+<given-names>D</given-names>
+</name>
+<name>
+<surname>Campbell</surname>
+<given-names>LJ</given-names>
+</name>
+<name>
+<surname>Littlefield</surname>
+<given-names>K</given-names>
+</name>
+<name>
+<surname>Evetts</surname>
+<given-names>KA</given-names>
+</name>
+<name>
+<surname>Li</surname>
+<given-names>Z</given-names>
+</name>
+<name>
+<surname>Sacks</surname>
+<given-names>DB</given-names>
+</name>
+<name>
+<surname>Lowe</surname>
+<given-names>PN</given-names>
+</name>
+<name>
+<surname>Mott</surname>
+<given-names>HR</given-names>
+</name>
+</person-group>
+<article-title>
+The IQGAP1-Rac1 and IQGAP1-Cdc42 interactions: interfaces differ between the complexes
+</article-title>
+<source>J Biol Chem</source>
+<year>2008</year>
+<volume>283</volume>
+<fpage>1692</fpage>
+<lpage>1704</lpage>
+<pub-id pub-id-type="pmid">17984089</pub-id>
+</element-citation>
+</ref>
+<ref id="B49">
+<element-citation publication-type="journal">
+<person-group person-group-type="author">
+<name>
+<surname>Paterson</surname>
+<given-names>JM</given-names>
+</name>
+<name>
+<surname>Ydenberg</surname>
+<given-names>CA</given-names>
+</name>
+<name>
+<surname>Rose</surname>
+<given-names>MD</given-names>
+</name>
+</person-group>
+<article-title>
+Dynamic localization of yeast Fus2p to an expanding ring at the cell fusion junction during mating
+</article-title>
+<source>J Cell Biol</source>
+<year>2008</year>
+<volume>181</volume>
+<fpage>697</fpage>
+<lpage>709</lpage>
+<pub-id pub-id-type="pmid">18474625</pub-id>
+</element-citation>
+</ref>
+<ref id="B50">
+<element-citation publication-type="journal">
+<person-group person-group-type="author">
+<name>
+<surname>Peter</surname>
+<given-names>BJ</given-names>
+</name>
+<name>
+<surname>Kent</surname>
+<given-names>HM</given-names>
+</name>
+<name>
+<surname>Mills</surname>
+<given-names>IG</given-names>
+</name>
+<name>
+<surname>Vallis</surname>
+<given-names>Y</given-names>
+</name>
+<name>
+<surname>Butler</surname>
+<given-names>PJ</given-names>
+</name>
+<name>
+<surname>Evans</surname>
+<given-names>PR</given-names>
+</name>
+<name>
+<surname>McMahon</surname>
+<given-names>HT</given-names>
+</name>
+</person-group>
+<article-title>
+BAR domains as sensors of membrane curvature: the amphiphysin BAR structure
+</article-title>
+<source>Science</source>
+<year>2004</year>
+<volume>303</volume>
+<fpage>495</fpage>
+<lpage>499</lpage>
+<pub-id pub-id-type="pmid">14645856</pub-id>
+</element-citation>
+</ref>
+<ref id="B51">
+<element-citation publication-type="journal">
+<person-group person-group-type="author">
+<name>
+<surname>Potgens</surname>
+<given-names>AJ</given-names>
+</name>
+<name>
+<surname>Schmitz</surname>
+<given-names>U</given-names>
+</name>
+<name>
+<surname>Bose</surname>
+<given-names>P</given-names>
+</name>
+<name>
+<surname>Versmold</surname>
+<given-names>A</given-names>
+</name>
+<name>
+<surname>Kaufmann</surname>
+<given-names>P</given-names>
+</name>
+<name>
+<surname>Frank</surname>
+<given-names>HG</given-names>
+</name>
+</person-group>
+<article-title>Mechanisms of syncytial fusion: a review</article-title>
+<source>Placenta</source>
+<year>2002</year>
+<volume>23</volume>
+<issue>Supp A</issue>
+<fpage>S107</fpage>
+<lpage>S113</lpage>
+<pub-id pub-id-type="pmid">11978067</pub-id>
+</element-citation>
+</ref>
+<ref id="B52">
+<element-citation publication-type="journal">
+<person-group person-group-type="author">
+<name>
+<surname>Primakoff</surname>
+<given-names>P</given-names>
+</name>
+<name>
+<surname>Myles</surname>
+<given-names>DG</given-names>
+</name>
+</person-group>
+<article-title>
+Penetration, adhesion, and fusion in mammalian sperm-egg interaction
+</article-title>
+<source>Science</source>
+<year>2002</year>
+<volume>296</volume>
+<fpage>2183</fpage>
+<lpage>2185</lpage>
+<pub-id pub-id-type="pmid">12077404</pub-id>
+</element-citation>
+</ref>
+<ref id="B53">
+<element-citation publication-type="journal">
+<person-group person-group-type="author">
+<name>
+<surname>Pruyne</surname>
+<given-names>D</given-names>
+</name>
+<name>
+<surname>Bretscher</surname>
+<given-names>A</given-names>
+</name>
+</person-group>
+<article-title>
+Polarization of cell growth in yeast. I. Establishment and maintenance of polarity states
+</article-title>
+<source>J Cell Sci</source>
+<year>2000</year>
+<volume>113</volume>
+<fpage>365</fpage>
+<lpage>375</lpage>
+<pub-id pub-id-type="pmid">10639324</pub-id>
+</element-citation>
+</ref>
+<ref id="B54">
+<element-citation publication-type="journal">
+<person-group person-group-type="author">
+<name>
+<surname>Richman</surname>
+<given-names>TJ</given-names>
+</name>
+<name>
+<surname>Sawyer</surname>
+<given-names>MM</given-names>
+</name>
+<name>
+<surname>Johnson</surname>
+<given-names>DI</given-names>
+</name>
+</person-group>
+<article-title>
+The Cdc42p GTPase is involved in a G2/M morphogenetic checkpoint regulating the apical-isotropic switch and nuclear division in yeast
+</article-title>
+<source>J Biol Chem</source>
+<year>1999</year>
+<volume>274</volume>
+<fpage>16861</fpage>
+<lpage>16870</lpage>
+<pub-id pub-id-type="pmid">10358031</pub-id>
+</element-citation>
+</ref>
+<ref id="B55">
+<element-citation publication-type="journal">
+<person-group person-group-type="author">
+<name>
+<surname>Richman</surname>
+<given-names>TJ</given-names>
+</name>
+<name>
+<surname>Toenjes</surname>
+<given-names>KA</given-names>
+</name>
+<name>
+<surname>Morales</surname>
+<given-names>SE</given-names>
+</name>
+<name>
+<surname>Cole</surname>
+<given-names>KC</given-names>
+</name>
+<name>
+<surname>Wasserman</surname>
+<given-names>BT</given-names>
+</name>
+<name>
+<surname>Taylor</surname>
+<given-names>CM</given-names>
+</name>
+<name>
+<surname>Koster</surname>
+<given-names>JA</given-names>
+</name>
+<name>
+<surname>Whelihan</surname>
+<given-names>MF</given-names>
+</name>
+<name>
+<surname>Johnson</surname>
+<given-names>DI</given-names>
+</name>
+</person-group>
+<article-title>
+Analysis of cell-cycle specific localization of the Rdi1p RhoGDI and the structural determinants required for Cdc42p membrane localization and clustering at sites of polarized growth
+</article-title>
+<source>Curr Genet</source>
+<year>2004</year>
+<volume>45</volume>
+<fpage>339</fpage>
+<lpage>349</lpage>
+<pub-id pub-id-type="pmid">15108020</pub-id>
+</element-citation>
+</ref>
+<ref id="B56">
+<element-citation publication-type="journal">
+<person-group person-group-type="author">
+<name>
+<surname>Saka</surname>
+<given-names>A</given-names>
+</name>
+<name>
+<surname>Abe</surname>
+<given-names>M</given-names>
+</name>
+<name>
+<surname>Okano</surname>
+<given-names>H</given-names>
+</name>
+<name>
+<surname>Minemura</surname>
+<given-names>M</given-names>
+</name>
+<name>
+<surname>Qadota</surname>
+<given-names>H</given-names>
+</name>
+<name>
+<surname>Utsugi</surname>
+<given-names>T</given-names>
+</name>
+<name>
+<surname>Mino</surname>
+<given-names>A</given-names>
+</name>
+<name>
+<surname>Tanaka</surname>
+<given-names>K</given-names>
+</name>
+<name>
+<surname>Takai</surname>
+<given-names>Y</given-names>
+</name>
+<name>
+<surname>Ohya</surname>
+<given-names>Y</given-names>
+</name>
+</person-group>
+<article-title>
+Complementing yeast rho1 mutation groups with distinct functional defects
+</article-title>
+<source>J Biol Chem</source>
+<year>2001</year>
+<volume>276</volume>
+<fpage>46165</fpage>
+<lpage>46171</lpage>
+<pub-id pub-id-type="pmid">11574532</pub-id>
+</element-citation>
+</ref>
+<ref id="B57">
+<element-citation publication-type="journal">
+<person-group person-group-type="author">
+<name>
+<surname>Sens</surname>
+<given-names>KL</given-names>
+</name>
+<name>
+<surname>Zhang</surname>
+<given-names>S</given-names>
+</name>
+<name>
+<surname>Jin</surname>
+<given-names>P</given-names>
+</name>
+<name>
+<surname>Duan</surname>
+<given-names>R</given-names>
+</name>
+<name>
+<surname>Zhang</surname>
+<given-names>G</given-names>
+</name>
+<name>
+<surname>Luo</surname>
+<given-names>F</given-names>
+</name>
+<name>
+<surname>Parachini</surname>
+<given-names>L</given-names>
+</name>
+<name>
+<surname>Chen</surname>
+<given-names>EH</given-names>
+</name>
+</person-group>
+<article-title>
+An invasive podosome-like structure promotes fusion pore formation during myoblast fusion
+</article-title>
+<source>J Cell Biol</source>
+<year>2010</year>
+<volume>191</volume>
+<fpage>1013</fpage>
+<lpage>1027</lpage>
+<pub-id pub-id-type="pmid">21098115</pub-id>
+</element-citation>
+</ref>
+<ref id="B58">
+<element-citation publication-type="journal">
+<person-group person-group-type="author">
+<name>
+<surname>Sheltzer</surname>
+<given-names>JM</given-names>
+</name>
+<name>
+<surname>Rose</surname>
+<given-names>MD</given-names>
+</name>
+</person-group>
+<article-title>
+The class V myosin Myo2p is required for Fus2p transport and actin polarization during the yeast mating response
+</article-title>
+<source>Mol Biol Cell</source>
+<year>2009</year>
+<volume>20</volume>
+<fpage>2909</fpage>
+<lpage>2919</lpage>
+<pub-id pub-id-type="pmid">19403698</pub-id>
+</element-citation>
+</ref>
+<ref id="B59">
+<element-citation publication-type="journal">
+<person-group person-group-type="author">
+<name>
+<surname>Sikorski</surname>
+<given-names>RS</given-names>
+</name>
+<name>
+<surname>Hieter</surname>
+<given-names>P</given-names>
+</name>
+</person-group>
+<article-title>
+A system of shuttle vectors and yeast host strains designed for efficient manipulation of DNA in
+<italic>Saccharomyces cerevisiae</italic>
+</article-title>
+<source>Genetics</source>
+<year>1989</year>
+<volume>122</volume>
+<fpage>19</fpage>
+<lpage>27</lpage>
+<pub-id pub-id-type="pmid">2659436</pub-id>
+</element-citation>
+</ref>
+<ref id="B60">
+<element-citation publication-type="journal">
+<person-group person-group-type="author">
+<name>
+<surname>Simon</surname>
+<given-names>MN</given-names>
+</name>
+<name>
+<surname>De Virgilio</surname>
+<given-names>C</given-names>
+</name>
+<name>
+<surname>Souza</surname>
+<given-names>B</given-names>
+</name>
+<name>
+<surname>Pringle</surname>
+<given-names>JR</given-names>
+</name>
+<name>
+<surname>Abo</surname>
+<given-names>A</given-names>
+</name>
+<name>
+<surname>Reed</surname>
+<given-names>SI</given-names>
+</name>
+</person-group>
+<article-title>
+Role for the Rho-family GTPase Cdc42 in yeast mating-pheromone signal pathway
+</article-title>
+<source>Nature</source>
+<year>1995</year>
+<volume>376</volume>
+<fpage>702</fpage>
+<lpage>705</lpage>
+<pub-id pub-id-type="pmid">7651520</pub-id>
+</element-citation>
+</ref>
+<ref id="B61">
+<element-citation publication-type="journal">
+<person-group person-group-type="author">
+<name>
+<surname>Trueheart</surname>
+<given-names>J</given-names>
+</name>
+<name>
+<surname>Boeke</surname>
+<given-names>JD</given-names>
+</name>
+<name>
+<surname>Fink</surname>
+<given-names>GR</given-names>
+</name>
+</person-group>
+<article-title>
+Two genes required for cell fusion during yeast conjugation: evidence for a pheromone-induced surface protein
+</article-title>
+<source>Mol Cell Biol</source>
+<year>1987</year>
+<volume>7</volume>
+<fpage>2316</fpage>
+<lpage>2328</lpage>
+<pub-id pub-id-type="pmid">3302672</pub-id>
+</element-citation>
+</ref>
+<ref id="B62">
+<element-citation publication-type="journal">
+<person-group person-group-type="author">
+<name>
+<surname>Trueheart</surname>
+<given-names>J</given-names>
+</name>
+<name>
+<surname>Fink</surname>
+<given-names>GR</given-names>
+</name>
+</person-group>
+<article-title>
+The yeast cell fusion protein FUS1 is O-glycosylated and spans the plasma membrane
+</article-title>
+<source>Proc Natl Acad Sci USA</source>
+<year>1989</year>
+<volume>86</volume>
+<fpage>9916</fpage>
+<lpage>9920</lpage>
+<pub-id pub-id-type="pmid">2690078</pub-id>
+</element-citation>
+</ref>
+<ref id="B71">
+<element-citation publication-type="journal">
+<person-group person-group-type="author">
+<name>
+<surname>Vasyutina</surname>
+<given-names>E</given-names>
+</name>
+<name>
+<surname>Martarelli</surname>
+<given-names>B</given-names>
+</name>
+<name>
+<surname>Brakebusch</surname>
+<given-names>C</given-names>
+</name>
+<name>
+<surname>Wende</surname>
+<given-names>H</given-names>
+</name>
+<name>
+<surname>Birchmeier</surname>
+<given-names>C</given-names>
+</name>
+</person-group>
+<article-title>
+The small G-proteins Rac1 and Cdc42 are essential for myoblast fusion in the mouse
+</article-title>
+<source>Proc Natl Acad Sci USA</source>
+<year>2009</year>
+<volume>106</volume>
+<fpage>8935</fpage>
+<lpage>8940</lpage>
+<pub-id pub-id-type="pmid">19443691</pub-id>
+</element-citation>
+</ref>
+<ref id="B63">
+<element-citation publication-type="journal">
+<person-group person-group-type="author">
+<name>
+<surname>Vignery</surname>
+<given-names>A</given-names>
+</name>
+</person-group>
+<article-title>
+Osteoclasts and giant cells: macrophage-macrophage fusion mechanism
+</article-title>
+<source>Int J Exp Pathol</source>
+<year>2000</year>
+<volume>81</volume>
+<fpage>291</fpage>
+<lpage>304</lpage>
+<pub-id pub-id-type="pmid">11168677</pub-id>
+</element-citation>
+</ref>
+<ref id="B64">
+<element-citation publication-type="journal">
+<person-group person-group-type="author">
+<name>
+<surname>Wu</surname>
+<given-names>WJ</given-names>
+</name>
+<name>
+<surname>Leonard</surname>
+<given-names>DA</given-names>
+</name>
+<name>
+<surname>R</surname>
+<given-names>AC</given-names>
+</name>
+<name>
+<surname>Manor</surname>
+<given-names>D</given-names>
+</name>
+</person-group>
+<article-title>
+Interaction between Cdc42Hs and RhoGDI is mediated through the Rho insert region
+</article-title>
+<source>J Biol Chem</source>
+<year>1997</year>
+<volume>272</volume>
+<fpage>26153</fpage>
+<lpage>26158</lpage>
+<pub-id pub-id-type="pmid">9334181</pub-id>
+</element-citation>
+</ref>
+<ref id="B65">
+<element-citation publication-type="journal">
+<person-group person-group-type="author">
+<name>
+<surname>Ydenberg</surname>
+<given-names>CA</given-names>
+</name>
+<name>
+<surname>Rose</surname>
+<given-names>MD</given-names>
+</name>
+</person-group>
+<article-title>
+Yeast mating: a model system for studying cell and nuclear fusion
+</article-title>
+<source>Methods Mol Biol</source>
+<year>2008</year>
+<volume>475</volume>
+<fpage>3</fpage>
+<lpage>20</lpage>
+<pub-id pub-id-type="pmid">18979235</pub-id>
+</element-citation>
+</ref>
+<ref id="B66">
+<element-citation publication-type="journal">
+<person-group person-group-type="author">
+<name>
+<surname>Ydenberg</surname>
+<given-names>CA</given-names>
+</name>
+<name>
+<surname>Rose</surname>
+<given-names>MD</given-names>
+</name>
+</person-group>
+<article-title>
+Antagonistic regulation of Fus2p nuclear localization by pheromone signaling and the cell cycle
+</article-title>
+<source>J Cell Biol</source>
+<year>2009</year>
+<volume>184</volume>
+<fpage>409</fpage>
+<lpage>422</lpage>
+<pub-id pub-id-type="pmid">19188495</pub-id>
+</element-citation>
+</ref>
+<ref id="B67">
+<element-citation publication-type="journal">
+<person-group person-group-type="author">
+<name>
+<surname>Youn</surname>
+<given-names>JY</given-names>
+</name>
+<etal/>
+</person-group>
+<article-title>
+Dissecting BAR domain function in the yeast amphiphysins Rvs161 and Rvs167 during endocytosis
+</article-title>
+<source>Mol Biol Cell</source>
+<year>2009</year>
+<volume>21</volume>
+<fpage>3054</fpage>
+<lpage>3069</lpage>
+<pub-id pub-id-type="pmid">20610658</pub-id>
+</element-citation>
+</ref>
+<ref id="B68">
+<element-citation publication-type="journal">
+<person-group person-group-type="author">
+<name>
+<surname>Zhang</surname>
+<given-names>X</given-names>
+</name>
+<name>
+<surname>Bi</surname>
+<given-names>E</given-names>
+</name>
+<name>
+<surname>Novick</surname>
+<given-names>P</given-names>
+</name>
+<name>
+<surname>Du</surname>
+<given-names>L</given-names>
+</name>
+<name>
+<surname>Kozminski</surname>
+<given-names>KG</given-names>
+</name>
+<name>
+<surname>Lipschutz</surname>
+<given-names>JH</given-names>
+</name>
+<name>
+<surname>Guo</surname>
+<given-names>W</given-names>
+</name>
+</person-group>
+<article-title>
+Cdc42 interacts with the exocyst and regulates polarized secretion
+</article-title>
+<source>J Biol Chem</source>
+<year>2001</year>
+<volume>276</volume>
+<fpage>46745</fpage>
+<lpage>46750</lpage>
+<pub-id pub-id-type="pmid">11595741</pub-id>
+</element-citation>
+</ref>
+<ref id="B69">
+<element-citation publication-type="journal">
+<person-group person-group-type="author">
+<name>
+<surname>Zhang</surname>
+<given-names>X</given-names>
+</name>
+<name>
+<surname>Orlando</surname>
+<given-names>K</given-names>
+</name>
+<name>
+<surname>He</surname>
+<given-names>B</given-names>
+</name>
+<name>
+<surname>Xi</surname>
+<given-names>F</given-names>
+</name>
+<name>
+<surname>Zhang</surname>
+<given-names>J</given-names>
+</name>
+<name>
+<surname>Zajac</surname>
+<given-names>A</given-names>
+</name>
+<name>
+<surname>Guo</surname>
+<given-names>W</given-names>
+</name>
+</person-group>
+<article-title>
+Membrane association and functional regulation of Sec3 by phospholipids and Cdc42
+</article-title>
+<source>J Cell Biol</source>
+<year>2008</year>
+<volume>180</volume>
+<fpage>145</fpage>
+<lpage>158</lpage>
+<pub-id pub-id-type="pmid">18195105</pub-id>
+</element-citation>
+</ref>
+<ref id="B70">
+<element-citation publication-type="journal">
+<person-group person-group-type="author">
+<name>
+<surname>Zhao</surname>
+<given-names>ZS</given-names>
+</name>
+<name>
+<surname>Leung</surname>
+<given-names>T</given-names>
+</name>
+<name>
+<surname>Manser</surname>
+<given-names>E</given-names>
+</name>
+<name>
+<surname>Lim</surname>
+<given-names>L</given-names>
+</name>
+</person-group>
+<article-title>
+Pheromone signalling in
+<italic>Saccharomyces cerevisiae</italic>
+requires the small GTP-binding protein Cdc42p and its activator CDC24
+</article-title>
+<source>Mol Cell Biol</source>
+<year>1995</year>
+<volume>15</volume>
+<fpage>5246</fpage>
+<lpage>5257</lpage>
+<pub-id pub-id-type="pmid">7565673</pub-id>
+</element-citation>
+</ref>
+</ref-list>
+</back>
+</article>
+</pmc-articleset>

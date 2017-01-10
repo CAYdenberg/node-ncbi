@@ -69,6 +69,15 @@ module.exports = {
         id: id
       }
     });
-  }
+  },
+
+  pmcFullText: (id) => createGateway({
+    utility: 'efetch',
+    params: {
+      db: 'pmc',
+      retmode: 'xml',
+      id: id
+    }
+  })
 
 }

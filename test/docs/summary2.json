@@ -1,0 +1,130 @@
+{
+    "header": {
+        "type": "esummary",
+        "version": "0.3"
+    },
+    "result": {
+        "uids": [
+            "22323294"
+        ],
+        "22323294": {
+            "uid": "22323294",
+            "pubdate": "2012 Apr",
+            "epubdate": "2012 Feb 9",
+            "source": "Mol Biol Cell",
+            "authors": [
+                {
+                    "name": "Ydenberg CA",
+                    "authtype": "Author",
+                    "clusterid": ""
+                },
+                {
+                    "name": "Stein RA",
+                    "authtype": "Author",
+                    "clusterid": ""
+                },
+                {
+                    "name": "Rose MD",
+                    "authtype": "Author",
+                    "clusterid": ""
+                }
+            ],
+            "lastauthor": "Rose MD",
+            "title": "Cdc42p and Fus2p act together late in yeast cell fusion.",
+            "sorttitle": "cdc42p and fus2p act together late in yeast cell fusion",
+            "volume": "23",
+            "issue": "7",
+            "pages": "1208-18",
+            "lang": [
+                "eng"
+            ],
+            "nlmuniqueid": "9201390",
+            "issn": "1059-1524",
+            "essn": "1939-4586",
+            "pubtype": [
+                "Journal Article"
+            ],
+            "recordstatus": "PubMed - indexed for MEDLINE",
+            "pubstatus": "4",
+            "articleids": [
+                {
+                    "idtype": "pubmed",
+                    "idtypen": 1,
+                    "value": "22323294"
+                },
+                {
+                    "idtype": "pii",
+                    "idtypen": 4,
+                    "value": "mbc.E11-08-0723"
+                },
+                {
+                    "idtype": "doi",
+                    "idtypen": 3,
+                    "value": "10.1091/mbc.E11-08-0723"
+                },
+                {
+                    "idtype": "pmc",
+                    "idtypen": 8,
+                    "value": "PMC3315798"
+                },
+                {
+                    "idtype": "rid",
+                    "idtypen": 8,
+                    "value": "22323294"
+                },
+                {
+                    "idtype": "eid",
+                    "idtypen": 8,
+                    "value": "22323294"
+                },
+                {
+                    "idtype": "pmcid",
+                    "idtypen": 5,
+                    "value": "pmc-id: PMC3315798;"
+                }
+            ],
+            "history": [
+                {
+                    "pubstatus": "entrez",
+                    "date": "2012/02/11 06:00"
+                },
+                {
+                    "pubstatus": "pubmed",
+                    "date": "2012/02/11 06:00"
+                },
+                {
+                    "pubstatus": "medline",
+                    "date": "2012/09/14 06:00"
+                }
+            ],
+            "references": [
+            ],
+            "attributes": [
+                "Has Abstract"
+            ],
+            "pmcrefcount": 7,
+            "fulljournalname": "Molecular biology of the cell",
+            "elocationid": "doi: 10.1091/mbc.E11-08-0723",
+            "doctype": "citation",
+            "srccontriblist": [
+            ],
+            "booktitle": "",
+            "medium": "",
+            "edition": "",
+            "publisherlocation": "",
+            "publishername": "",
+            "srcdate": "",
+            "reportnumber": "",
+            "availablefromurl": "",
+            "locationlabel": "",
+            "doccontriblist": [
+            ],
+            "docdate": "",
+            "bookname": "",
+            "chapter": "",
+            "sortpubdate": "2012/04/01 00:00",
+            "sortfirstauthor": "Ydenberg CA",
+            "vernaculartitle": ""
+        }
+    }
+}
