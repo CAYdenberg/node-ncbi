@@ -17,7 +17,7 @@ var Gateway = {};
  * @return: a URL
  */
 Gateway.getBase = function() {
-  return this.base = 'http://eutils.ncbi.nlm.nih.gov/entrez/eutils/' + this.settings.utility + '.fcgi?';
+  return this.base = 'https://eutils.ncbi.nlm.nih.gov/entrez/eutils/' + this.settings.utility + '.fcgi?';
 }
 
 /**
