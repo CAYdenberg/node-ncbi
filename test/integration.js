@@ -16,6 +16,13 @@ describe('Pubmed module', function() {
     })
   });
 
+  it('should return a count of 0 if the search returns no results', function(done) {
+    pubmed.search('boioioioioioioioioioioing').then(results => {
+      assert.equal(results.count, 0);
+      done();
+    })
+  });
+
   it('should return papers that cite this one', function(done) {
     pubmed.citedBy(19188495).then(results => {
       results.forEach(isPubmedSummary);
@@ -28,13 +35,6 @@ describe('Pubmed module', function() {
       results.forEach(isPubmedSummary);
       done();
     });
-  });
-
-  it('should return a count of 0 if the search returns no results', function(done) {
-    pubmed.search('boioioioioioioioioioioing').then(results => {
-      assert.equal(results.count, 0);
-      done();
-    })
   });
 
   it('should return null if an invalid pmid is passed', function(done) {
