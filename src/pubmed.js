@@ -70,6 +70,28 @@ module.exports = {
 
   abstract: function(pmid) {
     return gateways.pubmedRecord(pmid).resolve(queries.abstract);
+  },
+
+  isOa: function(pmid) {
+    return this.summary(pmid).then(summary => {
+      if (!summary) {
+        return null;
+      } else {
+        const pmcid = summary.pmc;
+        return gateways.pmcFullText(pmcid).resolve(queries.isOa);
+      }
+    });
+  },
+
+  fulltext: function(pmid) {
+    return this.summary(pmid).then(summary => {
+      if (!summary) {
+        return null;
+      } else {
+        const pmcid = summary.pmc;
+        return gateways.pmcFullText(pmcid).send().then(res => res.body);
+      }
+    });
   }
 
 }

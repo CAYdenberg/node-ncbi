@@ -1,8 +1,10 @@
 /* eslint-env mocha, node */
 
-var pubmed = require('../src/pubmed');
+const check = require('check-types').assert;
 const {isPubmedSummary} = require('./helpers.js');
 const assert = require('assert');
+
+var pubmed = require('../src/pubmed');
 
 describe('Pubmed module', function() {
   this.timeout(10000);
@@ -52,6 +54,27 @@ describe('Pubmed module', function() {
   it('should return null if an invalid pmid is passed to the abstract method', function(done) {
     pubmed.abstract(0).then(results => {
       assert.equal(results, null);
+      done();
+    });
+  });
+
+  it('should tell us if a paper is open access', function(done) {
+    pubmed.isOa(22323294).then(result => {
+      assert.equal(result, true);
+      done();
+    })
+  });
+
+  it('should tell us if a paper is not open access', function(done) {
+    pubmed.isOa(23727094).then(result => {
+      assert.equal(result, false);
+      done();
+    });
+  });
+
+  it('should retrieve the full NLM XML of a paper', function(done) {
+    pubmed.fulltext(22323294).then(result => {
+      check.string(result);
       done();
     });
   });
