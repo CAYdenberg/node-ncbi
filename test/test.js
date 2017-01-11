@@ -181,6 +181,21 @@ describe('parser', function() {
     })
   });
 
+  describe('isOa', () => {
+    it('should tell us if a PMC document is fully open-access', (done) => {
+      getDoc('pmc_oa.xml', (err, contents) => {
+        assert.equal(q.isOa(contents), true);
+        done()
+      });
+    });
+    it('should tell us if a PMC document is not open-access', (done) => {
+      getDoc('pmc_not_oa.xml', (err, contents) => {
+        assert.equal(q.isOa(contents), false);
+        done()
+      });
+    })
+  });
+
 });
 
 

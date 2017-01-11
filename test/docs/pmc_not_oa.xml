@@ -1,0 +1,176 @@
+<pmc-articleset>
+<article xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML" article-type="research-article">
+<!--
+The publisher of this article does not allow downloading of the full text in XML form.
+-->
+<?properties manuscript?>
+<front>
+<journal-meta>
+<journal-id journal-id-type="nlm-journal-id">9107782</journal-id>
+<journal-id journal-id-type="pubmed-jr-id">8548</journal-id>
+<journal-id journal-id-type="nlm-ta">Curr Biol</journal-id>
+<journal-id journal-id-type="iso-abbrev">Curr. Biol.</journal-id>
+<journal-title-group>
+<journal-title>Current biology : CB</journal-title>
+</journal-title-group>
+<issn pub-type="ppub">0960-9822</issn>
+<issn pub-type="epub">1879-0445</issn>
+</journal-meta>
+<article-meta>
+<article-id pub-id-type="pmid">23727094</article-id>
+<article-id pub-id-type="pmc">3714218</article-id>
+<article-id pub-id-type="doi">10.1016/j.cub.2013.04.058</article-id>
+<article-id pub-id-type="manuscript">NIHMS472952</article-id>
+<article-categories>
+<subj-group subj-group-type="heading">
+<subject>Article</subject>
+</subj-group>
+</article-categories>
+<title-group>
+<article-title>
+GMF severs actin-Arp2/3 complex branch junctions by a cofilin-like mechanism
+</article-title>
+</title-group>
+<contrib-group>
+<contrib contrib-type="author">
+<name>
+<surname>Ydenberg</surname>
+<given-names>Casey A.</given-names>
+</name>
+<xref ref-type="aff" rid="A1">1</xref>
+<xref rid="FN2" ref-type="author-notes">*</xref>
+</contrib>
+<contrib contrib-type="author">
+<name>
+<surname>Padrick</surname>
+<given-names>Shae B.</given-names>
+</name>
+<xref ref-type="aff" rid="A2">2</xref>
+<xref rid="FN2" ref-type="author-notes">*</xref>
+</contrib>
+<contrib contrib-type="author">
+<name>
+<surname>Sweeney</surname>
+<given-names>Meredith O.</given-names>
+</name>
+<xref ref-type="aff" rid="A1">1</xref>
+</contrib>
+<contrib contrib-type="author">
+<name>
+<surname>Gandhi</surname>
+<given-names>Meghal</given-names>
+</name>
+<xref ref-type="aff" rid="A1">1</xref>
+</contrib>
+<contrib contrib-type="author">
+<name>
+<surname>Sokolova</surname>
+<given-names>Olga</given-names>
+</name>
+<xref ref-type="aff" rid="A3">3</xref>
+</contrib>
+<contrib contrib-type="author">
+<name>
+<surname>Goode</surname>
+<given-names>Bruce L.</given-names>
+</name>
+<xref ref-type="aff" rid="A1">1</xref>
+<xref rid="FN1" ref-type="author-notes">4</xref>
+</contrib>
+</contrib-group>
+<aff id="A1">
+<label>1</label>
+Rosenstiel Center for Basic Biomedical Research, Brandeis University, Waltham, MA, 02453
+</aff>
+<aff id="A2">
+<label>2</label>
+Department of Biophysics, University of Texas Southwestern Medical Center, Dallas, TX 75390
+</aff>
+<aff id="A3">
+<label>3</label>
+Faculty of Biology, Moscow State University, GSP-1, 1 Leninskie Gory, Bld 12, 119991, Moscow, Russia
+</aff>
+<author-notes>
+<corresp id="FN1">
+<label>4</label>
+To whom correspondence should be addressed: MS029, Brandeis University, 415 South St, Waltham, MA, 02453. 781-736-2464,
+<email>goode@brandeis.edu</email>
+</corresp>
+<fn id="FN2" fn-type="equal">
+<label>*</label>
+<p>These authors contributed equally to this work</p>
+</fn>
+</author-notes>
+<pub-date pub-type="nihms-submitted">
+<day>20</day>
+<month>6</month>
+<year>2013</year>
+</pub-date>
+<pub-date pub-type="epub">
+<day>30</day>
+<month>5</month>
+<year>2013</year>
+</pub-date>
+<pub-date pub-type="ppub">
+<day>17</day>
+<month>6</month>
+<year>2013</year>
+</pub-date>
+<pub-date pub-type="pmc-release">
+<day>17</day>
+<month>6</month>
+<year>2014</year>
+</pub-date>
+<volume>23</volume>
+<issue>12</issue>
+<fpage>1037</fpage>
+<lpage>1045</lpage>
+<permissions>
+<copyright-statement>© 2013 Elsevier Inc. All rights reserved.</copyright-statement>
+<copyright-year>2013</copyright-year>
+</permissions>
+<abstract>
+<title>Summary</title>
+<sec id="S1">
+<title>Background</title>
+<p id="P1">
+Branched actin filament networks driving cell motility, endocytosis, and intracellular transport are assembled in seconds by the Arp2/3 complex and must be equally rapidly debranched and turned over. One of the only factors known to promote debranching of actin networks is the yeast homologue of GMF, which is structurally related to the actin filament-severing protein cofilin. However, the molecular mechanism underlying debranching, and whether this activity extends to mammalian GMF, have remained open questions.
+</p>
+</sec>
+<sec id="S2">
+<title>Results</title>
+<p id="P2">
+Using scanning mutagenesis and TIRF microscopy, we show that GMF depends on two separate surfaces for debranching. One is analogous to the G-actin and F-actin binding site on cofilin, but we show using fluorescence anisotropy and chemical crosslinking that it instead interacts with actin-related proteins in Arp2/3 complex. The other is analogous to a second F-actin binding site on cofilin, which in GMF appears to contact the first actin subunit in the daughter filament. We further show that GMF binds to Arp2/3 complex with low nanomolar affinity and promotes the open conformation. Finally, we show that this debranching activity and mechanism are conserved for mammalian GMF.
+</p>
+</sec>
+<sec id="S3">
+<title>Conclusions</title>
+<p id="P3">
+GMF debranches filaments by a mechanism related to cofilin-mediated severing, but in which GMF has evolved to target molecular junctions between actin-related proteins in Arp2/3 complex and actin subunits in the daughter filament of the branch. This activity and mechanism are conserved in GMF homologues from evolutionarily distant species.
+</p>
+</sec>
+</abstract>
+<kwd-group>
+<kwd>Cytoskeleton</kwd>
+<kwd>actin</kwd>
+<kwd>ADF superfamily</kwd>
+<kwd>Arp2/3 complex</kwd>
+<kwd>GMF</kwd>
+<kwd>yeast</kwd>
+<kwd>mouse</kwd>
+<kwd>disassembly</kwd>
+<kwd>severing</kwd>
+<kwd>debranching</kwd>
+</kwd-group>
+<funding-group>
+<award-group>
+<funding-source country="United States">
+National Institute of General Medical Sciences : NIGMS
+</funding-source>
+<award-id>R01 GM063691 || GM</award-id>
+</award-group>
+</funding-group>
+</article-meta>
+</front>
+</article>
+</pmc-articleset>

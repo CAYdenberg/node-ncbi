@@ -130,6 +130,11 @@ const queries = {
     const nodes = queries.deepSearch('abstracttext', data);
     const values = queries.nodeValues(nodes);
     return values;
+  },
+
+  isOa: (data) => {
+    const nodes = queries.deepSearch('body', data);
+    return !!nodes.length;
   }
 
 }
