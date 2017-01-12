@@ -75,8 +75,10 @@ In addition, following methods are available:
 - `cites()`  - papers which this paper cites.
 - `citedBy()` - papers which cite this paper (only includes citing papers in PubMed central)
 - `similar()` - papers similar to this one (similarity is calculated on NCBI's side of the API, not ours).
+- `isOa()` - true if the full NLM XML can be retrieved ("Gold" open-access)
+- `fulltext()` - the full NLM XML if available, null otherwise
 
-All methods return a promise accessible by `.then()`. Except for `.abstract()` the parameter passed to the callback is a PubMed summary or an array of summaries.
+All methods return a promise accessible by `.then()`; the value retrieved is passed to the promise.
 
 ## Contributing
 
