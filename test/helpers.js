@@ -20,12 +20,11 @@ module.exports = {
 
   /** Define helper function to determine if an object is a pubmed summary */
   isPubmedSummary: function(obj) {
-    check.number(obj.pmid);
     check.object(obj.raw);
+    check.string(obj.pubDate);
     check.string(obj.title);
     check.string(obj.authors);
-    check.emptyString(obj.abstract);
-    check.string(obj.pubDate);
+    check.number(obj.pmid);
   }
 
 }

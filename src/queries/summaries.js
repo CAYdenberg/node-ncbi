@@ -14,8 +14,7 @@ const summaryQueries = {
       raw: data,
       title: data.title || '',
       authors: summaryQueries.formatAuthors(data.authors) || '',
-      pubDate: data.sortpubdate,
-      abstract: ''
+      pubDate: data.sortpubdate
     };
     data.articleids.forEach((idObject) => {
       if (idObject.idtype === 'pubmed') {
@@ -34,7 +33,7 @@ const summaryQueries = {
 
   sortSummaries: function(summaries, sortingFunc) {
     if (sortingFunc) {
-      summaries.sort(sortingFunction);
+      summaries.sort(sortingFunc);
     } else {
       //default sorting function: reverse chronological
       summaries.sort(function(a, b) {
