@@ -1,5 +1,3 @@
-const update = require('react-addons-update');
-
 const summaryQueries = {
 
   formatAuthors: function(authorsArray) {
@@ -22,7 +20,7 @@ const summaryQueries = {
         summary.pmid = parseInt(idObject.value, 10);
       } else if (idObject.idtype === 'pmc') {
         //Remove PMC from the beginning of the string and make sure it's an integer.
-        summary.pmc = parseInt(idObject.value.replace("PMC", ""));
+        summary.pmc = parseInt(idObject.value.replace('PMC', ''));
       } else if (idObject.idtype === 'doi') {
         //Move DOI to the top level
         summary.doi = idObject.value;
