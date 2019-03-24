@@ -1,4 +1,8 @@
-# node-ncbi
+# node-ncbi - API Key Support
+
+We created this fork to add API Key support (https://ncbiinsights.ncbi.nlm.nih.gov/2017/11/02/new-api-keys-for-the-e-utilities/)
+
+---
 
 A nodejs wrapper for the NCBI eUtils. You can use it to search PubMed or other databases and get the results as a JavaScript object.
 

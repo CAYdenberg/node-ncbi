@@ -5,6 +5,10 @@ const queries = require('./queries');
 
 module.exports = {
 
+  setApiKey: function(apiKey = '') {
+    gateways.apiKey = apiKey
+  },
+
   search: function(query, page, resultsPerPage) {
     let count;
     page = page || 0;

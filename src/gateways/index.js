@@ -8,6 +8,8 @@ const createGateway = require('./createGateway');
  */
 module.exports = {
 
+  apiKey: '',
+
   /**
    * pubmedSearch. Return a Gateway for a pubmed search, with start and end parameters.
    * (ie first and last results.)
@@ -20,7 +22,8 @@ module.exports = {
         db: 'pubmed',
         term: query,
         retstart: start,
-        retmax: resultsPerPage
+        retmax: resultsPerPage,
+        api_key: this.apiKey
       }
     });
   },
@@ -33,7 +36,8 @@ module.exports = {
       utility: 'esummary',
       params: {
         db: 'pubmed',
-        id: ids
+        id: ids,
+        api_key: this.apiKey
       }
     });
   },
@@ -48,7 +52,8 @@ module.exports = {
       params: {
         db: 'pubmed',
         retmode: 'xml',
-        id: ids
+        id: ids,
+        api_key: this.apiKey
       }
     });
   },
@@ -66,7 +71,8 @@ module.exports = {
         db: 'pubmed',
         dbfrom: 'pubmed',
         cmd: 'neighbor',
-        id: id
+        id: id,
+        api_key: this.apiKey
       }
     });
   },
@@ -76,7 +82,8 @@ module.exports = {
     params: {
       db: 'pmc',
       retmode: 'xml',
-      id: id
+      id: id,
+      api_key: this.apiKey
     }
   })
 
