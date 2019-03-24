@@ -22,6 +22,7 @@ A nodejs wrapper for the NCBI eUtils. You can use it to search PubMed or other d
 
 ```js
 const pubmed = ncbi.pubmed;
+pubmed.setApiKey( 'YOUR API KEY' )
 pubmed.search('actin').then((results) => {
     console.log(results);
 });

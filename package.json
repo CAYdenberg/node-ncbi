@@ -1,6 +1,6 @@
 {
-  "name": "node-ncbi",
-  "version": "0.5.1",
+  "name": "@lama-media/node-ncbi",
+  "version": "0.5.2",
   "description": "Access and parse the NCBI eUtils API in Node or the Browser",
   "keywords": [
     "pubmed",
@@ -20,7 +20,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/CAYdenberg/node-ncbi.git"
+    "url": "https://github.com/lama-media/node-ncbi.git"
   },
   "dependencies": {
     "check-types": "^7.0.1",
