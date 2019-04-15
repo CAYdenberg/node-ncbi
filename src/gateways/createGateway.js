@@ -93,6 +93,5 @@ module.exports = function(args) {
   const gateway = Object.assign(Object.create(Gateway), {
     settings: settings
   });
-  console.log('gateway',gateway)
   return gateway;
 }
