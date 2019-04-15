@@ -44,12 +44,13 @@ const queries = {
    * @return: string (at the top level) otherwise string, object or array
    */
   nodeValue: function nodeValue(node) {
+    // console.log('node', 'isArray', Array.isArray(node), typeof node, node )
     if (typeof node === 'string') {
       return node;
     } else if (Array.isArray(node)) {
-      return nodeValue(node[0]);
+      return _.map( node, nodeValue );
     } else if (typeof node === 'object') {
-      return nodeValue(node._);
+      return '<p><strong>'+_.get( node, '$.Label', '' ).toUpperCase()+'</strong><br/>' + nodeValue(node._) + '</p>';
     } else {
       return null;
     }
@@ -61,9 +62,10 @@ const queries = {
    * @return: array of strings representing the values of those nodes
    */
   nodeValues: function(nodes) {
+    nodes = _.flattenDeep( nodes )
     return update(nodes, {$apply: (node) => {
       return queries.nodeValue(node);
-    }});
+    }}).join('');
   },
 
   count: function(data) {
@@ -128,7 +130,13 @@ const queries = {
    */
   abstract: function(data) {
     const nodes = queries.deepSearch('abstracttext', data);
+
+    // console.log('nodes', nodes)
+
     const values = queries.nodeValues(nodes);
+
+    // console.log('values', values)
+
     return values;
   },
 

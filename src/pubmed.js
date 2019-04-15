@@ -72,7 +72,7 @@ module.exports = {
     });
   },
 
-  abstract: function(pmid) {
+  abstract: async function(pmid) {
     return gateways.pubmedRecord(pmid).resolve(queries.abstract);
   },
 
