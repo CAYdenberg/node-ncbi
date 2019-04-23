@@ -9,11 +9,11 @@ module.exports = {
     gateways.apiKey = apiKey
   },
 
-  search: function(query, page, resultsPerPage) {
+  search: function(query, page, resultsPerPage, field = false) {
     let count;
     page = page || 0;
     resultsPerPage = resultsPerPage || 10;
-    return gateways.pubmedSearch(query, page, resultsPerPage).resolve(data => {
+    return gateways.pubmedSearch(query, page, resultsPerPage, field).resolve(data => {
       count = queries.count(data);
       const pmids = queries.ids(data);
       if (!pmids.length) {

@@ -14,9 +14,9 @@ module.exports = {
    * pubmedSearch. Return a Gateway for a pubmed search, with start and end parameters.
    * (ie first and last results.)
    */
-  pubmedSearch: function(query, page, resultsPerPage) {
+  pubmedSearch: function(query, page, resultsPerPage, field = false) {
     const start = page * resultsPerPage;
-    return createGateway({
+    let obj = {
       utility: 'esearch',
       params: {
         db: 'pubmed',
@@ -25,7 +25,13 @@ module.exports = {
         retmax: resultsPerPage,
         api_key: this.apiKey
       }
-    });
+    }
+
+    if( field ) {
+      obj.params.field = field
+    }
+
+    return createGateway( obj );
   },
 
   /**
