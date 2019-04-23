@@ -11,6 +11,11 @@ module.exports = (data) => {
       dataObj = JSON.parse(data);
     } catch(err) {
       //try XML
+      if( typeof data == 'string' ) {
+        data = data.replace( /<sup>/g, '[sup]').replace( /<\/sup>/g, '[/sup]')
+        data = data.replace( /<i>/g, '[i]').replace( /<\/i>/g, '[/i]')
+        data = data.replace( /<sub>/g, '[sub]').replace( /<\/sub>/g, '[/sub]')
+      }
       parseString(data, function(err, result) {
         if (err) {
           dataObj = null;

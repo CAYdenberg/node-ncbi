@@ -44,13 +44,17 @@ const queries = {
    * @return: string (at the top level) otherwise string, object or array
    */
   nodeValue: function nodeValue(node) {
-    // console.log('node', 'isArray', Array.isArray(node), typeof node, node )
+    // console.log('node', node )
     if (typeof node === 'string') {
       return node;
     } else if (Array.isArray(node)) {
       return _.map( node, nodeValue );
     } else if (typeof node === 'object') {
-      return '<p><strong>'+_.get( node, '$.Label', '' ).toUpperCase()+'</strong><br/>' + nodeValue(node._) + '</p>';
+      var text = nodeValue(node._) || ''
+      text = text.replace(/\[sup\]/g, '<sup>').replace(/\[\/sup\]/g, '</sup>')
+      text = text.replace(/\[i\]/g, '<em>').replace(/\[\/i\]/g, '</em>')
+      text = text.replace(/\[sub\]/g, '<sub>').replace(/\[\/sub\]/g, '</sub>')
+      return '<p><strong>'+_.get( node, '$.Label', '' ).toUpperCase()+'</strong><br/>' + text + '</p>';
     } else {
       return null;
     }
@@ -63,6 +67,7 @@ const queries = {
    */
   nodeValues: function(nodes) {
     nodes = _.flattenDeep( nodes )
+    console.log('nodes',nodes)
     return update(nodes, {$apply: (node) => {
       return queries.nodeValue(node);
     }}).join('');
@@ -129,13 +134,12 @@ const queries = {
    * of an array
    */
   abstract: function(data) {
+
+    console.log('data', require('util').inspect(data, {showHidden: false, depth: null}))
+
+
     const nodes = queries.deepSearch('abstracttext', data);
-
-    // console.log('nodes', nodes)
-
     const values = queries.nodeValues(nodes);
-
-    // console.log('values', values)
 
     return values;
   },
