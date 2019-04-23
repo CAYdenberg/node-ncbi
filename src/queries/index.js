@@ -55,7 +55,6 @@ const queries = {
       return _.map( node, nodeValue );
     } else if (typeof node === 'object') {
       var text = nodeValue(node._) || ''
-      console.log('text 11111',text)
       return '<p><strong>'+_.get( node, '$.Label', '' ).toUpperCase()+'</strong><br/>' + text + '</p>';
     } else {
       return null;
