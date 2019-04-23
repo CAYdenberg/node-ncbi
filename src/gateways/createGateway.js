@@ -68,7 +68,7 @@ Gateway.resolve = function(query) {
   return this.send().then(res => {
     // console.log('res.body',res.body)
     const dataObj = parse(res.body);
-    // console.log('dataObj',dataObj)
+    // console.log('dataObj', require('util').inspect(dataObj, { showHidden: false, depth: null }))
     return query(dataObj);
   });
 };

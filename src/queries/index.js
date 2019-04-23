@@ -143,6 +143,22 @@ const queries = {
     return values;
   },
 
+
+  /**
+   * Perform a deep search for the abstract text and return it.
+   * @arg single | Boolean, if true, return just one result as a string instead
+   * of an array
+   */
+  otherIds: function(data) {
+
+    // console.log('data', require('util').inspect(data, {showHidden: false, depth: null}))
+    const nodes = _.get( data, 'PubmedArticleSet.PubmedArticle.PubmedData', {} ); // queries.deepSearch('abstracttext', data);
+    // console.log('otherIds',nodes)
+    const values = queries.nodeValues(nodes);
+
+    return values;
+  },
+
   isOa: (data) => {
     const nodes = queries.deepSearch('body', data);
     return !!nodes.length;
