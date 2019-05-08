@@ -143,6 +143,14 @@ const queries = {
     return values;
   },
 
+  copyright: function( data ) {
+    const nodes = queries.deepSearch('copyrightinformation', data);
+    console.log('data', nodes)
+    const values = queries.nodeValues(nodes);
+
+    return values;
+  },
+
 
   /**
    * Perform a deep search for the abstract text and return it.

@@ -76,6 +76,10 @@ module.exports = {
     return gateways.pubmedRecord(pmid).resolve(queries.abstract);
   },
 
+  copyright: async function(pmid) {
+    return gateways.pubmedRecord(pmid).resolve(queries.copyright);
+  },
+
   isOa: function(pmid) {
     return this.summary(pmid).then(summary => {
       if (!summary) {
