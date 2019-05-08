@@ -145,9 +145,8 @@ const queries = {
 
   copyright: function( data ) {
     const nodes = queries.deepSearch('copyrightinformation', data);
-    console.log('data', nodes)
     const values = queries.nodeValues(nodes);
-
+    // console.log('data copyrightinformation', nodes, values)
     return values;
   },
 
