@@ -49,13 +49,21 @@ const queries = {
       node = node.replace(/\[sup\]/g, '<sup>').replace(/\[\/sup\]/g, '</sup>')
       node = node.replace(/\[i\]/g, '<em>').replace(/\[\/i\]/g, '</em>')
       node = node.replace(/\[sub\]/g, '<sub>').replace(/\[\/sub\]/g, '</sub>')
+      node = node.replace(/\[strong\]/g, '<strong>').replace(/\[\/strong\]/g, '</strong>')
+      node = node.replace(/\[b\]/g, '<strong>').replace(/\[\/b\]/g, '</strong>')
+      node = node.replace(/\[u\]/g, '<u>').replace(/\[\/u\]/g, '</u>')
 
       return node;
     } else if (Array.isArray(node)) {
       return _.map( node, nodeValue );
     } else if (typeof node === 'object') {
       var text = nodeValue(node._) || ''
-      return '<p><strong>'+_.get( node, '$.Label', '' ).toUpperCase()+'</strong><br/>' + text + '</p>';
+
+      if( _.isEmpty(_.get( node, '$.Label', '' ) ))
+        return '<p>' + text + '</p>';
+      else
+        return '<p><strong>'+_.get( node, '$.Label', '' ).toUpperCase()+'</strong><br/>' + text + '</p>';
+
     } else {
       return null;
     }
