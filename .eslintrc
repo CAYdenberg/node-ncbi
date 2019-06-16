@@ -1,7 +1,8 @@
 {
   "env": {
+    "commonjs": true,
     "es6": true,
-    "commonjs": true
+    "node": true
   },
   "globals": {
     "console": true
