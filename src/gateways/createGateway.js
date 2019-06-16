@@ -89,7 +89,12 @@ module.exports = function(args) {
       db: 'pubmed'
     }
   };
-  const settings = update(defaults, {$merge: args, params: {$merge: args.params}});
+  let settings = update(defaults, {$merge: args, params: {$merge: args.params}});
+  if (process.env.NCBI_API_KEY) {
+    settings = update(settings, {params:
+      {$merge: {api_key: process.env.NCBI_API_KEY} }
+    })
+  }
   const gateway = Object.assign(Object.create(Gateway), {
     settings: settings
   });

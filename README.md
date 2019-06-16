@@ -4,13 +4,17 @@ A nodejs wrapper for the NCBI eUtils. You can use it to search PubMed or other d
 
 [Read the full documentation of eUtils](http://www.ncbi.nlm.nih.gov/books/NBK25500/).
 
-**Note:** NCBI appears to have changed their CORS policy making browser use impossible. You can still use the [API wrapper](http://ncbi.site/) (coming soon).
-
 ## Getting started
 
 `npm install --save node-ncbi`
 
 `var ncbi = require('node-ncbi');`
+
+### API Keys
+
+eUtils now requires API keys to make **more than three requests per second** [You can read here about how to obtain an API key from NCBI](https://www.ncbi.nlm.nih.gov/books/NBK25497/#chapter2.Coming_in_December_2018_API_Key).
+
+Starting with v0.6.0 of `node-ncbi`, setting the environment variable `NCBI_API_KEY` will automatically append your key to all outgoing requests.
 
 ## Basic usage
 
