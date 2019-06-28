@@ -48,7 +48,7 @@ Gateway.generateUrl = function() {
  */
 Gateway.send = function() {
   var url = this.generateUrl();
-  return popsicle({
+  return popsicle.get({
     method: 'GET',
     url: url
   });
