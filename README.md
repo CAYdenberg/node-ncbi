@@ -107,10 +107,6 @@ params: {
  `url` will log the URL needed to access eUtils while `open` will open that URL in a browser. This can help with debugging and to look at the actual data which is useful to create new queries. [See the full documentation of eUtils](http://www.ncbi.nlm.nih.gov/books/NBK25500/) for more information on creating
  queries.
 
-### ESLint
-
-Run with `gulp lint`.
-
 ## License
 
 Copyright (c) 2016 Casey A. Ydenberg
