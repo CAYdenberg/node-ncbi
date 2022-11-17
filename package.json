@@ -10,6 +10,7 @@
     "research"
   ],
   "main": "index.js",
+  "types": "types/node-ncbi.d.ts",
   "scripts": {
     "start": "node ./bin/repl",
     "test": "npx mocha"

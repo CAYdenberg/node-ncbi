@@ -22,8 +22,8 @@ Starting with v0.6.0 of `node-ncbi`, setting the environment variable `NCBI_API_
 
 ```js
 const pubmed = ncbi.pubmed;
-pubmed.search('actin').then((results) => {
-    console.log(results);
+pubmed.search("actin").then((results) => {
+  console.log(results);
 });
 ```
 
@@ -49,20 +49,20 @@ where `count` is the total number of papers, independent of pagination. The "pap
 By default, 10 results will be retrieved at a time. To get the next set of results:
 
 ```javascript
-pubmed.search('actin', 1).then((results) => {
-    console.log(results);
+pubmed.search("actin", 1).then((results) => {
+  console.log(results);
 });
 ```
 
 To change the number of results retrieved at a time:
 
 ```javascript
-pubmed.search('actin', 0, 20).then((results) => {
-    console.log(results);
+pubmed.search("actin", 0, 20).then((results) => {
+  console.log(results);
 });
 ```
 
-###Looking up a specific paper
+### Looking up a specific paper
 
 ```javascript
 pubmed.summary(20517925).then((paper) => {
@@ -76,7 +76,7 @@ In addition, following methods are available:
 
 - `abstract()` - get the abstract
 - `summary()` - get the "summary" - an object of fields containing title, authors, citation info, etc.
-- `cites()`  - papers which this paper cites.
+- `cites()` - papers which this paper cites.
 - `citedBy()` - papers which cite this paper (only includes citing papers in PubMed central)
 - `similar()` - papers similar to this one (similarity is calculated on NCBI's side of the API, not ours).
 - `isOa()` - true if the full NLM XML can be retrieved ("Gold" open-access)
@@ -104,12 +104,12 @@ params: {
 }
 ```
 
- `url` will log the URL needed to access eUtils while `open` will open that URL in a browser. This can help with debugging and to look at the actual data which is useful to create new queries. [See the full documentation of eUtils](http://www.ncbi.nlm.nih.gov/books/NBK25500/) for more information on creating
- queries.
+`url` will log the URL needed to access eUtils while `open` will open that URL in a browser. This can help with debugging and to look at the actual data which is useful to create new queries. [See the full documentation of eUtils](http://www.ncbi.nlm.nih.gov/books/NBK25500/) for more information on creating
+queries.
 
 ## License
 
-Copyright (c) 2016 Casey A. Ydenberg
+Copyright (c) 2022 Casey A. Ydenberg
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -123,7 +123,7 @@ all copies or substantial portions of the Software.
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.  IN NO EVENT SHALL THE
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
 AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
