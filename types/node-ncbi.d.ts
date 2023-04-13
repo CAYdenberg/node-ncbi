@@ -12,7 +12,7 @@ declare module "node-ncbi" {
 
     function search(
       term: string,
-      skip?: number,
+      page?: number,
       limit?: number
     ): Promise<{
       count: number;
@@ -20,6 +20,8 @@ declare module "node-ncbi" {
     }>;
 
     function summary(pmid: number): Promise<Paper>;
+
+    function summaries(pmids: string): Promise<Paper[]>;
 
     function abstract(pmid: number): Promise<string>;
 
