@@ -12,15 +12,15 @@ const summaryQueries = {
       raw: data,
       title: data.title || '',
       authors: summaryQueries.formatAuthors(data.authors) || '',
-      pubDate: data.sortpubdate
+      pubDate: data.sortpubdate || data.sortdate,
     };
     data.articleids.forEach((idObject) => {
-      if (idObject.idtype === 'pubmed') {
+      if (['pubmed', 'pmid'].includes(idObject.idtype)) {
         //Change pubmed to pmid. Make sure it's an integer.
         summary.pmid = parseInt(idObject.value, 10);
       } else if (idObject.idtype === 'pmc') {
         //Remove PMC from the beginning of the string and make sure it's an integer.
-        summary.pmc = parseInt(idObject.value.replace('PMC', ''));
+        summary.pmc = parseInt(idObject.value.replace('PMC', ''), 10);
       } else if (idObject.idtype === 'doi') {
         //Move DOI to the top level
         summary.doi = idObject.value;

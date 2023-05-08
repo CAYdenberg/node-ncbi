@@ -40,6 +40,17 @@ describe('Links gateway', function() {
 
 });
 
+describe('PMC summary gateway', () => {
+  describe('generateUrl', () => {
+
+    it('should build a valid url from parameters', () => {
+      const fetch = createGateway.pmcSummary(3315798);
+      assert.equal(fetch.generateUrl(), 'https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?retmode=json&db=pmc&id=3315798');
+    });
+
+  });
+});
+
 describe('PMC full text gateway', () => {
   describe('generateUrl', () => {
 

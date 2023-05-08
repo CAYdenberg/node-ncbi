@@ -5,6 +5,7 @@ const {isPubmedSummary} = require('./helpers.js');
 const assert = require('assert');
 
 var pubmed = require('../src/pubmed');
+var pmc = require('../src/pmc')
 
 describe('Pubmed module', function() {
   this.timeout(10000);
@@ -68,6 +69,13 @@ describe('Pubmed module', function() {
   it('should tell us if a paper is not open access', function(done) {
     pubmed.isOa(23727094).then(result => {
       assert.equal(result, false);
+      done();
+    });
+  });
+
+  it('should retrieve a summary from pmc', function(done) {
+    pmc.summary(3315798).then(result => {
+      isPubmedSummary(result);
       done();
     });
   });

@@ -38,6 +38,16 @@ module.exports = {
     });
   },
 
+  pmcSummary: function (ids) {
+    return createGateway({
+      utility: 'esummary',
+      params: {
+        db: 'pmc',
+        id: ids,
+      }
+    })
+  },
+
   /**
    * Get a set of full/efetch documents from pubmed, specified by an array of pmids (pubmed identifiers).
    * Note that efetch documents can only be returned via XML (or flatfile).
