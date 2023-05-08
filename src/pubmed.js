@@ -3,30 +3,37 @@
 const gateways = require('./gateways');
 const queries = require('./queries');
 
+function pubmedSearch(query, page, resultsPerPage, sort) {
+  let count;
+  page = page || 0;
+  resultsPerPage = resultsPerPage || 10;
+  sort = sort || 'most+recent'
+  return gateways.pubmedSearch(query, page, resultsPerPage).resolve(data => {
+    count = queries.count(data);
+    const pmids = queries.ids(data);
+    if (!pmids.length) {
+      return {
+        count: 0,
+        papers: []
+      };
+    }
+    return new Promise((resolve, reject) => {
+      this.summaries(pmids).then(summaries => {
+        resolve({
+          count: count,
+          papers: summaries
+        });
+      }).catch(err => reject(err));
+    });
+  });
+}
+
 module.exports = {
 
-  search: function(query, page, resultsPerPage) {
-    let count;
-    page = page || 0;
-    resultsPerPage = resultsPerPage || 10;
-    return gateways.pubmedSearch(query, page, resultsPerPage).resolve(data => {
-      count = queries.count(data);
-      const pmids = queries.ids(data);
-      if (!pmids.length) {
-        return {
-          count: 0,
-          papers: []
-        };
-      }
-      return new Promise((resolve, reject) => {
-        this.summaries(pmids).then(summaries => {
-          resolve({
-            count: count,
-            papers: summaries
-          });
-        }).catch(err => reject(err));
-      });
-    });
+  search: pubmedSearch,
+
+  searchByRelevance: function(query, page, resultsPerPage) {
+    return pubmedSearch(query, page, resultsPerPage, 'relevance');
   },
 
   summaries: function(pmids) {

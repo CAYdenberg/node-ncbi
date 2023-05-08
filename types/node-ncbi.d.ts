@@ -19,6 +19,15 @@ declare module "node-ncbi" {
       papers: Array<Paper>;
     }>;
 
+    function searchByRelevance(
+      term: string,
+      page?: number,
+      limit?: number
+    ): Promise<{
+      count: number;
+      papers: Array<Paper>;
+    }>;
+
     function summary(pmid: number): Promise<Paper>;
 
     function summaries(pmids: string): Promise<Paper[]>;
