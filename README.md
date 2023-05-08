@@ -62,6 +62,14 @@ pubmed.search("actin", 0, 20).then((results) => {
 });
 ```
 
+You can also search by relevance (instead of publication date):
+
+```javascript
+pubmed.searchByRelevance("actin").then((results) => {
+  console.log(results);
+});
+```
+
 ### Looking up a specific paper
 
 ```javascript
@@ -83,6 +91,14 @@ In addition, following methods are available:
 - `fulltext()` - the full NLM XML if available, null otherwise
 
 All methods return a promise accessible by `.then()`; the value retrieved is passed to the promise.
+
+### Searching by PubMedCentral (PMC) ID number
+
+```javascript
+pmc.summary(3315798).then((paper) => {
+  console.log(paper);
+});
+```
 
 ## Contributing
 
