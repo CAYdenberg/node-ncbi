@@ -1,16 +1,25 @@
 declare module "node-ncbi" {
+  interface Paper {
+    raw: object;
+    pubDate: string;
+    title: string;
+    authors: string;
+    pmid: number;
+    pmc?: number;
+    doi?: string;
+  }
+  
   module pubmed {
-    interface Paper {
-      raw: object;
-      pubDate: string;
-      title: string;
-      authors: string;
-      pmid: number;
-      pmc?: number;
-      doi?: string;
-    }
-
     function search(
+      term: string,
+      page?: number,
+      limit?: number
+    ): Promise<{
+      count: number;
+      papers: Array<Paper>;
+    }>;
+
+    function searchByRelevance(
       term: string,
       page?: number,
       limit?: number
@@ -34,5 +43,9 @@ declare module "node-ncbi" {
     function isOa(pmid: number): Promise<boolean>;
 
     function fulltext(pmid: number): Promise<string>;
+  }
+
+  module pmc {
+    function summary(pmc: number): Promise<Paper>;
   }
 }
