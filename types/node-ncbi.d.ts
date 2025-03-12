@@ -33,6 +33,6 @@ declare module "node-ncbi" {
 
     function isOa(pmid: number): Promise<boolean>;
 
-    function fullText(pmid: number): Promise<string>;
+    function fulltext(pmid: number): Promise<string>;
   }
 }
