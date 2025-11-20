@@ -1,5 +1,5 @@
 const update = require("immutability-helper");
-const popsicle = require("popsicle");
+const axios = require("axios");
 
 const parse = require("./parse");
 
@@ -51,9 +51,8 @@ Gateway.generateUrl = function () {
  */
 Gateway.send = function () {
   var url = this.generateUrl();
-  return popsicle.get({
-    method: "GET",
-    url: url,
+  return axios.get(url, {
+    validateStatus: () => true,
   });
 };
 
@@ -68,7 +67,7 @@ Gateway.send = function () {
  */
 Gateway.resolve = function (query) {
   return this.send().then((res) => {
-    const dataObj = parse(res.body);
+    const dataObj = parse(res.data);
     return query(dataObj);
   });
 };
